@@ -27,6 +27,13 @@ async function ev(expr) {
   if (r.exceptionDetails) throw new Error(r.exceptionDetails.text + " " + (r.exceptionDetails.exception?.description || ""));
   return r.result.value;
 }
+// 페이지가 다 그려질 때까지(카드가 생기고 문서 로드 완료) 최대 20초 기다린다
+async function ready() {
+  for (let i = 0; i < 80; i++) {
+    await sleep(250);
+    try { if (await ev(`document.readyState === 'complete' && document.querySelectorAll('.tk').length > 0`)) { await sleep(300); return; } } catch {}
+  }
+}
 async function shot(name) {
   const r = await send("Page.captureScreenshot", { format: "png", captureBeyondViewport: false });
   writeFileSync(`${OUT}/${name}.png`, Buffer.from(r.data, "base64"));
@@ -55,7 +62,7 @@ try {
   for (const [label, w, h, mobile] of [["mobile", 390, 844, true], ["pc", 1280, 900, false]]) {
     await send("Emulation.setDeviceMetricsOverride", { width: w, height: h, deviceScaleFactor: mobile ? 2 : 1, mobile });
     await send("Page.navigate", { url: URL_ });
-    await sleep(2500);
+    await ready();
     const m = await ev(`({sw: document.documentElement.scrollWidth, iw: innerWidth, cards: document.querySelectorAll('.tk').length,
       chips: document.querySelectorAll('.chip').length, stamp: document.getElementById('stamp').textContent})`);
     check(`${label}: 가로 넘침 없음`, m.sw <= m.iw, `scrollWidth ${m.sw} / 화면 ${m.iw}`);
@@ -65,9 +72,9 @@ try {
 
   // 아래 기능 점검은 휴대폰 화면 기준
   await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
-  await send("Page.navigate", { url: URL_ }); await sleep(1500);
+  await send("Page.navigate", { url: URL_ }); await ready();
   await ev(`localStorage.clear()`);  // 지난 실행의 저장·참여함 기록을 지우고 시작
-  await send("Page.reload"); await sleep(2000);
+  await send("Page.reload"); await ready();
   const total = await ev(`DATA.events.filter(e => (!e.end || e.end >= kstToday()) && e.grade !== 'X').length`);
   const shown = await ev(`document.querySelectorAll('#list .tk').length`);
   check("데이터 건수 = 화면 카드 수(조건 많음 제외)", total === shown, `데이터 ${total} / 화면 ${shown}`);
@@ -111,7 +118,7 @@ try {
 
   // 저장·참여함(새로고침 후 유지)
   const fid = await ev(`(() => { const b = document.querySelector('#list .tk [data-act="fav"]'); const id = b.dataset.id; b.click(); return id; })()`); await sleep(300);
-  await send("Page.reload"); await sleep(2000);
+  await send("Page.reload"); await ready();
   const kept = await ev(`document.querySelector('#list .tk [data-act="fav"][data-id="${fid}"]')?.getAttribute('aria-pressed')`);
   check("저장 표시가 새로고침 후 유지", kept === "true");
 
@@ -139,6 +146,8 @@ try {
 } finally {
   writeFileSync(`${OUT}/browser_results.json`, JSON.stringify(results, null, 1));
   for (const r of results) console.log(`${r.ok ? "PASS" : "FAIL"}  ${r.name}  ${r.detail}`);
+  // GitHub Actions에서는 실패 항목을 주석(annotation)으로 남겨 로그인 없이도 원인을 볼 수 있게 한다
+  if (process.env.GITHUB_ACTIONS) for (const r of results.filter(x => !x.ok)) console.log(`::error::브라우저 점검 실패: ${r.name} ${String(r.detail).replace(/\n/g, " ").slice(0, 300)}`);
   try { ws?.close(); } catch {}
   proc.kill();
   process.exit(results.every(r => r.ok) ? 0 : 1);
