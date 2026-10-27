@@ -65,7 +65,9 @@ jobs:
           python -m http.server 8765 --bind 127.0.0.1 --directory _site &
           sleep 2
           mkdir -p /tmp/bt
-          CHROME=$(command -v google-chrome || command -v chromium) node tests/browser_test.mjs http://127.0.0.1:8765/ /tmp/bt
+          export CHROME=$(command -v google-chrome || command -v chromium)
+          # Chrome이 늦게 뜨는 일시 오류를 고려해 실패하면 한 번 더 시도한다
+          node tests/browser_test.mjs http://127.0.0.1:8765/ /tmp/bt || (sleep 5 && node tests/browser_test.mjs http://127.0.0.1:8765/ /tmp/bt)
 
       - name: 수집 데이터 커밋
         run: |

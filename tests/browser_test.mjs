@@ -44,7 +44,7 @@ const check = (name, ok, detail = "") => { results.push({ name, ok: !!ok, detail
 
 try {
   let target;
-  for (let i = 0; i < 40 && !target; i++) {
+  for (let i = 0; i < 120 && !target; i++) {  // Chrome 시작을 최대 30초 기다린다(러너가 느릴 때)
     await sleep(250);
     try { target = (await (await fetch(`http://127.0.0.1:${PORT}/json/list`)).json()).find(t => t.type === "page"); } catch {}
   }
