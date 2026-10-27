@@ -1,0 +1,4977 @@
+{
+ "events": {
+  "b1026-1": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 50,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "A",
+   "id": "b1026-1",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "팔로우·구독 필요"
+   ],
+   "org": "한국에너지공단",
+   "place": null,
+   "prize": "배달의민족 모바일상품권 1만원",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://blog.naver.com/kea_sese/224448619358"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [
+    "10/26 09:2x 새 루트(기관 블로그 RSS)에서 찾고 주최 블로그 글(10/21 게시)을 열어 확인: 기간 10/21~11/1, 발표 11/4, 배민 1만원 50명. 참여는 한국에너지공단 SNS 둘러보기 → 구글폼 만족도 조사 제출. 팔로우를 취소하면 선정에서 빠질 수 있다고 적혀 있어요"
+   ],
+   "tags": [
+    "팔로우 필요"
+   ],
+   "title": "2026 한국에너지공단 SNS 만족도 조사 이벤트",
+   "url": "https://blog.naver.com/kea_sese/224448619358",
+   "who": null
+  },
+  "b1026-2": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 30,
+   "end": "2026-11-20",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "S",
+   "id": "b1026-2",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "창업진흥원",
+   "place": null,
+   "prize": "공차 블랙밀크티+펄 L+그릴드 핫치킨 브리또",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://blog.naver.com/startupkised/224447504614"
+   ],
+   "start": "2026-10-20",
+   "status": "active",
+   "steps": [
+    "10/26 09:2x 새 루트(기관 블로그 RSS)에서 찾고 주최 블로그 글(10/20 게시)을 열어 확인: 기간 10/20~11/20, 발표 11/26(이벤트 글 댓글), 공차 세트 30명. 네이버폼 설문을 끝내고 제출(이름·휴대폰 번호). 폼 안쪽은 열지 않았어요(네이버 단축 주소)."
+   ],
+   "tags": [],
+   "title": "창업진흥원 인지도 및 SNS 채널 만족도 조사 이벤트",
+   "url": "https://blog.naver.com/startupkised/224447504614",
+   "who": null
+  },
+  "bs-0ec37ec6de": {
+   "announce": "2026-11-20",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "bs-0ec37ec6de",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "부산광역시",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "bs",
+   "srcUrls": [
+    "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1817&prgcode=EVT_00000000002&event_gubun=SITE"
+   ],
+   "start": "2026-09-08",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "시간을 잇는돌 미래를 짓는 이름(부산독립운동기념관의 1945개 빈칸을 당신의 이름으로 채워주세요)",
+   "url": "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1817&prgcode=EVT_00000000002&event_gubun=SITE",
+   "who": "부산시 누리집 회원 대상"
+  },
+  "bs-74c8aab11c": {
+   "announce": "2026-11-13",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "bs-74c8aab11c",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "부산광역시",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "bs",
+   "srcUrls": [
+    "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1825&prgcode=EVT_00000000002&event_gubun=SITE"
+   ],
+   "start": "2026-10-19",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "(내차쉬는날)승용차요일 시민 참여인증 이벤트",
+   "url": "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1825&prgcode=EVT_00000000002&event_gubun=SITE",
+   "who": null
+  },
+  "bs-c9fd582457": {
+   "announce": "2026-11-06",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "bs-c9fd582457",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "부산광역시",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "bs",
+   "srcUrls": [
+    "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1820&prgcode=EVT_00000000001&event_gubun=SITE"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "'Daily Busan' 독자 만족도조사 참여하고 햄버거 세트 기프티콘 받자!",
+   "url": "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1820&prgcode=EVT_00000000001&event_gubun=SITE",
+   "who": "부산시 누리집 회원 대상"
+  },
+  "e152": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 100,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e152",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "팔로우·구독 필요",
+    "화면 캡처·인증 사진 올리기",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "전남광주통합특별시(구 광주)",
+   "place": null,
+   "prize": "컴포즈 아이스 아메리카노",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=152",
+    "https://blog.naver.com/PostView.naver?blogId=jeonnam-gwangju-city&logNo=224439269266&categoryNo=43&parentCategoryNo=&from=thumbnailList"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인: 100명 추첨. 블로그 이웃 추가 + 10월 게시물 3개 좋아요 캡처를 네이버폼에 제출. 발표까지 이웃·좋아요 유지. 주최 블로그 원문은 열리지 않아 사람이 확인."
+   ],
+   "tags": [
+    "팔로우 필요",
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "블로그 이웃 맺기 + 게시물 좋아요",
+   "url": "https://events.kr/event.php?id=152",
+   "who": null
+  },
+  "e153": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e153",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "화면 캡처·인증 사진 올리기",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "국민체육진흥공단",
+   "place": null,
+   "prize": "참여자 전원 튼튼머니 5천원 + 스마트워치·이어폰·온누리 5만원 등 추첨",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=153"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인: 10/13~10/31, 총 추첨 1,015명. 운동 인증 사진·영상을 필수 해시태그와 함께 올리고 친구 1명 태그, 프로필의 구글폼 작성. 튼튼머니 지급에 국민체력100 아이디 필요"
+   ],
+   "tags": [
+    "인스타 참여",
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "국민체력100 튼튼머니 체력자랑 인증",
+   "url": "https://events.kr/event.php?id=153",
+   "who": null
+  },
+  "e155": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e155",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "지냄",
+   "place": null,
+   "prize": "스타벅스 아이스 아메리카노 TALL 기프티콘",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=155"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인: 10/15~11/1, 5명. 인스타 @thegamro_official을 팔로우하고 강남점 기대·응원 댓글을 남겨요"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "더 감로 팔로우 이벤트",
+   "url": "https://events.kr/event.php?id=155",
+   "who": null
+  },
+  "e160": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 3,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e160",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "유튜브에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "지냄",
+   "place": null,
+   "prize": "더 감로 강남점 1박 숙박권 (숙박 11/3~11/30, 금·토·공휴일 제외)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=160"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인: 10/16~11/1, 3명. 유튜브 채널 \"어디서든 잘 지냄\"을 구독하고 영상에 좋아요를 누른 뒤 방문하고 싶은 이유를 댓글로 남겨요"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "원문 미확인"
+   ],
+   "title": "더 감로 강남점 OPEN EVENT",
+   "url": "https://events.kr/event.php?id=160",
+   "who": null
+  },
+  "e166": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 203,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e166",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "유튜브에서 참여",
+    "팔로우·구독 필요",
+    "화면 캡처·인증 사진 올리기",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "질병관리청",
+   "place": null,
+   "prize": "고프로 액션캠 1명, 캐리어 2명, 커피 기프티콘 200명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=166",
+    "https://naver.me/GRDqMnbv"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인: 10/19~11/1, 203명(고프로 액션캠 1, 캐리어 2, 커피 기프티콘 200). 질병관리청 유튜브 채널 아프지마TV를 구독(필수)하고 영상을 본 뒤 퀴즈 답을 댓글로 남기고, 댓글을 캡처해 이벤트 폼에 닉네임·연락처와 함께 내는 방식이에요"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "여건 너의 이름은 퀴즈 이벤트 (아프지마TV 영상 댓글)",
+   "url": "https://events.kr/event.php?id=166",
+   "who": null
+  },
+  "e167": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 10,
+   "end": "2026-10-30",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e167",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "의료기관평가인증원",
+   "place": null,
+   "prize": "배달쿠폰 모바일상품권 5천원",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=167"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인: 10/19~10/30, 10명. 인스타그램 계정(@sayfor_safety)을 팔로우하고 게시물에서 옥에 티를 찾아 정답을 댓글로 남기는 방식이에요"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "환자안전 옥에 티를 찾아라 (인스타 정답 댓글)",
+   "url": "https://events.kr/event.php?id=167",
+   "who": null
+  },
+  "e169": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 101,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": "설문 1건당 주최 측이 매칭기부하는 방식으로, 참여자 결제 없음(목록 메모 기준)",
+   "grade": "A",
+   "id": "e169",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "행복얼라이언스(스낵인터랙티브 등록)",
+   "place": null,
+   "prize": "순수한우 세트 1명, 투썸 말차크림라떼 100명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=169",
+    "https://form.naver.com/response/IMLDstsLxwgtf3-OspTX1w"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인: 네이버폼 설문 참여 후 인스타그램 이벤트 게시물에 「참여완료」 댓글(10/19~11/1). 설문 1건당 결식우려아동 도시락 1개 매칭기부. 원문은 인스타그램·폼이라 열지 않았어요"
+   ],
+   "tags": [
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "2026 행복얼라이언스 만족도 조사 이벤트",
+   "url": "https://events.kr/event.php?id=169",
+   "who": null
+  },
+  "e170": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 20,
+   "end": "2026-10-30",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e170",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "파리바게뜨",
+   "place": null,
+   "prize": "1등 로파서울 테이블웨어 세트 2명, 2등 미피 토스터기 3명, 3등 파바 모바일 상품권 1만원 15명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=170"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인: 파바 제품을 즐기는 모습을 계정 태그·필수 해시태그와 함께 인스타그램 피드에 올리기(10/2~10/30). 원문은 인스타그램·폼이라 열지 않았어요."
+   ],
+   "tags": [
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "오늘 뭐먹지? #밥먹자파바고끼니로그 인증 이벤트",
+   "url": "https://events.kr/event.php?id=170",
+   "who": null
+  },
+  "e174": {
+   "announce": "2026-11-10",
+   "cand": false,
+   "checked": "2026-10-22",
+   "count": 170,
+   "end": "2026-11-04",
+   "endTime": null,
+   "firstSeen": "2026-10-22",
+   "freeNote": null,
+   "grade": "S",
+   "id": "e174",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "경기관광공사",
+   "place": null,
+   "prize": "배달의민족 5만원권 20명, 메가박스 2인권 50명, 이디야 ICE 카페라떼(L) 100명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://ggtour.or.kr/information/event/63d59758-0341-4247-a3c5-c63bc204494d?tab=event",
+    "https://events.kr/event.php?id=174"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [
+    "경기관광 플랫폼 이벤트 페이지에서 '이벤트 참여하기' 누르기 / 구글폼에서 개인정보 수집·이용 동의, 이름·전화번호 입력 / 에버랜드 주토피아와 서울대공원 동물원 중 하나 골라 제출"
+   ],
+   "tags": [],
+   "title": "취향 밸런스 게임, 당신의 선택은?",
+   "url": "https://ggtour.or.kr/information/event/63d59758-0341-4247-a3c5-c63bc204494d?tab=event",
+   "who": null
+  },
+  "e176": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 30,
+   "end": "2026-11-09",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e176",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "필로텍(안심Shop)",
+   "place": null,
+   "prize": "서울국제유아교육전 초대권",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=176"
+   ],
+   "start": "2026-10-22",
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인(10/22 09:2x): 인스타그램 @ansimshop_ 계정 팔로우, 게시물 좋아요, 부스 기대평 댓글(스토리 공유 시 추가 응모). 팔로우가 필요해 보류 권고예요"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "서울국제유아교육전 초대권 무료증정",
+   "url": "https://events.kr/event.php?id=176",
+   "who": null
+  },
+  "e177": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 100,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e177",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "대한민국정부",
+   "place": null,
+   "prize": "디지털 온누리상품권 1만원 20명, 커피교환권 80명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=177",
+    "https://www.instagram.com/p/Dev_YljtfQR/"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인(10/22 12:2x): 정부 인스타그램(https://www.instagram.com/p/Dev_YljtfQR/) 게시물에 추천 가을 산행지와 이유를 댓글로 남겨요(게시일~11/1, 발표 11/6). @gov_korea 팔로우가 필수라 보류 권고예요"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "가을산행 안전수칙 댓글 이벤트(단풍 맛집은 어디?)",
+   "url": "https://events.kr/event.php?id=177",
+   "who": null
+  },
+  "e181": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 50,
+   "end": "2026-10-29",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e181",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "유튜브에서 참여",
+    "팔로우·구독 필요",
+    "화면 캡처·인증 사진 올리기",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "십세들(유튜브 @healing_talktalk)",
+   "place": null,
+   "prize": "배달의민족 모바일 상품권 5,000원권",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.youtube.com/watch?v=Cz05899Nws8"
+   ],
+   "start": "2026-10-22",
+   "status": "active",
+   "steps": [
+    "events.kr 상세 확인(10/23 18:2x): 십세들 유튜브 구독·알림 설정, 「선배가 간다」 EP.1-2 영상에 랄랄 선배의 한마디와 다음 선배와 나눌 고민을 댓글로 남기고, 댓글 캡처를 구글폼(forms.gle 단축 주소)에 제출(10/22~10/29 23:59). 구독 정보가 공개여야 당첨 인정. 영상은 YouTube oEmbed로 채널(십세들"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "'선배가 간다' EP.1-2 댓글 이벤트",
+   "url": "https://www.youtube.com/watch?v=Cz05899Nws8",
+   "who": null
+  },
+  "e182": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 10,
+   "end": "2026-11-15",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "e182",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "옥시젠슈티컬스",
+   "place": null,
+   "prize": "아쿠아 배리어 크림 본품(50ml)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=182"
+   ],
+   "start": "2026-10-26",
+   "status": "active",
+   "steps": [
+    "events.kr 상세(10/26 12:2x)에서 읽은 값: @oxygenceuticals.official 팔로우 + 이벤트 게시물 좋아요·정답 댓글(초성 힌트 ㅂㄹㅇㅇㄹ). 인스타 원문 주소는 상세에 없음."
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "옥시젠슈티컬스 신제품 네이밍 퀴즈 EVENT!",
+   "url": "https://events.kr/event.php?id=182",
+   "who": null
+  },
+  "e183": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 20,
+   "end": "2026-11-22",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "X",
+   "id": "e183",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "아이디어 제출",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "국민체육진흥공단",
+   "place": null,
+   "prize": "참가상 네이버페이 2만원(참여자 무작위 추첨), 최우수 50만원 등",
+   "reasons": [
+    "공모전"
+   ],
+   "src": "ledger",
+   "srcUrls": [
+    "https://events.kr/event.php?id=183",
+    "https://kspo.or.kr/contest"
+   ],
+   "start": "2026-10-26",
+   "status": "active",
+   "steps": [
+    "events.kr 상세(10/26 12:2x)에서 읽은 값: 규제개선 아이디어를 서술형으로 써서 공단 공모전 페이지(kspo.or.kr/contest)로 제출, 대한민국 국민 누구나. 아이디어 글쓰기가 필요해 간단 참여는 아님. 공단 페이지 원문은 아직 안 열었어요."
+   ],
+   "tags": [
+    "아이디어 제출",
+    "원문 미확인"
+   ],
+   "title": "체육관련 규제개선 공모전(참가자 추첨 네이버페이)",
+   "url": "https://events.kr/event.php?id=183",
+   "who": null
+  },
+  "e184": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 233,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": "'기부니'는 이벤트 이름의 말장난이며 결제 조건 없음(목록 메모 기준). 4~9월 행복취향.ZIP 3건 이상 참여자 대상",
+   "grade": "A",
+   "id": "e184",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "행복얼라이언스(스낵인터랙티브)",
+   "place": null,
+   "prize": "에어팟 프로3(3명)·굿즈(200명)·다이소 3천원 쿠폰(댓글 30명)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/DeGOQR9D-Q6/",
+    "https://www.instagram.com/p/DeGOQR9D-Q6/?hl=ko&img_index=1",
+    "https://events.kr/event.php?id=184"
+   ],
+   "start": "2026-10-05",
+   "status": "active",
+   "steps": [
+    "events.kr 상세(10/26 12:2x)에서 읽은 값: 4~9월 행복취향.ZIP 3건 이상 참여자 대상, 팔로우 + \"우수 기부니\" 댓글 + DM 구글폼. 댓글 참여자 30명 다이소 쿠폰. 인스타 원문은 아직 안 열었어요."
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "행복두끼 챌린지 우수 기부니 이벤트",
+   "url": "https://www.instagram.com/p/DeGOQR9D-Q6/",
+   "who": null
+  },
+  "ebse-survey-216-2026": {
+   "announce": "2026-11-09",
+   "cand": false,
+   "checked": "2026-10-14",
+   "count": 400,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-14",
+   "freeNote": null,
+   "grade": "S",
+   "id": "ebse-survey-216-2026",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": 5,
+   "min": 5,
+   "mode": "추첨",
+   "needs": [
+    "ID당 1회 응모",
+    "개인정보 이용에 동의해야 경품 추첨 대상",
+    "설문 마지막 제출까지 완료",
+    "당첨 후 기한 내 연락처 미입력 시 취소되며 개별 알림 없음"
+   ],
+   "org": "EBS English",
+   "place": null,
+   "prize": "메가MGC커피 모바일금액권 5천원",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.ebse.co.kr/apps/event/eventView.do?article_id=10055054&event_id=216"
+   ],
+   "start": "2026-10-07",
+   "status": "active",
+   "steps": [
+    "공식 이벤트 페이지에서 참여 신청과 개인정보 동의 안내 확인",
+    "본인에게 맞는 설문을 골라 끝까지 응답하고 제출",
+    "11월 9일 발표 확인 후 당첨자는 11월 15일까지 당첨 확인 화면에서 연락처 입력"
+   ],
+   "tags": [
+    "참여 대상 확인"
+   ],
+   "title": "EBSe 2026 이용자 만족도 설문조사",
+   "url": "https://www.ebse.co.kr/apps/event/eventView.do?article_id=10055054&event_id=216",
+   "who": "EBSe 이용자: 초등학생·중고등학생·교사·학부모·일반 대상별 설문. 실제 이용 경험에 맞게 응답"
+  },
+  "ek-04f1241ed2": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "X",
+   "id": "ek-04f1241ed2",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=175",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "소상공인시장진흥공단",
+   "place": null,
+   "platHint": null,
+   "prize": "디지털 온누리상품권 1만원 권",
+   "reasons": [
+    "공유·게시형"
+   ],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=175",
+    "https://www.sijangae.or.kr/"
+   ],
+   "start": "2026-10-22",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "코리아그랜드페스티벌 사전이벤트 전통시장·상점가 BOOM UP EVENT",
+   "url": "https://www.sijangae.or.kr/",
+   "who": null
+  },
+  "ek-06349be70b": {
+   "announce": "2026-11-22",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-06349be70b",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=154",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "이랑디자인",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://cafe.naver.com/f-e/cafes/31693275/articles/460?referrerAllArticles=true",
+    "https://events.kr/event.php?id=154"
+   ],
+   "start": "2026-10-14",
+   "status": "active",
+   "steps": [
+    "10월 카페 게시글 3개 이상 작성",
+    "이 이벤트 글에 참여 댓글 남기기",
+    "​",
+    "예시) 작성완료! 롯데월드 부산에서 가을 즐기러 가고 싶어요",
+    "​"
+   ],
+   "tags": [],
+   "title": "포친소와 함께 롯데월드 부산 가을 즐기러 가자",
+   "url": "https://cafe.naver.com/f-e/cafes/31693275/articles/460?referrerAllArticles=true",
+   "who": null
+  },
+  "ek-097ccd4f03": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-22",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-097ccd4f03",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=157",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국관광공사",
+   "place": null,
+   "platHint": "web",
+   "prize": null,
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://korean.visitkorea.or.kr/kfes//detail/themaDetail.do?themaCntntsId=b995bfec-08da-4b7c-b9af-af624a7e9e40",
+    "https://events.kr/event.php?id=157"
+   ],
+   "start": "2026-07-29",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "축제 먹거리 현장검증 이벤트",
+   "url": "https://korean.visitkorea.or.kr/kfes//detail/themaDetail.do?themaCntntsId=b995bfec-08da-4b7c-b9af-af624a7e9e40",
+   "who": null
+  },
+  "ek-13682ac418": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-18",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-13682ac418",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=150",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국개발연구원",
+   "place": null,
+   "platHint": "web",
+   "prize": null,
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=150"
+   ],
+   "start": "2026-10-01",
+   "status": "ended",
+   "steps": [],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "10월 국가재정 OX 경제 퀴즈",
+   "url": "https://events.kr/event.php?id=150",
+   "who": null
+  },
+  "ek-25293f2761": {
+   "announce": "2026-11-10",
+   "cand": true,
+   "checked": null,
+   "count": 20,
+   "end": "2026-12-02",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "X",
+   "id": "ek-25293f2761",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=178",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "카페게이트",
+   "place": null,
+   "platHint": null,
+   "prize": "4⃣재밌상(최대 20명 추첨) : 분식 무료 앱쿠폰",
+   "reasons": [
+    "공유·게시형"
+   ],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=178",
+    "https://forms.gle/Z9JEPz7KUK5v11Q89"
+   ],
+   "start": "2026-10-22",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "분식 게꿀맛 콘테스트",
+   "url": "https://forms.gle/Z9JEPz7KUK5v11Q89",
+   "who": null
+  },
+  "ek-39dfc9ffd3": {
+   "announce": "2026-10-30",
+   "cand": true,
+   "checked": null,
+   "count": 30,
+   "end": "2026-10-26",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-39dfc9ffd3",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=149",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "엑소스피어랩스",
+   "place": null,
+   "platHint": "naver",
+   "prize": "네이버페이 1만원 쿠폰 (30명 추첨 후 증정)",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://forms.gle/e7uQ3UgefqS3SS1N7",
+    "https://events.kr/event.php?id=149"
+   ],
+   "start": "2026-10-12",
+   "status": "ended",
+   "steps": [],
+   "tags": [],
+   "title": "보안 실무 현황 설문 이벤트",
+   "url": "https://forms.gle/e7uQ3UgefqS3SS1N7",
+   "who": null
+  },
+  "ek-536fb69340": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 100,
+   "end": "2026-10-20",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-536fb69340",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=148",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "서울시여성가족재단",
+   "place": null,
+   "platHint": "web",
+   "prize": "추첨 경품 | 설문조사 완료자 중 100명을 추첨하여 네이버페이 5,000원 제공",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=148",
+    "https://www.seoulsafeon.or.kr/2026safeonsurvey"
+   ],
+   "start": "2026-10-07",
+   "status": "ended",
+   "steps": [],
+   "tags": [],
+   "title": "2026년 서울세이프ON: 이용자 만족도 조사",
+   "url": "https://www.seoulsafeon.or.kr/2026safeonsurvey",
+   "who": null
+  },
+  "ek-572e207381": {
+   "announce": "2026-11-06",
+   "cand": true,
+   "checked": null,
+   "count": 20,
+   "end": "2026-11-04",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-572e207381",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=173",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "밀양 시청",
+   "place": null,
+   "platHint": "web",
+   "prize": "설문조사 참여자 중 무작위 추첨을 통해 20명에게 CU모바일 상품권(1만원 상당)을 드립니다.",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://www.miryang.go.kr/livingLab/_Web/",
+    "https://events.kr/event.php?id=173"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "2027년 밀양시 대국민 공공데이터 설문조사 및 이벤트",
+   "url": "https://www.miryang.go.kr/livingLab/_Web/",
+   "who": null
+  },
+  "ek-6052521b76": {
+   "announce": "2026-10-21",
+   "cand": true,
+   "checked": null,
+   "count": 20,
+   "end": "2026-10-18",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-6052521b76",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=156",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "경기관광공사",
+   "place": null,
+   "platHint": "web",
+   "prize": "CJ푸드빌 통합 기프트카드 5만원권 (20명)",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://ggtour.or.kr/information/event/609717fd-f706-418d-aa9d-be2e07ceda0d?tab=event",
+    "https://events.kr/event.php?id=156"
+   ],
+   "start": "2026-10-01",
+   "status": "ended",
+   "steps": [],
+   "tags": [
+    "팔로우 필요"
+   ],
+   "title": "경기도 여행, 구독부터 시작!",
+   "url": "https://ggtour.or.kr/information/event/609717fd-f706-418d-aa9d-be2e07ceda0d?tab=event",
+   "who": null
+  },
+  "ek-6b6277afcb": {
+   "announce": "2026-10-26",
+   "cand": true,
+   "checked": null,
+   "count": 30,
+   "end": "2026-10-25",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-6b6277afcb",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=159",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "플러스메이커스",
+   "place": null,
+   "platHint": "yt",
+   "prize": "컴포즈 커피 아이스 아메리카노 (30명)",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=159"
+   ],
+   "start": "2026-10-16",
+   "status": "ended",
+   "steps": [
+    "한국보건복지인재원 채널 '구독' 및 본 영상 '좋아요'",
+    "영상 시청 후 퀴즈 정답을 댓글로 작성하기!"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "원문 미확인"
+   ],
+   "title": "\"부모님이 자꾸 깜빡하시는데... 건망증일까, 치매일까?\"",
+   "url": "https://events.kr/event.php?id=159",
+   "who": null
+  },
+  "ek-74cbd2c215": {
+   "announce": "2026-10-29",
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-10-22",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-74cbd2c215",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=165",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "코리아파트너즈",
+   "place": null,
+   "platHint": "insta",
+   "prize": "스타벅스 아이스 카페 아메리카노T (5명)",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=165"
+   ],
+   "start": "2026-10-16",
+   "status": "ended",
+   "steps": [
+    "코리아파트너즈 계정 팔로우하기",
+    "게시물 좋아요",
+    "댓글로 정답 번호 남기기",
+    "이벤트 선물 : 스타벅스 아이스 카페 아메리카노T (5명)"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "인스타그램 퀴즈 이벤트 - 팔로우&댓글",
+   "url": "https://events.kr/event.php?id=165",
+   "who": null
+  },
+  "ek-87d538ef1c": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-87d538ef1c",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=186",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "의료기관평가인증원",
+   "place": null,
+   "platHint": "yt",
+   "prize": "[커피] 카페라떼(HOT) (5명)",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=186",
+    "https://www.youtube.com/shorts/833c4dKtoyY"
+   ],
+   "start": "2026-10-27",
+   "status": "active",
+   "steps": [
+    "구독 & 게시물 좋아요",
+    "댓글에 세이포에게 한마디 작성!"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "유튜브 참여"
+   ],
+   "title": "세이포가 현실에 있다면? | EP.6 퇴원편!",
+   "url": "https://www.youtube.com/shorts/833c4dKtoyY",
+   "who": null
+  },
+  "ek-94940e534a": {
+   "announce": "2026-11-24",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-15",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-94940e534a",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=171",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "파리바게뜨",
+   "place": null,
+   "platHint": "insta",
+   "prize": null,
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=171"
+   ],
+   "start": "2026-10-15",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "매일의 건강한 습관 #파란라벨 인증 이벤트",
+   "url": "https://events.kr/event.php?id=171",
+   "who": null
+  },
+  "ek-a3d12597f9": {
+   "announce": "2026-10-21",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-18",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-a3d12597f9",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=158",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "스튜디오블랙빈",
+   "place": null,
+   "platHint": "web",
+   "prize": null,
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=158"
+   ],
+   "start": "2026-10-01",
+   "status": "ended",
+   "steps": [],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "성평등 눈으로 읽는 세상",
+   "url": "https://events.kr/event.php?id=158",
+   "who": null
+  },
+  "ek-ae1e7198bc": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-10-23",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-ae1e7198bc",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=162",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "의료기관평가인증원",
+   "place": null,
+   "platHint": "insta",
+   "prize": "상품: [배달] 모바일상품권 5천원 (5명)",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=162"
+   ],
+   "start": "2026-10-16",
+   "status": "ended",
+   "steps": [
+    "계정 팔로우 & 게시물 좋아요",
+    "댓글에 세이포 응원 한마디 작성!"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "세이포가 현실에 있다면? | EP.3 낙상편!",
+   "url": "https://events.kr/event.php?id=162",
+   "who": null
+  },
+  "ek-aee544cedd": {
+   "announce": "2026-10-30",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-29",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "X",
+   "id": "ek-aee544cedd",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=181",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "십세들",
+   "place": null,
+   "platHint": "yt",
+   "prize": "총 50분께 배달의민족 모바일 상품권 5,000원권을 선물로 드립니다.",
+   "reasons": [
+    "공유·게시형"
+   ],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=181",
+    "https://youtu.be/Cz05899Nws8?si=bV0zSoeoFHQpwdw4"
+   ],
+   "start": "2026-10-22",
+   "status": "active",
+   "steps": [
+    "‘십세들’ 유튜브 채널 구독 & 알림 설정하기",
+    "영상 시청 후, 댓글에 하단 사항 기재하기",
+    "'선배가 간다' Ep.1-2편에서 가장 기억에 남았던 랄랄 선배의 한마디/조언",
+    "다음 선배와 나누고 싶은 고민 내용",
+    "[친구관계, 진로, 외모, 가족, 공부 등 자유롭게 작성해주세요]"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "캡처 인증"
+   ],
+   "title": "#유튜브 #댓글이벤트 #선배가간다 #50명 추첨 (~10/29일까지, 배달의 민족 상품권 5000원 권)",
+   "url": "https://youtu.be/Cz05899Nws8?si=bV0zSoeoFHQpwdw4",
+   "who": null
+  },
+  "ek-c1aa04bf42": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 50,
+   "end": "2026-10-21",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-c1aa04bf42",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=172",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "주식회사 우리누리",
+   "place": null,
+   "platHint": "yt",
+   "prize": "맘스터치 모바일 금액권 1만 원권 (50명 추첨)",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=172",
+    "https://www.youtube.com/watch?v=_oghl_dYvxo"
+   ],
+   "start": "2026-10-06",
+   "status": "ended",
+   "steps": [
+    "10.06.(화) ~ 10.21.(수)"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여"
+   ],
+   "title": "[오늘 마감] 유튜브 댓글 남기고 맘스터치 1만 원권 받자! (50명 추첨)",
+   "url": "https://www.youtube.com/watch?v=_oghl_dYvxo",
+   "who": null
+  },
+  "ek-cfa2ed2aac": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 13,
+   "end": "2026-10-29",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "X",
+   "id": "ek-cfa2ed2aac",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=185",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "스낵인터랙티브",
+   "place": null,
+   "platHint": "insta",
+   "prize": "행복도시락도 기부하고, 애플워치 SE3(1명)&네이버페이 3만원권(12명)&5천원 모바일 쿠폰 받아가세요!",
+   "reasons": [
+    "기부 관련 확인 필요"
+   ],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=185",
+    "https://forms.gle/3jPWdUTFKmNKL5xu5"
+   ],
+   "start": "2026-10-22",
+   "status": "active",
+   "steps": [
+    "10. 22. (목) ~ 26. 10. 29. (목)"
+   ],
+   "tags": [
+    "인스타 참여"
+   ],
+   "title": "도전기부왕 13기 모집, 네이버페이, 갤럭시워치 등 다양한 경품!",
+   "url": "https://forms.gle/3jPWdUTFKmNKL5xu5",
+   "who": null
+  },
+  "ek-f67462663a": {
+   "announce": "2026-11-04",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-f67462663a",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=187",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "쉐어잇",
+   "place": null,
+   "platHint": "web",
+   "prize": "댓글을 남겨주신 분들 중 추첨을 통해 10분께 올리브영 5천원권 기프티콘을 드립니다.",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=187"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "10월 밸런스게임 - 투표하고 댓글달면 올리브영 기프티콘 10명",
+   "url": "https://events.kr/event.php?id=187",
+   "who": null
+  },
+  "ek-f76b2ea6b4": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-10-24",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "X",
+   "id": "ek-f76b2ea6b4",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=168",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "대한장애인체육회",
+   "place": null,
+   "platHint": null,
+   "prize": "우수상(5명) : 모바일상품권 5만 원권",
+   "reasons": [
+    "공유·게시형"
+   ],
+   "src": "ek",
+   "srcUrls": [
+    "https://forms.gle/7icdKaUySx8oXXzr9",
+    "https://events.kr/event.php?id=168"
+   ],
+   "start": "2026-10-08",
+   "status": "ended",
+   "steps": [
+    "장애인아시아경기대회 종목의 동작 따라 하기 및 응원 메시지 전하기",
+    "이미지 또는 영상 촬영 후 필수 해시태그와 함께 개인 SNS에 업로드하기",
+    "*인스타그램, 페이스북, 유튜브, 틱톡",
+    "구글폼 작성하기",
+    "*구글폼 URL: https://forms.gle/7icdKaUySx8oXXzr9"
+   ],
+   "tags": [
+    "인스타 참여",
+    "유튜브 참여"
+   ],
+   "title": "종목 한 동작으로 함께하는 응원! 응원해봄 챌린지",
+   "url": "https://forms.gle/7icdKaUySx8oXXzr9",
+   "who": null
+  },
+  "ek-fd93751649": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 30,
+   "end": "2026-10-22",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "ek-fd93751649",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": "https://events.kr/event.php?id=163",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국여성경제인협회",
+   "place": null,
+   "platHint": "yt",
+   "prize": "네이버페이 3,000원 상품권 (30명)",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://naver.me/5g4J1Vof",
+    "https://events.kr/event.php?id=163"
+   ],
+   "start": "2026-10-15",
+   "status": "ended",
+   "steps": [],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "캡처 인증"
+   ],
+   "title": "한국여성경제인협회 S.H.E.O 감상노트 이벤트!",
+   "url": "https://naver.me/5g4J1Vof",
+   "who": null
+  },
+  "g39094": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": 110,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "g39094",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+   ],
+   "org": "주최 미표기(쉬운 우리말 누리집)",
+   "place": null,
+   "prize": "국립중앙박물관 키보드 ×1, 네이버페이 2천원 ×109",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://sejong.plainkorean.kr/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "구글폼 원문 확인: 경품과 10/28 발표는 일치. 폼에는 마감일과 주최가 없고 문항도 자바스크립트가 꺼져 있어 보이지 않음. GemHive는 10/25 마감이라고 기재. 주최와 마감일은 사람이 확인."
+   ],
+   "tags": [
+    "세부 미확인"
+   ],
+   "title": "한글날 제정 100주년 기념 문제 맞히기",
+   "url": "https://sejong.plainkorean.kr/",
+   "who": null
+  },
+  "g39335": {
+   "announce": "2026-10-30",
+   "cand": false,
+   "checked": "2026-10-22",
+   "count": 50,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-22",
+   "freeNote": null,
+   "grade": "A",
+   "id": "g39335",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "팔로우·구독 필요",
+    "인스타그램에서 참여"
+   ],
+   "org": "국립부산과학관",
+   "place": null,
+   "prize": "다이소 모바일 금액권 1만원",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/Des-_MCjyRf/"
+   ],
+   "start": "2026-10-20",
+   "status": "active",
+   "steps": [
+    "국립부산과학관 SNS 채널 1곳 이상 구독하고 이벤트 게시물 좋아요",
+    "구글 폼에 퀴즈 정답과 이름·연락처·SNS 계정 입력",
+    "인스타 이벤트 게시물 댓글에 정답과 응원 댓글, 친구 소환"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "특별기획전 이름 맞히기 퀴즈 (돋보기 속 저건 뭐지)",
+   "url": "https://www.instagram.com/p/Des-_MCjyRf/",
+   "who": null
+  },
+  "g39337": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-22",
+   "count": 50,
+   "end": "2026-10-30",
+   "endTime": "18:00",
+   "firstSeen": "2026-10-22",
+   "freeNote": null,
+   "grade": "S",
+   "id": "g39337",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "국무조정실",
+   "place": null,
+   "prize": "소정의 선물",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.better.go.kr/voice"
+   ],
+   "start": "2026-10-19",
+   "status": "active",
+   "steps": [
+    "투표 페이지에서 국민이 제안한 규제합리화 과제 14건 중 가장 좋은 3개에 좋아요",
+    "투표하기를 눌러 제출"
+   ],
+   "tags": [],
+   "title": "규제합리화 과제 국민투표 이벤트",
+   "url": "https://www.better.go.kr/voice",
+   "who": null
+  },
+  "g39340": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-22",
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": "14:30",
+   "firstSeen": "2026-10-22",
+   "freeNote": null,
+   "grade": "A",
+   "id": "g39340",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "유튜브 영상 시청"
+   ],
+   "org": "서울시동부권직장맘지원센터",
+   "place": null,
+   "prize": "모바일 상품권",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.youtube.com/watch?v=ZsvY4BZlqg8"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [
+    "'틈틈이 노동팁③' 유튜브 영상 시청",
+    "네이버 폼에 개인정보 동의, OX 퀴즈 정답, 이름·연락처와 만족도 문항 작성"
+   ],
+   "tags": [],
+   "title": "틈틈이 노동팁③ 영상 OX 퀴즈·만족도 조사",
+   "url": "https://www.youtube.com/watch?v=ZsvY4BZlqg8",
+   "who": null
+  },
+  "g39341": {
+   "announce": "2026-11-03",
+   "cand": false,
+   "checked": "2026-10-22",
+   "count": 200,
+   "end": "2026-10-28",
+   "endTime": "23:59",
+   "firstSeen": "2026-10-22",
+   "freeNote": null,
+   "grade": "A",
+   "id": "g39341",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "팔로우·구독 필요",
+    "인스타그램에서 참여"
+   ],
+   "org": "현대차증권",
+   "place": null,
+   "prize": "스타벅스 아이스 아메리카노 Tall",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://hmsecevent.co.kr/events/01a157dc-04f5-7022-b475-e57b010d4235"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [
+    "현대차증권 인스타그램 @hyundaimotor.securities 팔로우",
+    "이벤트 게시물 댓글에 퀴즈 정답 번호와 친구 태그",
+    "이벤트 페이지 신청폼에 인스타그램 ID·이름·연락처 입력"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "10월 왓츠인마이계좌 퀴즈 이벤트",
+   "url": "https://hmsecevent.co.kr/events/01a157dc-04f5-7022-b475-e57b010d4235",
+   "who": null
+  },
+  "g39348": {
+   "announce": "2026-11-09",
+   "cand": false,
+   "checked": "2026-10-22",
+   "count": 200,
+   "end": "2026-11-04",
+   "endTime": null,
+   "firstSeen": "2026-10-22",
+   "freeNote": null,
+   "grade": "S",
+   "id": "g39348",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "평택시",
+   "place": null,
+   "prize": "메가커피 아이스 아메리카노 기프티콘",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSe6b-9z7veTTLyf7cx507NCotOleiFHDLJQKxcZO8ia-DyNXA/viewform"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [
+    "구글 폼에서 이름·연락처 입력하고 개인정보 동의",
+    "평택시 유튜브 채널 만족도 문항에 답하고 제출"
+   ],
+   "tags": [],
+   "title": "2026 평택시 유튜브 채널 운영 만족도 조사",
+   "url": "https://docs.google.com/forms/d/e/1FAIpQLSe6b-9z7veTTLyf7cx507NCotOleiFHDLJQKxcZO8ia-DyNXA/viewform",
+   "who": null
+  },
+  "gg-myggd-vol208-survey": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-13",
+   "count": 200,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-13",
+   "freeNote": null,
+   "grade": "S",
+   "id": "gg-myggd-vol208-survey",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": 10,
+   "min": 5,
+   "mode": "추첨",
+   "needs": [
+    "설문 16문항",
+    "이름·휴대폰 번호",
+    "개인정보 수집·이용 동의"
+   ],
+   "org": "경기도 소식지 나의 경기도",
+   "place": null,
+   "prize": "메가MGC커피 아메리카노 2잔씩",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.gg.go.kr/myggd/vol208/2_7.php"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "공식 페이지의 독자 만족도 조사 참여하기 링크로 이동",
+    "본인의 실제 구독·이용 경험과 설문 문항에 답변",
+    "이름·휴대폰 번호 및 수집·이용 동의를 확인하고 제출"
+   ],
+   "tags": [],
+   "title": "2026 나의 경기도 독자 만족도 조사",
+   "url": "https://www.gg.go.kr/myggd/vol208/2_7.php",
+   "who": "설문지에 읽어본 적 없음 및 경기도 외 지역 선택지가 있음; 명시적인 나이 제한 미기재"
+  },
+  "hi10019": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 50,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi10019",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요"
+   ],
+   "org": "새만금개발공사",
+   "place": null,
+   "prize": "컴포즈커피 모카자바칩프라페 50명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/DevLYILDGsD/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/26 아침 읽기에서 새로 본 글). 응모 방법: SNS팔로우 , 좋아요·정답댓글 , 폼제출. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "새만금 라이어 퀴즈 맞히고 커피 받자",
+   "url": "https://www.instagram.com/p/DevLYILDGsD/",
+   "who": null
+  },
+  "hi10039": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 50,
+   "end": "2026-11-09",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi10039",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요"
+   ],
+   "org": "제주특별자치도",
+   "place": null,
+   "prize": "배달의민족 상품권 1만 원 50명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/De0b2vOgEh4/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/26 아침 읽기에서 새로 본 글). 응모 방법: G20 팔로우 , 좋아요 , 제주유치 응원글. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "G20 제주 유치 응원하고 상품권 받자",
+   "url": "https://www.instagram.com/p/De0b2vOgEh4/",
+   "who": null
+  },
+  "hi10043": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 30,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi10043",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요"
+   ],
+   "org": "KDI 한국개발연구원..",
+   "place": null,
+   "prize": "메가MGC커피 기프티콘 30명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/De0RfKij-sM/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/26 아침 읽기에서 새로 본 글). 응모 방법: 장보기 투표 , KDI 팔로우 , 완료 댓글. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "KDI 장보기 투표하고 커피쿠폰 받자",
+   "url": "https://www.instagram.com/p/De0RfKij-sM/",
+   "who": null
+  },
+  "hi10045": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 20,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi10045",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "화면 캡처·인증 사진 올리기"
+   ],
+   "org": "한국산업인력공단",
+   "place": null,
+   "prize": "투썸플레이스 아메리카노 20명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/De03SNnDXvv/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/26 아침 읽기에서 새로 본 글). 응모 방법: 촬영 , 팔로우·소감댓글 , 폼·완료댓글. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "캡처 인증"
+   ],
+   "title": "다회용기 인증샷으로 커피 받아가자",
+   "url": "https://www.instagram.com/p/De03SNnDXvv/",
+   "who": null
+  },
+  "hi10049": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 10,
+   "end": "2026-11-05",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi10049",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "유튜브에서 참여"
+   ],
+   "org": "한국벤처투자",
+   "place": null,
+   "prize": "배달의민족 1만 원 상품권 10명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/De03TYfjWov/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/26 아침 읽기에서 새로 본 글). 응모 방법: 합법적반차 시청 , 유튜브 후기 댓글. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "인스타 참여",
+    "유튜브 참여"
+   ],
+   "title": "반차 영상 시청평 남기고 상품권 받자",
+   "url": "https://www.instagram.com/p/De03TYfjWov/",
+   "who": null
+  },
+  "hi10057": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 30,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi10057",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "화면 캡처·인증 사진 올리기"
+   ],
+   "org": "인천광역시 연수구..",
+   "place": null,
+   "prize": "디저트 세트 30명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/De0hkIzH6di/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/26 아침 읽기에서 새로 본 글). 응모 방법: 팔로우 , 3개 좋아요 , 인증사진 폼제출. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "캡처 인증"
+   ],
+   "title": "연수구 팔로우 좋아요로 디저트 받자",
+   "url": "https://www.instagram.com/p/De0hkIzH6di/",
+   "who": null
+  },
+  "hi10080": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-26",
+   "count": 200,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-26",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi10080",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "유튜브에서 참여",
+    "팔로우·구독 필요",
+    "화면 캡처·인증 사진 올리기"
+   ],
+   "org": "충주시",
+   "place": null,
+   "prize": "배달의민족 상품권 1만원 200명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/De8JXhXktZt/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/26 아침 읽기에서 새로 본 글). 응모 방법: 3개 SNS 구독·이웃·팔로우 , 캡처제출. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "유튜브 참여",
+    "캡처 인증"
+   ],
+   "title": "충주시 SNS 3곳 인증하고 배민권 받자",
+   "url": "https://www.instagram.com/p/De8JXhXktZt/",
+   "who": null
+  },
+  "hi9874": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-23",
+   "count": 35,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-23",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi9874",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요"
+   ],
+   "org": "국립전주박물관",
+   "place": null,
+   "prize": "선물 35명(종류는 원문에 없음)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/Dep67DsierZ/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/23 아침 읽기에서 새로 본 글). 응모 방법: 팔로우 , 좋아요 , 나한상 이름 댓글. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "전주박물관 나한상 퀴즈로 상품권 받자",
+   "url": "https://www.instagram.com/p/Dep67DsierZ/",
+   "who": null
+  },
+  "hi9884": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-23",
+   "count": 20,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-23",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi9884",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요"
+   ],
+   "org": "인천시상수도사업..",
+   "place": null,
+   "prize": "네이버페이 5천원 20명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/Deqn4hEGUZg/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/23 아침 읽기에서 새로 본 글). 응모 방법: 팔로우 , 좋아요 , 정답댓글 , 폼제출. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "하늘수 낱말퀴즈 풀고 5천원권 받자",
+   "url": "https://www.instagram.com/p/Deqn4hEGUZg/",
+   "who": null
+  },
+  "hi9893": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-23",
+   "count": 200,
+   "end": "2026-11-15",
+   "endTime": null,
+   "firstSeen": "2026-10-23",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi9893",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여"
+   ],
+   "org": "한국부동산원",
+   "place": null,
+   "prize": "피자 20·치킨 20·커피 160명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/DeqJH7qHxYu/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/23 아침 읽기에서 새로 본 글). 응모 방법: 신고센터 접속 , 설문 클릭 , 답변 제출. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "인스타 참여"
+   ],
+   "title": "신고센터 설문하고 피자세트 노리자",
+   "url": "https://www.instagram.com/p/DeqJH7qHxYu/",
+   "who": null
+  },
+  "hi9906": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-23",
+   "count": 55,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-23",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hi9906",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여"
+   ],
+   "org": "인구보건복지협회",
+   "place": null,
+   "prize": "해피콘 5천원 55명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/DetN92Gk-kd/"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "이벤트하우스 목록 값이에요(10/23 아침 읽기에서 새로 본 글). 응모 방법: 폼 정답 제출 , 좋아요 , 완료 댓글. 원문 주소는 아직 못 찾았어요 "
+   ],
+   "tags": [
+    "인스타 참여"
+   ],
+   "title": "출산 앱 퀴즈 풀고 해피콘 5천원 받자",
+   "url": "https://www.instagram.com/p/DetN92Gk-kd/",
+   "who": null
+  },
+  "hub-bs-288": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-18",
+   "count": 30,
+   "end": "2026-10-30",
+   "endTime": null,
+   "firstSeen": "2026-10-18",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hub-bs-288",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "네이버 로그인 후 제출"
+   ],
+   "org": "부산광역시 미디어담당관(부산시보)",
+   "place": null,
+   "prize": "모바일 문화상품권 1만원 상당",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1819&prgcode=EVT_00000000001&event_gubun=SITE"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "10/18 15:3x 원문 확인: 부산시 공식 페이지(부산민원120 이벤트 통합안내 상세)를 열어 봤어요"
+   ],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "부산시보 2026년 10월호 이벤트 다른그림 찾기(부산국제영화제)",
+   "url": "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1819&prgcode=EVT_00000000001&event_gubun=SITE",
+   "who": null
+  },
+  "hub-mo-380492": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": 40,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hub-mo-380492",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여"
+   ],
+   "org": "한국청소년상담복지개발원",
+   "place": null,
+   "prize": "케이크 쿠폰(우수작 10명), 음료 쿠폰(참여상 30명)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380492"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "10/19 복지부 상세 확인: 기간 10/1~10/31. 직접 찍은 사진과 한 줄 메시지를 인스타그램 게시물 댓글로 남겨요(타인의 얼굴·개인정보가 있는 사진은 제외). 복지부 상세의 '이벤트 자세히 보기'가 인스타그램으로 이어지고 참여가 그 안에서만 이뤄져서, '인스타그램에만 있는 이벤트를 사이트에 넣을지' 정책이 정해지기 전까지 확인 상태로 둬요."
+   ],
+   "tags": [
+    "인스타 참여"
+   ],
+   "title": "나를 웃게 하는 순간은? 사진과 한 줄 메시지를 댓글로",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380492",
+   "who": null
+  },
+  "hub-mo-380493": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": 10,
+   "end": "2026-10-30",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hub-mo-380493",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "유튜브에서 참여",
+    "팔로우·구독 필요",
+    "화면 캡처·인증 사진 올리기"
+   ],
+   "org": "한국사회보장정보원",
+   "place": null,
+   "prize": "다이소 모바일 금액권 1만원권",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380493"
+   ],
+   "start": "2026-10-08",
+   "status": "active",
+   "steps": [
+    "10/19 복지부 상세 확인: 기간 10/8~10/30. 한국사회보장정보원 유튜브 채널을 구독해 구독 인증샷을 캡처하고, 영상에 정답을 댓글로 남기고(채널에 단 댓글만 인정), 인증샷을 구글폼에 업로드해요"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "캡처 인증"
+   ],
+   "title": "복지니 손에 있는 글자는? 유튜브 댓글 퀴즈",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380493",
+   "who": null
+  },
+  "hub-mo-380544": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-22",
+   "count": 100,
+   "end": "2026-10-27",
+   "endTime": null,
+   "firstSeen": "2026-10-22",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hub-mo-380544",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요"
+   ],
+   "org": "건강보험심사평가원",
+   "place": null,
+   "prize": "네이버페이 포인트 5천원권",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380544"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [
+    "10/22 09:2x 복지부 상세 확인: 기간 10/21~10/27, 발표 10/30(이벤트 게시글 본문). 심평원 인스타그램·페이스북·블로그 중 1개 채널을 팔로우 또는 구독하고, 이벤트 게시글에 나만의 건강정보 활용법을 댓글로 남긴 뒤 프로필 링크의 이벤트 폼을 작성해요"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "나만의 건강정보 활용법을 댓글로 남겨주세요!",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380544",
+   "who": null
+  },
+  "hub-mo-380549": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-23",
+   "count": 50,
+   "end": "2026-11-06",
+   "endTime": null,
+   "firstSeen": "2026-10-23",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hub-mo-380549",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요"
+   ],
+   "org": "한국보건산업진흥원",
+   "place": null,
+   "prize": "네이버페이 5천원 쿠폰",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380549"
+   ],
+   "start": "2026-10-16",
+   "status": "active",
+   "steps": [
+    "10/23 09:2x 복지부 상세 확인: 기간 10/16~11/6, 발표 11/11, 네이버페이 5천원 쿠폰 50명, 누구나 참여. 진흥원 공식 SNS 팔로우·구독, 콘텐츠 좋아요, 프로필 링크의 만족도 설문(약 5분, 마지막에 이벤트용 개인정보 입력), 이벤트 게시글에 \"참여 완료\" 댓글. 팔로우·구독만 더 필요한 건이라 보류하지 않아요(사장님 10/22"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "2026년 공식 SNS 만족도 온라인 조사",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380549",
+   "who": null
+  },
+  "hub-te-13478": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-30",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hub-te-13478",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "한국관광공사 관광e배움터",
+   "place": null,
+   "prize": "",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/13478"
+   ],
+   "start": "2026-06-08",
+   "status": "active",
+   "steps": [
+    "10/17 확인·보류·제외 목록에는 없는 항목이에요"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "[이벤트] 2026 민박업 운영자 온라인 교육 수강 이벤트",
+   "url": "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/13478",
+   "who": null
+  },
+  "hub-te-14170": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "hub-te-14170",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "한국관광공사 관광e배움터",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/14170"
+   ],
+   "start": "2026-10-26",
+   "status": "active",
+   "steps": [
+    "관광e배움터 진행 중 목록 값(10/26 09:2x): 기간 2026.10.26~11.01, 새로 올라온 글이에요"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "[신규과정 이벤트] 오늘의 배움, 한 줄로 남기기!",
+   "url": "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/14170",
+   "who": null
+  },
+  "incheon-uijeong-165-quiz-78": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-17",
+   "count": 6,
+   "end": "2026-11-30",
+   "endTime": "23:59",
+   "firstSeen": "2026-10-17",
+   "freeNote": null,
+   "grade": "S",
+   "id": "incheon-uijeong-165-quiz-78",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [
+    "「인천의정소식」 165호(9·10월호)를 읽고 사진 속 공간의 이름과 역할 작성",
+    "응모 폼의 이름·연락처·답변 입력란 작성(필수 표시)",
+    "개인정보 수집·이용 동의 항목 확인(이름·연락처, 보유 1년)"
+   ],
+   "org": "인천광역시의회 소통홍보담당관(인천의정소식)",
+   "place": null,
+   "prize": "기프티콘(시 공지 제목은 '커피쿠폰', 퀴즈 상세 페이지는 '소정의 상품'으로만 표기)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.incheon.go.kr/IC010101/view?nttNo=2046285"
+   ],
+   "start": "2026-10-16",
+   "status": "active",
+   "steps": [
+    "시 공지 또는 의회 퀴즈 상세 페이지에서 '의회 속 숨은 공간 찾기' 문제(사진) 확인",
+    "165호 소식지를 읽고 사진 속 공간의 이름과 하는 일 찾기",
+    "'이벤트 신청하기' 폼에 이름·연락처·답변을 입력하고 개인정보 동의 후 제출",
+    "166호(11·12월호) 발간 시 개별 안내 확인"
+   ],
+   "tags": [
+    "참여 대상 확인"
+   ],
+   "title": "「인천의정소식」 165호 독자 이벤트: 의회 속 숨은 공간 찾기",
+   "url": "https://www.incheon.go.kr/IC010101/view?nttNo=2046285",
+   "who": "참여 자격(연령·거주지 등)이 시 공지와 퀴즈 페이지에 명시되지 않음. 공지는 '시민'이라는 표현을 쓰나 인천시민 한정인지는 미확인. 정답을 맞힌 응모자 중 추첨."
+  },
+  "jcyc-retreat-buzz-228-2026": {
+   "announce": "2026-11-16",
+   "cand": false,
+   "checked": "2026-10-17",
+   "count": 60,
+   "end": "2026-11-12",
+   "endTime": null,
+   "firstSeen": "2026-10-17",
+   "freeNote": null,
+   "grade": "X",
+   "id": "jcyc-retreat-buzz-228-2026",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [
+    "개인 SNS에 카드뉴스(또는 포스터) 게시 (SNS 종류 지정 없음)",
+    "안내된 해시태그 9개 중 5개 이상 포함",
+    "게시물을 캡처해 네이버폼으로 참여완료 접수",
+    "정확한 개인정보 입력 (잘못 입력하면 당첨돼도 경품 발송 불가)"
+   ],
+   "org": "제천시 청년센터",
+   "place": null,
+   "prize": "CU 모바일 상품권 5,000원권, 참여자 중 추첨 60명",
+   "reasons": [
+    "공유·신청형",
+    "공유·게시형"
+   ],
+   "src": "ledger",
+   "srcUrls": [
+    "https://jcyc.kr/main_program/228"
+   ],
+   "start": "2026-10-13",
+   "status": "active",
+   "steps": [
+    "제천리트릿 홈페이지(제천리트릿.kr) 이벤트 페이지에서 카드뉴스를 내려받기",
+    "개인 SNS에 올리고 #제천에서리트릿 등 안내된 해시태그 중 5개 이상 작성",
+    "올린 게시물을 캡처해 네이버폼으로 접수하면 응모 완료",
+    "11월 16일 당첨자 발표 확인"
+   ],
+   "tags": [],
+   "title": "2026 제천에서 리트릿 소문내기 이벤트",
+   "url": "https://jcyc.kr/main_program/228",
+   "who": "공지에 참여 대상·연령·지역 제한 미기재. 당첨자가 중복되면 1회 당첨으로 제한"
+  },
+  "jeju-jedu-2037168": {
+   "announce": "2026-11-11",
+   "cand": false,
+   "checked": "2026-10-13",
+   "count": 100,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-13",
+   "freeNote": null,
+   "grade": "A",
+   "id": "jeju-jedu-2037168",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": 10,
+   "min": 5,
+   "mode": "추첨",
+   "needs": [
+    "제주특별자치도청 홈페이지 회원가입·로그인",
+    "휴대폰 번호 확인",
+    "회원 1인당 한 번 등록"
+   ],
+   "org": "제주학연구센터",
+   "place": null,
+   "prize": "1만원 상당 모바일 상품권",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.jeju.go.kr/jedu/join/notice.htm?act=view&seq=2037168"
+   ],
+   "start": "2026-10-09",
+   "status": "active",
+   "steps": [
+    "구술로 보는 제주어 자료에서 잘못된 표준어 대역 번호 확인",
+    "제주도청 홈페이지 계정으로 로그인",
+    "페우다 이벤트 응모에서 휴대폰 번호·정답 번호·응원 메시지 확인 후 저장"
+   ],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "제주어 페우다 2026 가을 퀴즈",
+   "url": "https://www.jeju.go.kr/jedu/join/notice.htm?act=view&seq=2037168",
+   "who": "제주어에 관심 있는 누구나라고 공지; 제주 거주 필수라고 안내하지 않음"
+  },
+  "jeju-jejueo-2037162": {
+   "announce": "2026-11-11",
+   "cand": false,
+   "checked": "2026-10-13",
+   "count": 100,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-13",
+   "freeNote": null,
+   "grade": "A",
+   "id": "jeju-jejueo-2037162",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": 10,
+   "min": 5,
+   "mode": "추첨",
+   "needs": [
+    "제주특별자치도청 홈페이지 회원가입·로그인",
+    "휴대폰 번호 확인",
+    "회원 1인당 한 번 등록"
+   ],
+   "org": "제주학연구센터",
+   "place": null,
+   "prize": "1만원 상당 모바일 상품권",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.jeju.go.kr/jejueo/community/notice.htm?act=view&seq=2037162"
+   ],
+   "start": "2026-10-09",
+   "status": "active",
+   "steps": [
+    "공지의 어휘를 사전에서 검색해 잘못된 뜻풀이 번호 확인",
+    "제주도청 홈페이지 계정으로 로그인",
+    "이벤트 응모에서 휴대폰 번호·정답 번호·응원 메시지 확인 후 저장"
+   ],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "제주어왓 2026 가을 퀴즈",
+   "url": "https://www.jeju.go.kr/jejueo/community/notice.htm?act=view&seq=2037162",
+   "who": "제주어에 관심 있는 누구나라고 공지; 제주 거주 필수라고 안내하지 않음"
+  },
+  "jjwf-kakao-together-cheer-share-2026": {
+   "announce": "2026-12-31",
+   "cand": false,
+   "checked": "2026-10-17",
+   "count": 30,
+   "end": "2026-12-06",
+   "endTime": null,
+   "firstSeen": "2026-10-17",
+   "freeNote": "기부는 필수가 아니라고 공지에 안내됨",
+   "grade": "X",
+   "id": "jjwf-kakao-together-cheer-share-2026",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "카카오같이가치 모금 페이지에서 응원·댓글·공유 또는 기부로 참여 (기부는 필수가 아닌 것으로 안내)",
+    "참여 후 네이버폼 작성",
+    "공유 이벤트는 SNS·웹사이트에 이벤트를 공유 (#전주시복지재단 #가족돌봄청년 #카카오같이가치) 하고 별도 네이버폼 작성"
+   ],
+   "org": "전주시복지재단",
+   "place": null,
+   "prize": "커피상품권 10,000원권 30장 (선정 방식·당첨 인원은 공지에 미기재)",
+   "reasons": [
+    "공유·게시형"
+   ],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.jjwf.or.kr/sub04/notice.html?pmode=view&code=6abf03d5417c7"
+   ],
+   "start": "2026-09-23",
+   "status": "active",
+   "steps": [
+    "카카오같이가치 모금 페이지(전주시복지재단 모금함)에서 응원·댓글·공유 중 하나 이상 참여 (원하면 기부도 가능)",
+    "공지의 참여 이벤트 네이버폼을 작성하면 참여 완료",
+    "공유 이벤트는 SNS·웹사이트에 모금 이벤트를 해시태그와 함께 공유한 뒤 별도 네이버폼(https://naver.me/5AuSucrk) 작성",
+    "12월 31일 개별 통보 확인"
+   ],
+   "tags": [],
+   "title": "카카오같이가치 「돌봄에 멈춰 있던 청년의 내일, 다시 시작할 수 있도록」 참여·공유 이벤트",
+   "url": "https://www.jjwf.or.kr/sub04/notice.html?pmode=view&code=6abf03d5417c7",
+   "who": "공지에 참여 대상·연령·지역 제한 미기재. 중복 참여·중복 당첨 규정도 미기재"
+  },
+  "kto-touredu-welcome-14069-202610": {
+   "announce": "2026-11-13",
+   "cand": false,
+   "checked": "2026-10-14",
+   "count": 200,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-14",
+   "freeNote": null,
+   "grade": "X",
+   "id": "kto-touredu-welcome-14069-202610",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [
+    "행사 기간 내 신규 회원만",
+    "이벤트 신청 및 30~200자 댓글 작성 모두 필수",
+    "1인 휴대폰 번호당 기본 1건 증정",
+    "타인 글 도용·목적에 맞지 않는 댓글은 제외될 수 있음"
+   ],
+   "org": "한국관광공사 관광e배움터",
+   "place": null,
+   "prize": "컴포즈커피 바닐라라떼 Hot TAKE-OUT — 웰컴상",
+   "reasons": [
+    "신규 회원가입 필요",
+    "대상 제한"
+   ],
+   "src": "ledger",
+   "srcUrls": [
+    "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/14069"
+   ],
+   "start": "2026-10-12",
+   "status": "active",
+   "steps": [
+    "행사 기간에 관광e배움터 신규 회원가입",
+    "공식 이벤트 참여 신청",
+    "참여 페이지 하단에 첫 방문 소감 또는 강좌명과 완강 다짐 중 하나를 30~200자 댓글로 작성",
+    "11월 13일 공식 당첨자 발표 페이지 확인"
+   ],
+   "tags": [
+    "참여 대상 확인"
+   ],
+   "title": "관광e배움터 웰컴 투어 방명록 — 신규 회원 웰컴상",
+   "url": "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/14069",
+   "who": "10월12~31일 신규 가입 후 필수 신청·댓글 작성 완료 회원. 운영사·임직원 등 이해관계자는 제외"
+  },
+  "mcst-policy-communication-k-2026q3": {
+   "announce": "2026-11-05",
+   "cand": false,
+   "checked": "2026-10-17",
+   "count": null,
+   "end": "2026-10-29",
+   "endTime": null,
+   "firstSeen": "2026-10-17",
+   "freeNote": null,
+   "grade": "S",
+   "id": "mcst-policy-communication-k-2026q3",
+   "kind": "투표",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [
+    "3분기 정책 소통 혁신사례(장관급 5곳·차관급 5곳)를 확인한 뒤 투표",
+    "장관급·차관급 부문별로 각 1개 선택 후 제출"
+   ],
+   "org": "문화체육관광부 (내가 뽑은 정책소통 K)",
+   "place": null,
+   "prize": "참여자 중 추첨. 참여 5천명 미만이면 갤럭시 워치9 1명·아이스 아메리카노 700명, 5천명 이상이면 갤럭시 워치9 2명·갤럭시 버즈4 프로 2명·아이스 아메리카노 1,000명(참여 규모에 따라 달라짐, 상품 금액 미기재)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.xn--k-9x4fi1oswe54h.com/contents/notice-detail.php?id=10"
+   ],
+   "start": "2026-10-15",
+   "status": "active",
+   "steps": [
+    "정책소통k.com에서 '3분기 정책 소통 혁신사례'를 열어 각 사례 상세 페이지 확인",
+    "상세 페이지 하단 '국민 심사하러 가기' 버튼으로 투표 폼(네이버 단축 링크)으로 이동",
+    "장관급·차관급 부문별 각 1개 선택 후 제출(참여만으로 자동 응모)",
+    "11/5(목) 당첨자 발표 예정, 당첨자는 개별 안내"
+   ],
+   "tags": [],
+   "title": "2026 내가 뽑은 정책소통 K – 3분기 국민심사",
+   "url": "https://www.xn--k-9x4fi1oswe54h.com/contents/notice-detail.php?id=10",
+   "who": "3분기 공지에 참여 대상·제외 조건 문구 없음(국민이 직접 뽑는 국민심사로 안내). 참고: 2분기 소통24 공지는 '대한민국 국민 누구나'로 표기."
+  },
+  "mo-6e9684937b": {
+   "announce": "2026-10-29",
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-10-22",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "mo-6e9684937b",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국보건의료연구원",
+   "place": null,
+   "platHint": null,
+   "prize": "커피 쿠폰 (총 5명)",
+   "reasons": [],
+   "src": "mo",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380525"
+   ],
+   "start": "2026-10-12",
+   "status": "ended",
+   "steps": [
+    "한국보건의료연구원(NECA)의 탈처방 정보 읽어보기!",
+    "정보를 읽기 전과 후, 나 또는 가족의 약을 대하는 행동에 어떤 변화가 있었는지 생각해 보기!",
+    "앞으로의 다짐이 아닌, 실제로 달라진 행동이나 경험을 댓글로 한두 문장 남기면 참여 완료!"
+   ],
+   "tags": [],
+   "title": "나와 가족이 먹는 약, 함께 확인해 봐요!",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380525",
+   "who": null
+  },
+  "mo-7d3b7d6c18": {
+   "announce": "2026-11-04",
+   "cand": true,
+   "checked": null,
+   "count": 35,
+   "end": "2026-10-23",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "X",
+   "id": "mo-7d3b7d6c18",
+   "kind": "투표",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "한국자활복지개발원",
+   "place": null,
+   "platHint": null,
+   "prize": "치킨·콜라 세트 쿠폰 (우수작 5명) · 커피 쿠폰 (참여 추첨 30명)",
+   "reasons": [
+    "공모전"
+   ],
+   "src": "mo",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380506"
+   ],
+   "start": "2026-10-12",
+   "status": "ended",
+   "steps": [
+    "한국자활복지개발원 인스타그램 프로필 링크(네이버 폼)에 접속하기!"
+   ],
+   "tags": [
+    "인스타 참여"
+   ],
+   "title": "자활의 의미와 가치를 담은 새로운 별명을 지어주세요!",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380506",
+   "who": null
+  },
+  "mo-90a4ad5cd4": {
+   "announce": "2026-10-23",
+   "cand": true,
+   "checked": null,
+   "count": 10,
+   "end": "2026-10-20",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "mo-90a4ad5cd4",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국사회복지협의회",
+   "place": null,
+   "platHint": null,
+   "prize": "세븐일레븐 모바일 금액권 5천 원권 (총 10명)",
+   "reasons": [],
+   "src": "mo",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380518"
+   ],
+   "start": "2026-10-06",
+   "status": "ended",
+   "steps": [
+    "네이버에서 '푸드뱅크', '기부식품', '기부식품등제공사업' 총 3가지 키워드 검색하기!",
+    "각 키워드의 검색결과창을 캡처하기!",
+    "네이버폼에 인증샷을 제출하면 참여 완료!"
+   ],
+   "tags": [
+    "캡처 인증"
+   ],
+   "title": "푸드뱅크 관련 키워드 3개 검색하고 인증하면 선물을 드립니다!",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380518",
+   "who": null
+  },
+  "mo-9f3476ecc6": {
+   "announce": "2026-10-29",
+   "cand": true,
+   "checked": null,
+   "count": 30,
+   "end": "2026-10-25",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "mo-9f3476ecc6",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "대한적십자사",
+   "place": null,
+   "platHint": null,
+   "prize": "올리브영 1만 원권 (총 30명) · ※ 10월 27일 대한적십자사 창립기념일에 참여자들이 함께 꾸민 생일 케이크가 공개됩니다. · #대한적십자사 #대한적십자사창립기념일 #창립121주년 #생일케이크",
+   "reasons": [],
+   "src": "mo",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380547"
+   ],
+   "start": "2026-10-22",
+   "status": "ended",
+   "steps": [
+    "대한적십자사 공식 인스타그램 계정 팔로우하기!",
+    "이벤트 게시글 좋아요·저장·공유하기!",
+    "생일 케이크에 올리고 싶은 토핑을 이모지로 댓글에 남기면 참여 완료!"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여"
+   ],
+   "title": "창립 121주년 생일 케이크를 꾸며주세요",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380547",
+   "who": null
+  },
+  "mo-a35bc1aac1": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "X",
+   "id": "mo-a35bc1aac1",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "국가아동권리보장원",
+   "place": null,
+   "platHint": null,
+   "prize": "총 6건 선정, 상금 1,000만 원",
+   "reasons": [
+    "공모전"
+   ],
+   "src": "mo",
+   "srcUrls": [
+    "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380550"
+   ],
+   "start": "2026-10-06",
+   "status": "active",
+   "steps": [
+    "국가아동권리보장원 누리집에서 공모 분야 및 제출서류 확인하기!",
+    "아동학대 대응 현장의 경험을 바탕으로 교육 아이디어 작성하기!",
+    "공모전 안내에 따라 신청서와 제출서류를 접수하면 참여 완료!"
+   ],
+   "tags": [
+    "아이디어 제출"
+   ],
+   "title": "아동학대 대응인력 교육 아이디어 공모전에 참여해 주세요!",
+   "url": "https://www.mohw.go.kr/gallery.es?mid=a10314000000&bid=0015&act=view&list_no=380550",
+   "who": null
+  },
+  "mois-earthquake-5357-map": {
+   "announce": "2026-11-03",
+   "cand": false,
+   "checked": "2026-10-13",
+   "count": 100,
+   "end": "2026-10-30",
+   "endTime": null,
+   "firstSeen": "2026-10-13",
+   "freeNote": null,
+   "grade": "A",
+   "id": "mois-earthquake-5357-map",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": 12,
+   "min": 6,
+   "mode": "추첨",
+   "needs": [
+    "지도 캡처 이미지",
+    "Google 계정 로그인",
+    "참여자 정보 제출"
+   ],
+   "org": "행정안전부 지진안전 누리집",
+   "place": null,
+   "prize": "모바일 상품권 5,000원",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.xn--le5b23c9wbqa.com/communication/event.php?code=event02&idx=5357&page=1&ptype=view"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "지도 앱에서 지진 또는 지진해일 대피장소를 검색하고 주변 장소 화면 캡처",
+    "공식 공지에서 연결한 Google Form 접속",
+    "캡처와 참여자 정보를 제출"
+   ],
+   "tags": [
+    "로그인 필요",
+    "10분 넘게 걸림"
+   ],
+   "title": "우리동네 지진·지진해일 대피장소 지도 캡처",
+   "url": "https://www.xn--le5b23c9wbqa.com/communication/event.php?code=event02&idx=5357&page=1&ptype=view",
+   "who": "공지에 나이·지역 제한 미기재"
+  },
+  "nh-09032ecc62": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "S",
+   "id": "nh-09032ecc62",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "광주통일관",
+   "place": null,
+   "prize": "투썸플레이스 기프티콘 5명 (목록 기준, 원문 요약에는 경품 표기 없음)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://xn--zb0b7a927m4lb9yv.org/bbs/board.php?bo_table=about_05&wr_id=27333"
+   ],
+   "start": "2026-10-07",
+   "status": "active",
+   "steps": [
+    "공지 글의 퀴즈 정답을 찾아 제출 (원문에 비밀 댓글이 많아 댓글 응모로 보임, 미확정)"
+   ],
+   "tags": [],
+   "title": "2026 월간통일퀴즈 10월",
+   "url": "https://xn--zb0b7a927m4lb9yv.org/bbs/board.php?bo_table=about_05&wr_id=27333",
+   "who": null
+  },
+  "nh-186fa8a072": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-186fa8a072",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+   ],
+   "org": "한국산업단지공단",
+   "place": null,
+   "prize": "기프티콘",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.kicox.or.kr/cyclb/webzine/data/vol74/20.jsp"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "해당 호를 읽고 단어 퀴즈 정답 제출; 읽힌 본문에 실제 응모 링크·기간이 없어 현재 회차 확인 보류"
+   ],
+   "tags": [
+    "세부 미확인"
+   ],
+   "title": "HAPPiCOX 74호 단어 퀴즈",
+   "url": "https://www.kicox.or.kr/cyclb/webzine/data/vol74/20.jsp",
+   "who": null
+  },
+  "nh-1bbf89d39f": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-1bbf89d39f",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "문학광장(한국문화예술위원회)",
+   "place": null,
+   "prize": "소니 헤드셋 1, 인스탁스 카메라 1, 바디필로우 2, 스타벅스 3만원 3, 도서상품권 1만원 5 (총 12명)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/Dd5o_KgmHnf/"
+   ],
+   "start": "2026-09-29",
+   "status": "active",
+   "steps": [
+    "인스타그램 팔로우·좋아요 후 기대평 댓글"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "2026 아르코 문학극장 기대평 이벤트",
+   "url": "https://www.instagram.com/p/Dd5o_KgmHnf/",
+   "who": null
+  },
+  "nh-311f88b30f": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "S",
+   "id": "nh-311f88b30f",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "국가보훈부",
+   "place": null,
+   "prize": "선물 100명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://culture.mpva.go.kr/actv/cult/180"
+   ],
+   "start": "2026-10-13",
+   "status": "active",
+   "steps": [
+    "이달의 독립운동가 자료를 참고해 네이버폼으로 퀴즈 정답 제출"
+   ],
+   "tags": [],
+   "title": "10월 보훈문화 종합 포털 퀴즈 이벤트",
+   "url": "https://culture.mpva.go.kr/actv/cult/180",
+   "who": null
+  },
+  "nh-3120785123": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-3120785123",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "안산시",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.ansan.go.kr/ansantalktalk/content/participation/event.html?fidx=26026&page=1&pg=vv"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 이벤트 목록에 10월호 제목과 9월 30일 게시 확인; 상세 열기 두 차례 오류로 참여 조건 미확인"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "2026년 10월 시정소식지 독자참여 이벤트~!",
+   "url": "https://www.ansan.go.kr/ansantalktalk/content/participation/event.html?fidx=26026&page=1&pg=vv",
+   "who": null
+  },
+  "nh-333169d225": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-333169d225",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "팔로우·구독 필요"
+   ],
+   "org": "한국철도공사",
+   "place": null,
+   "prize": "매호 추첨 선물",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://korailstory.com/page/vol16/subscribe_event.html"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "코레일 사보 웹진 카카오톡 플러스 친구 추가 후 이름·전화번호로 알림 신청; 팔로우 성격 및 현재 회차 마감 미확인"
+   ],
+   "tags": [
+    "팔로우 필요"
+   ],
+   "title": "레일로 이어지는 행복+ 2026년 9+10월호 카카오톡 구독신청 이벤트",
+   "url": "https://korailstory.com/page/vol16/subscribe_event.html",
+   "who": null
+  },
+  "nh-344420e5ad": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-344420e5ad",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "신한라이프",
+   "place": null,
+   "prize": "CU 모바일 금액권 5천원 1,000명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://today.shinhanlife.co.kr/om/WqJpNLHaY178Vep/omevtsm030m.mdv?eid=7R8xVXKCgrJBbT3fDNsqNFb9zVcJdfoYp&vid=86035152"
+   ],
+   "start": "2026-10-04",
+   "status": "active",
+   "steps": [
+    "사진 속 빨간 단풍잎 개수 맞히고 본인인증·마케팅 동의 후 응모"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "풍성한 가을 단풍잎 퀴즈 이벤트",
+   "url": "https://today.shinhanlife.co.kr/om/WqJpNLHaY178Vep/omevtsm030m.mdv?eid=7R8xVXKCgrJBbT3fDNsqNFb9zVcJdfoYp&vid=86035152",
+   "who": null
+  },
+  "nh-411fe13932": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-411fe13932",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "서울특별시의회",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://webzine.smc.seoul.kr/2026/10/event.html"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 10월호의 독자 이벤트 입구 확인; 안내가 외부 iframe이고 해당 화면 열기 오류로 행사 세부 내용 미확인"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "월간 서울의회 2026년 10월호 독자 이벤트",
+   "url": "https://webzine.smc.seoul.kr/2026/10/event.html",
+   "who": null
+  },
+  "nh-43a8442a51": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-43a8442a51",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+   ],
+   "org": "서울특별시 서초구",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://seocho.newstool.co.kr/view.php?aid=18396&eid=9058"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "소식지 카드뉴스를 읽고 공식 연결 네이버폼에서 정답 제출; 상세 경품·기간·대상 조건은 아직 미확인"
+   ],
+   "tags": [
+    "세부 미확인"
+   ],
+   "title": "서초통계 2026년 10월호 퀴즈 이벤트 — 경력과 전문성을 새로운 일의 기회로!",
+   "url": "https://seocho.newstool.co.kr/view.php?aid=18396&eid=9058",
+   "who": null
+  },
+  "nh-4afbcea1c5": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-4afbcea1c5",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "아이디어 제출"
+   ],
+   "org": "인천항만공사",
+   "place": null,
+   "prize": "5만원 상당 기프티콘 3명, 3만원 상당 기프티콘 10명, 무작위 추첨 2만원 상당 기프티콘 80명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.icpa.or.kr/article/view.do?articleKey=32892&boardKey=213&currentPageNo=1&menuKey=3988"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "이벤트 홈페이지 또는 포스터 QR을 통해 인천항 발전 아이디어 접수; 제안 분량과 소요 시간 미확인"
+   ],
+   "tags": [
+    "아이디어 제출"
+   ],
+   "title": "2026년도 아이디어 전달해 海 대국민 소통 이벤트",
+   "url": "https://www.icpa.or.kr/article/view.do?articleKey=32892&boardKey=213&currentPageNo=1&menuKey=3988",
+   "who": null
+  },
+  "nh-51fdc6997e": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-51fdc6997e",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+   ],
+   "org": "한국철도공사",
+   "place": null,
+   "prize": "추첨 선물",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://korailstory.com/page/vol16/review.html"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "웹진의 좋았던 점·개선 의견·응원 후기 작성; 소속·직명 입력칸과 자동등록방지가 보여 추가 탐색 중단"
+   ],
+   "tags": [
+    "세부 미확인"
+   ],
+   "title": "레일로 이어지는 행복+ 2026년 9+10월호 독자후기 이벤트",
+   "url": "https://korailstory.com/page/vol16/review.html",
+   "who": null
+  },
+  "nh-5281c6c1c6": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-5281c6c1c6",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "인천육아종합지원센터",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://incheon.childcare.go.kr/ccef/community/notice/NoticeSlPL.jsp?BBSGB=1006"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 검색 결과에서 10월 퀴즈 제목 확인; 직접 읽은 목록은 9월 회차까지만 노출되어 상세·현재 접수 여부 미확인"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "2026년 10월 보육퀴즈(영유아 심폐소생술)",
+   "url": "https://incheon.childcare.go.kr/ccef/community/notice/NoticeSlPL.jsp?BBSGB=1006",
+   "who": null
+  },
+  "nh-56bb185f37": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-11-20",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "S",
+   "id": "nh-56bb185f37",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국농어촌공사",
+   "place": null,
+   "prize": "배달의민족 5만원권 2명, 투썸플레이스 5천원권 20명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.ekr.or.kr/Kkrpub/webzine/2026/09%2B10/event2.html"
+   ],
+   "start": "2026-10-08",
+   "status": "active",
+   "steps": [
+    "웹진 퀴즈 정답을 공식 연결 구글폼에 이름·휴대전화번호와 함께 제출; 제출 실행 안 함"
+   ],
+   "tags": [],
+   "title": "흙사랑 물사랑 2026년 9+10월호 퀴즈 이벤트",
+   "url": "https://www.ekr.or.kr/Kkrpub/webzine/2026/09%2B10/event2.html",
+   "who": null
+  },
+  "nh-5c99996f5e": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-30",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-5c99996f5e",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "유튜브에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "한독 모터스",
+   "place": null,
+   "prize": "미니 골드바·LG 퓨리케어 미니·BMW 레디백 등 100명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.youtube.com/watch?v=s4XKT0RDOCg"
+   ],
+   "start": "2026-10-07",
+   "status": "active",
+   "steps": [
+    "유튜브 채널 구독 후 이벤트 영상에 축하 댓글"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "원문 미확인"
+   ],
+   "title": "BMW 한독 모터스 유튜브 100만 구독자 이벤트",
+   "url": "https://www.youtube.com/watch?v=s4XKT0RDOCg",
+   "who": null
+  },
+  "nh-77d515f708": {
+   "announce": "2026-11-18",
+   "cand": false,
+   "checked": "2026-10-22",
+   "count": 150,
+   "end": "2026-11-11",
+   "endTime": null,
+   "firstSeen": "2026-10-22",
+   "freeNote": null,
+   "grade": "S",
+   "id": "nh-77d515f708",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "인천광역시",
+   "place": null,
+   "prize": "배달의민족 모바일 상품권 1만원 50명, 메가커피 모바일 금액권 5천원 100명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://itour.incheon.go.kr/tourinfo/evnt/detail.do?bbsNo=56349"
+   ],
+   "start": "2026-10-21",
+   "status": "active",
+   "steps": [
+    "인천투어 이벤트 공지에서 '이벤트 참여하기' 클릭",
+    "개인정보 동의 후 설문에 답하고 이름·연락처 입력해 제출"
+   ],
+   "tags": [],
+   "title": "인천투어 홈페이지 만족도 조사 이벤트",
+   "url": "https://itour.incheon.go.kr/tourinfo/evnt/detail.do?bbsNo=56349",
+   "who": null
+  },
+  "nh-7fe9970eef": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-7fe9970eef",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "팔로우·구독 필요"
+   ],
+   "org": "한국산업인력공단",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://webzine.hrdkorea.or.kr/event/view?id=67"
+   ],
+   "start": "2026-10-15",
+   "status": "active",
+   "steps": [
+    "공식 상세의 SNS 구독 및 응원 댓글 안내 확인; 경품과 필수 채널 안내 이미지가 열리지 않아 조건 미확인"
+   ],
+   "tags": [
+    "팔로우 필요"
+   ],
+   "title": "공단 공식 SNS 구독 이벤트",
+   "url": "https://webzine.hrdkorea.or.kr/event/view?id=67",
+   "who": null
+  },
+  "nh-81d9654b75": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-81d9654b75",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "유튜브에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "기본사회위원회",
+   "place": null,
+   "prize": "투썸플레이스 스초생+아메리카노 60명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.youtube.com/watch?v=lJHw2DP1w1k"
+   ],
+   "start": "2026-10-14",
+   "status": "active",
+   "steps": [
+    "유튜브 구독 후 영상 시청 댓글, 네이버폼 인증"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "원문 미확인"
+   ],
+   "title": "기본사회위원회 유튜브 댓글 이벤트",
+   "url": "https://www.youtube.com/watch?v=lJHw2DP1w1k",
+   "who": null
+  },
+  "nh-826063ce83": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-826063ce83",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+   ],
+   "org": "경기도",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.gg.go.kr/myggd/event.php"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "10월호 기사 속 숨은 이미지 개수를 찾아 공식 연결 네이버폼으로 응모; 폼 본문이 비어 기간·경품·추가 조건 미확인"
+   ],
+   "tags": [
+    "세부 미확인"
+   ],
+   "title": "나의 경기도 2026년 10월호 웹진 단독 이벤트 — 이미지를 찾아라!",
+   "url": "https://www.gg.go.kr/myggd/event.php",
+   "who": null
+  },
+  "nh-8403d1d4b3": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-8403d1d4b3",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "제주관광공사",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://data.ijto.or.kr/bbs/BBSMSTR_000000000080/view.do?nttId=H000000000854Xo8xQ2w"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 검색 결과에서 퀴즈 공지 확인; 원문 열기 도구 오류와 제목·본문 기간 상충으로 상세 검증 보류"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "2026년 10월 제주 관광 데이터 한 판! — 더 많이 더 적게",
+   "url": "https://data.ijto.or.kr/bbs/BBSMSTR_000000000080/view.do?nttId=H000000000854Xo8xQ2w",
+   "who": null
+  },
+  "nh-9b5dfa2fee": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-9b5dfa2fee",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "동서식품",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.dongsuh.co.kr/mediaCenter/event/info/1006"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "맥심플랜트에서 함께하는 향기로운 만남, 2026 독자 이벤트",
+   "url": "https://www.dongsuh.co.kr/mediaCenter/event/info/1006",
+   "who": null
+  },
+  "nh-9ed07ec325": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-9ed07ec325",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "울산광역시교육청",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://use.go.kr/user/quiz/BD_selectQuiz.do?q_regSn=64"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 검색 결과에서 진행중인 청렴퀴즈 제목 확인; 상세 열기 두 차례 오류로 날짜·상품·대상 조건을 확정하지 않음"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "2026년 10월 청렴퀴즈",
+   "url": "https://use.go.kr/user/quiz/BD_selectQuiz.do?q_regSn=64",
+   "who": null
+  },
+  "nh-a0226c4f56": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-a0226c4f56",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "국가통계포털 KOSIS",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://kosis.kr/survey/survey37.do"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 검색 결과에는 2026년 10월 퀴즈, 직접 연 동일 주소에는 2025년 8월 퀴즈가 표시됨; 캡차 이미지가 보여 추가 탐색 중단"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "2026년 10월 통계찾기 퀴즈 이벤트",
+   "url": "https://kosis.kr/survey/survey37.do",
+   "who": null
+  },
+  "nh-a166afe260": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-27",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-a166afe260",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "BNK투자증권",
+   "place": null,
+   "prize": "스타벅스 아메리카노 Tall 10명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/Dd-WB--SAWk/"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "인스타그램 팔로우·좋아요 후 다섯 글자 댓글"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "주식생활 다섯 글자 댓글 챌린지",
+   "url": "https://www.instagram.com/p/Dd-WB--SAWk/",
+   "who": null
+  },
+  "nh-a251703b9c": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-a251703b9c",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "울산광역시",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://webzine.ulsan.go.kr/news/list.do?pageIndex=7"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 검색 결과의 헬로울산 목록에서 10월 회차 확인; 목록 열기 시간초과로 참여 절차·기간·경품 미확인"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "헬로울산 2026년 10월 이벤트 — 좋아해♥",
+   "url": "https://webzine.ulsan.go.kr/news/list.do?pageIndex=7",
+   "who": null
+  },
+  "nh-a29ca6b97b": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-a29ca6b97b",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+   ],
+   "org": "춘천시",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://bomnae.chuncheon.go.kr/contentView?contentNo=2867&no=429"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 2026년 10월호 설문조사 이벤트 상세를 읽었으나 핵심 안내가 이미지여서 응모 절차·기간·경품 미확인"
+   ],
+   "tags": [
+    "세부 미확인"
+   ],
+   "title": "봄내소식지 429호 설문조사 이벤트",
+   "url": "https://bomnae.chuncheon.go.kr/contentView?contentNo=2867&no=429",
+   "who": null
+  },
+  "nh-a5319ffd70": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-11-20",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-a5319ffd70",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+   ],
+   "org": "한국환경공단",
+   "place": null,
+   "prize": "문화상품권",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.kecowebzine.kr/data/vol66/event.html"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "가을호 의견이나 다음 호 희망 주제를 공식 연결 네이버폼으로 제출하는 별도 이벤트; 같은 페이지의 자동등록방지 확인 후 추가 탐색 중단"
+   ],
+   "tags": [
+    "세부 미확인"
+   ],
+   "title": "자연가까이 사람가까이 2026년 가을호 독자의견 이벤트",
+   "url": "https://www.kecowebzine.kr/data/vol66/event.html",
+   "who": null
+  },
+  "nh-a60f58e395": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-a60f58e395",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "유튜브에서 참여",
+    "화면 캡처·인증 사진 올리기",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "2026여수세계섬박람회",
+   "place": null,
+   "prize": "투썸플레이스 아메리카노 100명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/Def1APrn3Ci/"
+   ],
+   "start": "2026-10-15",
+   "status": "active",
+   "steps": [
+    "공식 유튜브 숏폼 시청 후 기대 콘텐츠 댓글, 캡처를 구글폼에 제출"
+   ],
+   "tags": [
+    "인스타 참여",
+    "유튜브 참여",
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "숏폼 댓글 이벤트",
+   "url": "https://www.instagram.com/p/Def1APrn3Ci/",
+   "who": null
+  },
+  "nh-bfd9fee52e": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-11-10",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-bfd9fee52e",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "세부 미확인: 원문은 열었지만 기간·경품·응모 방법 중 일부를 못 읽음"
+   ],
+   "org": "한국농어촌공사",
+   "place": null,
+   "prize": "소정의 상품",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.ekr.or.kr/Kkrpub/webzine/2026/09%2B10/survey.html"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "웹진의 만족도 조사 링크로 의견 제출; 연결 폼 열기 오류로 문항 수·추가 조건 미확인"
+   ],
+   "tags": [
+    "세부 미확인"
+   ],
+   "title": "2026 흙사랑 물사랑 독자 만족도 조사",
+   "url": "https://www.ekr.or.kr/Kkrpub/webzine/2026/09%2B10/survey.html",
+   "who": null
+  },
+  "nh-c5c662e5ae": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-c5c662e5ae",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkStatus": "skip",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "인스타그램에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "전북생태관광육성지원센터",
+   "place": null,
+   "prize": "메가커피 아메리카노 30명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.instagram.com/p/DeLQXaqCUyw/"
+   ],
+   "start": "2026-10-07",
+   "status": "active",
+   "steps": [
+    "전북 생태관광·삼천리길 SNS 팔로우 후 인증"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "원문 미확인"
+   ],
+   "title": "삼천리길 SNS 채널 팔로우 이벤트",
+   "url": "https://www.instagram.com/p/DeLQXaqCUyw/",
+   "who": null
+  },
+  "nh-cc9caf5bcd": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-cc9caf5bcd",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "대상 한정: 활동객 대상"
+   ],
+   "org": "여수해양경찰서",
+   "place": null,
+   "prize": "퀴즈 상품 무작위 추첨",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://sotong.go.kr/front/epilogue/epilogueBbsViewPage.do?bbs_id=0020670e346c42a6b0dc993b34bfe876&miv_pageNo=&searchkey=&searchtxt="
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "개인 수상레저 활동객 대상, 네이버폼으로 4지선다형 5문항 정답과 이름·전화번호 입력; 1인 1회"
+   ],
+   "tags": [
+    "참여 대상 확인"
+   ],
+   "title": "소형레저기구 표류사고 예방 퀴즈 이벤트",
+   "url": "https://sotong.go.kr/front/epilogue/epilogueBbsViewPage.do?bbs_id=0020670e346c42a6b0dc993b34bfe876&miv_pageNo=&searchkey=&searchtxt=",
+   "who": null
+  },
+  "nh-cd142b8232": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-19",
+   "count": null,
+   "end": "2026-10-30",
+   "endTime": null,
+   "firstSeen": "2026-10-19",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-cd142b8232",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "화면 캡처·인증 사진 올리기"
+   ],
+   "org": "행정안전부",
+   "place": null,
+   "prize": "5천원 모바일 상품권 100명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.incheon.go.kr/IC010101/view?curPage=3&nttNo=2046271"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "지도 앱에서 지진·지진해일 대피장소를 검색해 화면을 캡처하고 지진안전 누리집의 구글폼에 이미지와 정보 제출"
+   ],
+   "tags": [
+    "캡처 인증"
+   ],
+   "title": "2026 지진안전주간 — 지도 앱에서 우리동네 대피장소 찾기 인증샷 이벤트",
+   "url": "https://www.incheon.go.kr/IC010101/view?curPage=3&nttNo=2046271",
+   "who": null
+  },
+  "nh-d6b814b51a": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-16",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-d6b814b51a",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "화면 캡처·인증 사진 올리기",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "과학기술정보통신부·정보통신산업진흥원·한국정보통신기술협회",
+   "place": null,
+   "prize": "모바일 상품권 3만원 최대 1,000명",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://ai-checker.or.kr/ai-checker"
+   ],
+   "start": "2026-09-28",
+   "status": "active",
+   "steps": [
+    "AI 답변 오류를 캡처해 공식 참가 페이지에 제출"
+   ],
+   "tags": [
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "AI 오류찾기 챌린지 시즌 3",
+   "url": "https://ai-checker.or.kr/ai-checker",
+   "who": null
+  },
+  "nh-dac7ae5907": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": null,
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-dac7ae5907",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "산업통상부·산업연구원 ISTANS",
+   "place": null,
+   "prize": null,
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://istans.or.kr/istans_new/kor/board/BoardList.html?board_class=BOARD02"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [
+    "공식 공지사항에서 10월 12일 등록된 퀴즈 제목 확인; 상세 링크가 스크립트라 기간·경품·응모 절차 미확인"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "2026 10월 ISTANS 퀴즈이벤트",
+   "url": "https://istans.or.kr/istans_new/kor/board/BoardList.html?board_class=BOARD02",
+   "who": null
+  },
+  "nh-e83fee3d0b": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-30",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-e83fee3d0b",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "씨게이트",
+   "place": null,
+   "prize": "커피 쿠폰 매일 20명, 치킨+콜라 쿠폰 매일 2명 (총 550명)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://seagateevent.com/portableex2ea"
+   ],
+   "start": "2026-10-06",
+   "status": "active",
+   "steps": [
+    "이벤트 페이지에서 제한 시간 안에 문구 타이핑 후 개인정보 입력해 응모"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "씨게이트 타자게임 경품 이벤트",
+   "url": "https://seagateevent.com/portableex2ea",
+   "who": null
+  },
+  "nh-f3c65456c1": {
+   "announce": null,
+   "cand": false,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-10",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nh-f3c65456c1",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "유튜브에서 참여",
+    "팔로우·구독 필요",
+    "주최 원문 미확인(목록 정보만)"
+   ],
+   "org": "경기 AI디지털배움터",
+   "place": null,
+   "prize": "커피 상품권 1만원 5명, 편의점 상품권 2천원 45명 (이벤트하우스 목록은 마감 10/31로 표기)",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.youtube.com/watch?v=8cvyqpQ5nWQ"
+   ],
+   "start": "2026-10-12",
+   "status": "active",
+   "steps": [
+    "유튜브 구독·좋아요 후 'AI로 배우고 싶은 것' 댓글"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "유튜브 참여",
+    "원문 미확인"
+   ],
+   "title": "경기 AI디지털배움터 댓글이벤트",
+   "url": "https://www.youtube.com/watch?v=8cvyqpQ5nWQ",
+   "who": null
+  },
+  "nkis-satisfaction-17086-2026": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-14",
+   "count": 100,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-14",
+   "freeNote": null,
+   "grade": "A",
+   "id": "nkis-satisfaction-17086-2026",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": 12,
+   "min": 5,
+   "mode": "추첨",
+   "needs": [
+    "국가정책연구포털 이용자 대상",
+    "온라인 설문 완료"
+   ],
+   "org": "경제·인문사회연구회 국가정책연구포털(NKIS)",
+   "place": null,
+   "prize": "스타벅스 아메리카노 기프티콘",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.nkis.re.kr/commonBoard_view.do?bbs_id=BBSMSTR_000000000154&cate_code=N&menuNo=401000&ntt_id=17086"
+   ],
+   "start": "2026-10-12",
+   "status": "active",
+   "steps": [
+    "공식 공지의 설문 안내 이미지에서 참여 경로 확인",
+    "본인의 실제 NKIS 이용 경험으로 설문 응답 및 동의내용 확인"
+   ],
+   "tags": [
+    "10분 넘게 걸림"
+   ],
+   "title": "2026 국가정책연구포털 NKIS 이용자 만족도 조사",
+   "url": "https://www.nkis.re.kr/commonBoard_view.do?bbs_id=BBSMSTR_000000000154&cate_code=N&menuNo=401000&ntt_id=17086",
+   "who": "NKIS 이용자 누구나"
+  },
+  "scnu-education-survey-2026": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-14",
+   "count": 230,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-14",
+   "freeNote": null,
+   "grade": "X",
+   "id": "scnu-education-survey-2026",
+   "kind": "설문",
+   "lastSeen": "2026-10-27",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [
+    "조사 대상에 맞는 설문 사용",
+    "휴대전화번호 기재자만 경품 추첨",
+    "향림평가단은 기프티콘 추첨 혜택에서 제외"
+   ],
+   "org": "국립순천대학교 IR센터",
+   "place": null,
+   "prize": "커피 기프티콘 200명·치킨 기프티콘 30명",
+   "reasons": [
+    "대상 제한"
+   ],
+   "src": "ledger",
+   "srcUrls": [
+    "https://www.scnu.ac.kr/SCNU/na/ntt/selectNttInfo.do?nttSn=281321726"
+   ],
+   "start": "2026-10-06",
+   "status": "active",
+   "steps": [
+    "대학 공식 공지에서 본인에게 해당하는 조사 대상과 설문 링크 선택",
+    "본인의 경험에 맞게 교육만족도 설문 응답",
+    "경품 추첨을 원하면 해당 동의 확인 후 휴대전화번호 기재"
+   ],
+   "tags": [
+    "참여 대상 확인"
+   ],
+   "title": "2026년도 SCNU 교육만족도 조사",
+   "url": "https://www.scnu.ac.kr/SCNU/na/ntt/selectNttInfo.do?nttSn=281321726",
+   "who": "재학생·졸업생·교직원·재학생 학부모·산업체·지역시민·산학협력 대상. 지역시민의 구체 범위는 미기재"
+  },
+  "seoul-ddangyo-300million-2000307": {
+   "announce": null,
+   "cand": false,
+   "checked": "2026-10-14",
+   "count": 300,
+   "end": "2026-10-31",
+   "endTime": "23:59",
+   "firstSeen": "2026-10-14",
+   "freeNote": null,
+   "grade": "A",
+   "id": "seoul-ddangyo-300million-2000307",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": 8,
+   "min": 4,
+   "mode": "추첨",
+   "needs": [
+    "서울시민 대상",
+    "Instagram 계정 팔로우 및 댓글",
+    "네이버 폼 제출"
+   ],
+   "org": "서울특별시",
+   "place": null,
+   "prize": "땡겨요 상품권 1만원",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://mediahub.seoul.go.kr/missions/2000307"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "서울사랑상품권 공식 Instagram 팔로우",
+    "지정 피드에 서울배달+땡겨요 응원 댓글 작성",
+    "공식 계정 프로필 상단 네이버 폼 작성"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "지역 한정",
+    "인스타 참여"
+   ],
+   "title": "서울배달+땡겨요 서울 회원 300만 달성 기념 댓글",
+   "url": "https://mediahub.seoul.go.kr/missions/2000307",
+   "who": "서울시민 누구나"
+  },
+  "te-8b7359bfda": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "te-8b7359bfda",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국관광공사 관광e배움터",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "te",
+   "srcUrls": [
+    "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/14071"
+   ],
+   "start": "2026-10-12",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[이벤트] 10월 한글주간 기념 \"우리말로 아름답고 멋지게!\"",
+   "url": "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/14071",
+   "who": null
+  },
+  "te-d24c3fe69c": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": null,
+   "firstSeen": "2026-10-27",
+   "grade": "C",
+   "id": "te-d24c3fe69c",
+   "kind": "기타",
+   "lastSeen": "2026-10-27",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국관광공사 관광e배움터",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "te",
+   "srcUrls": [
+    "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/14068"
+   ],
+   "start": "2026-10-12",
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[이벤트] \"10월 문화의 달 기념\" 관광e배움터와 함께 채우는 문화 감성! 직무 역량!",
+   "url": "https://touredu.visitkorea.or.kr/home/support/promotions/prgs/14068",
+   "who": null
+  },
+  "ymhc-86-october-2026": {
+   "announce": "2026-11-05",
+   "cand": false,
+   "checked": "2026-10-14",
+   "count": null,
+   "end": "2026-10-31",
+   "endTime": "23:59",
+   "firstSeen": "2026-10-14",
+   "freeNote": null,
+   "grade": "A",
+   "id": "ymhc-86-october-2026",
+   "kind": "댓글",
+   "lastSeen": "2026-10-27",
+   "linkChecked": "2026-10-27",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "max": 8,
+   "min": 4,
+   "mode": null,
+   "needs": [
+    "연제구 지역주민",
+    "영상 시청 후 소감 댓글",
+    "개인정보 수집·이용 동의",
+    "댓글 보호용 비밀번호 6~20자"
+   ],
+   "org": "연제구정신건강복지센터",
+   "place": null,
+   "prize": "스타벅스 1만원권 또는 독서등 스탠드",
+   "reasons": [],
+   "src": "ledger",
+   "srcUrls": [
+    "https://ymhc.or.kr/sub.php?menukey=21&mode=view&idx=86"
+   ],
+   "start": "2026-10-01",
+   "status": "active",
+   "steps": [
+    "공식 안내에서 약 2분 영상을 시청",
+    "개인정보 수집·이용 동의와 비밀댓글 여부를 확인",
+    "성명·연락처·댓글 보호 비밀번호 및 본인의 소감을 입력"
+   ],
+   "tags": [
+    "지역 한정",
+    "참여 대상 확인"
+   ],
+   "title": "연제구 10월 마음건강 영상·댓글 이벤트",
+   "url": "https://ymhc.or.kr/sub.php?menukey=21&mode=view&idx=86",
+   "who": "연제구 지역주민 누구나"
+  }
+ },
+ "meta": {
+  "updated": "2026-10-27T19:40:23+09:00"
+ }
+}

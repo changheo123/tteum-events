@@ -1,0 +1,317 @@
+# 수집 파이프라인: 출처 실행 → 무료·중복 검증 → DB 병합 → 종료·링크 처리 → 안전 점검 → 저장
+# 사용: python -m collector.pipeline [--force] [--only 출처]
+import argparse
+import datetime as dt
+import difflib
+import json
+import os
+import re
+import sys
+import time
+import traceback
+from pathlib import Path
+
+from .common import Fetcher, now_kst, today_kst
+from .extract import norm_url, norm_title, is_show_invite, pay_required
+from .sources import events_kr, public_boards, api_sources
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data"
+CONFIG = ROOT / "config" / "sources.json"
+
+SOURCES = {
+    "events_kr": events_kr.collect,
+    "busan": public_boards.busan,
+    "mohw": public_boards.mohw,
+    "touredu": public_boards.touredu,
+    "youtube": api_sources.youtube,
+    "naver": api_sources.naver,
+    "telegram": api_sources.telegram,
+}
+# 1단계에서 사람이 근거를 확인한 무료 예외(장부)
+PAY_OK = {
+    "jjwf-kakao-together-cheer-share-2026": "기부는 필수가 아니라고 공지에 안내됨",
+    "e169": "설문 1건당 주최 측이 매칭기부하는 방식으로, 참여자 결제 없음(목록 메모 기준)",
+    "e184": "'기부니'는 이벤트 이름의 말장난이며 결제 조건 없음(목록 메모 기준). 4~9월 행복취향.ZIP 3건 이상 참여자 대상",
+}
+NO_LINK_CHECK = re.compile(r"instagram\.com|youtube\.com|youtu\.be|blog\.naver\.com|cafe\.naver\.com|t\.me/|forms\.gle|docs\.google\.com|form\.naver\.com|naver\.me")
+
+
+def load(p, default):
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return default
+
+
+def dump(p, obj):
+    p.parent.mkdir(parents=True, exist_ok=True)
+    tmp = p.with_suffix(".tmp")
+    tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    os.replace(tmp, p)  # 쓰다 실패해도 기존 파일이 깨지지 않게 교체 방식으로 저장
+
+
+def seed_from_ledger(db):
+    """DB가 비어 있으면 1단계 승인 장부(공연초대 제외)를 첫 데이터로 넣는다."""
+    led = load(ROOT / "legacy" / "ledger-2026-10-27.json", {"events": []})
+    n = 0
+    for e in led["events"]:
+        if e["kind"] == "공연 초대" or ("공연 초대권" in (e.get("prize") or "") and "현장 관람" in e["tags"]):
+            continue
+        txt = " ".join(e["needs"] + e["steps"] + [e["title"], e.get("prize") or ""])
+        if re.search(r"구매|결제|입금|참가비|유료|기부", txt) and e["id"] not in PAY_OK:
+            continue
+        e = dict(e)
+        e.update({"src": "ledger", "srcUrls": [e["url"]], "firstSeen": e.get("checked") or "2026-10-27",
+                  "lastSeen": "2026-10-27", "status": "active", "freeNote": PAY_OK.get(e["id"])})
+        db["events"][e["id"]] = e
+        n += 1
+    return n
+
+
+def keys_of(e):
+    ks = {norm_url(u) for u in [e.get("url"), e.get("listUrl"), *e.get("srcUrls", [])] if u}
+    return {k for k in ks if k}
+
+
+def find_dup(db, ev, index):
+    """같은 원문 URL이거나, 제목이 거의 같고 마감일이 같으면 같은 이벤트로 본다."""
+    for k in keys_of(ev):
+        if k in index:
+            return index[k]
+    t = norm_title(ev["title"])
+    if len(t) < 6:
+        return None
+    for oid, o in db["events"].items():
+        if o.get("status") == "rejected":
+            continue
+        if ev.get("end") and o.get("end") and ev["end"] != o["end"]:
+            continue
+        ot = norm_title(o["title"])
+        if ot and (t in ot or ot in t or difflib.SequenceMatcher(None, t, ot).ratio() >= 0.86):
+            return oid
+    return None
+
+
+def merge(db, ev, today, stats):
+    index = {}
+    for oid, o in db["events"].items():
+        for k in keys_of(o):
+            index.setdefault(k, oid)
+    oid = find_dup(db, ev, index)
+    if oid is None:
+        ev.update({"srcUrls": [u for u in {ev["url"], ev.get("listUrl")} if u], "firstSeen": today, "lastSeen": today, "status": "active"})
+        db["events"][ev["id"]] = ev
+        stats["added"] += 1
+        return ev["id"]
+    o = db["events"][oid]
+    stats["merged"] += 1
+    o["lastSeen"] = today
+    o.setdefault("srcUrls", [])
+    for u in (ev["url"], ev.get("listUrl")):
+        if u and u not in o["srcUrls"]:
+            o["srcUrls"].append(u)
+    if o.get("cand"):
+        # 자동 후보끼리는 비어 있던 값만 채운다(이미 있는 값을 덮어쓰지 않음)
+        for k in ("org", "prize", "count", "start", "end", "announce"):
+            if not o.get(k) and ev.get(k):
+                o[k] = ev[k]
+        if not o.get("steps") and ev.get("steps"):
+            o["steps"] = ev["steps"]
+        # 모음 사이트 링크보다 주최 원문 링크를 대표 링크로
+        if re.search(r"events\.kr/|t\.me/", o["url"]) and not re.search(r"events\.kr/|t\.me/", ev["url"]):
+            o["url"] = ev["url"]
+            o["tags"] = [t for t in o["tags"] if t != "원문 미확인"]
+    return oid
+
+
+def month_expiry(title):
+    """마감일이 없는 'YYYY년 M월 …' 글은 그 달이 지나면 내린다(화면에는 마감일로 표시하지 않음)."""
+    m = re.search(r"(20\d{2})년\s*(\d{1,2})월", title or "")
+    if not m:
+        return None
+    y, mo = int(m.group(1)), int(m.group(2))
+    nxt = dt.date(y + (mo == 12), mo % 12 + 1, 1)
+    return (nxt - dt.timedelta(days=1)).isoformat()
+
+
+def update_status(db, today, cfg):
+    stale = cfg.get("no_end_stale_days", 21)
+    keep = cfg.get("keep_ended_days", 45)
+    t = dt.date.fromisoformat(today)
+    pruned = 0
+    for oid in list(db["events"]):
+        e = db["events"][oid]
+        if e.get("status") in ("rejected", "removed"):
+            continue
+        if e.get("end"):
+            e["status"] = "ended" if e["end"] < today else "active"
+        else:
+            exp = month_expiry(e["title"])
+            last = dt.date.fromisoformat(e.get("lastSeen") or today)
+            gone = (exp and exp < today) or (e.get("cand") and (t - last).days > stale)
+            e["status"] = "ended" if gone else "active"
+        # 오래 지난 종료 이벤트는 DB에서 정리(이력은 git에 남음)
+        endd = e.get("end") or e.get("lastSeen")
+        if e["status"] == "ended" and endd and (t - dt.date.fromisoformat(endd)).days > keep:
+            del db["events"][oid]
+            pruned += 1
+    return pruned
+
+
+def check_links(f, db, today, limit):
+    """진행 중 이벤트의 원문 링크를 오래 확인 안 한 순서로 몇 개씩 확인. 404·410이 두 번 나오면 내린다."""
+    act = [e for e in db["events"].values() if e.get("status") == "active" and e.get("url")]
+    act.sort(key=lambda e: e.get("linkChecked") or "")
+    done = {"checked": 0, "ok": 0, "dead": 0, "skip": 0, "error": 0}
+    for e in act:
+        if done["checked"] >= limit:
+            break
+        if NO_LINK_CHECK.search(e["url"]):
+            if e.get("linkChecked") != today:
+                e["linkChecked"], e["linkStatus"] = today, "skip"
+                done["skip"] += 1
+            continue
+        done["checked"] += 1
+        e["linkChecked"] = today
+        try:
+            r = f.get(e["url"], allow_redirects=True)
+            code = r.status_code
+        except PermissionError:
+            e["linkStatus"] = "robots"
+            continue
+        except Exception:
+            e["linkStatus"] = "error"
+            done["error"] += 1
+            continue
+        if code in (404, 410):
+            e["linkFail"] = e.get("linkFail", 0) + 1
+            e["linkStatus"] = f"http {code}"
+            if e["linkFail"] >= 2:
+                e["status"] = "removed"
+                done["dead"] += 1
+        else:
+            e["linkFail"] = 0
+            e["linkStatus"] = "ok" if code < 400 else f"http {code}"
+            done["ok"] += code < 400
+    return done
+
+
+def apply_overrides(db):
+    """관리자 수정(data/overrides.json): approve·reject·edit. GitHub 저장소 권한이 있는 사람만 고칠 수 있다."""
+    ov = load(DATA / "overrides.json", {})
+    for oid in ov.get("approve", []):
+        if oid in db["events"]:
+            e = db["events"][oid]
+            e["cand"] = False
+            if e.get("grade") == "C":
+                e["grade"] = "A"
+            e["checked"] = e.get("checked") or today_kst().isoformat()
+    for oid in ov.get("reject", []):
+        if oid in db["events"]:
+            db["events"][oid]["status"] = "rejected"
+    for oid, fields in ov.get("edit", {}).items():
+        if oid in db["events"]:
+            db["events"][oid].update(fields)
+
+
+def due(state, name, interval_min, now):
+    last = state.get("lastRun", {}).get(name)
+    if not last:
+        return True
+    return (now - dt.datetime.fromisoformat(last)).total_seconds() >= interval_min * 60 - 120
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--force", action="store_true", help="주기와 관계없이 모든 출처 실행")
+    ap.add_argument("--only", help="이 출처만 실행")
+    ap.add_argument("--no-links", action="store_true")
+    a = ap.parse_args(argv)
+
+    cfg = load(CONFIG, {})
+    db = load(DATA / "db.json", {"events": {}})
+    state = load(DATA / "state.json", {})
+    runs = load(DATA / "runs.json", [])
+    now = now_kst()
+    today = now.date().isoformat()
+    f = Fetcher(min_interval=cfg.get("min_interval_sec", 1.0))
+    t0 = time.time()
+
+    seeded = seed_from_ledger(db) if not db["events"] else 0
+    prev_active = sum(1 for e in db["events"].values() if e.get("status") == "active")
+    run = {"at": now.isoformat(timespec="seconds"), "seeded": seeded, "sources": {}}
+    stats = {"added": 0, "merged": 0, "rejected": 0}
+
+    for name, fn in SOURCES.items():
+        sc = cfg.get("sources", {}).get(name, {})
+        if a.only and name != a.only:
+            continue
+        if not sc.get("enabled", True):
+            run["sources"][name] = {"status": "off"}
+            continue
+        if not a.force and not a.only and not due(state, name, sc.get("interval_min", 60), now):
+            run["sources"][name] = {"status": "wait"}
+            continue
+        s0, req0 = time.time(), f.count
+        try:
+            r = fn(f, state, sc)
+            added0, merged0 = stats["added"], stats["merged"]
+            for ev in r["events"]:
+                # 수집기가 놓친 경우까지 한 번 더: 공연초대·유료 조건은 저장하지 않는다
+                if is_show_invite(ev["title"]) or pay_required(ev["title"] + " " + (ev.get("prize") or "")):
+                    stats["rejected"] += 1
+                    continue
+                oid = merge(db, ev, today, stats)
+                if oid != ev["id"]:
+                    state.setdefault("alias", {})[ev["id"]] = oid  # 병합된 글은 대표 이벤트 ID로 기억
+            for sid in r.get("seen", []):
+                sid = state.get("alias", {}).get(sid, sid)
+                if sid in db["events"]:
+                    db["events"][sid]["lastSeen"] = today
+            run["sources"][name] = {"status": "ok", "listed": r.get("listed", 0), "new": stats["added"] - added0,
+                                    "merged": stats["merged"] - merged0, "skipped": len(r.get("skipped", {})),
+                                    "requests": f.count - req0, "sec": round(time.time() - s0, 1)}
+            state.setdefault("lastRun", {})[name] = now.isoformat(timespec="seconds")
+            state.setdefault("lastOk", {})[name] = now.isoformat(timespec="seconds")
+            state.setdefault("lastSkipped", {})[name] = dict(list(r.get("skipped", {}).items())[:30])
+        except api_sources.NotConfigured as e:
+            run["sources"][name] = {"status": "unconfigured", "reason": str(e)}
+            state.setdefault("lastRun", {})[name] = now.isoformat(timespec="seconds")
+        except Exception as e:
+            # 출처 하나가 실패해도 다른 출처와 기존 데이터는 그대로 둔다(다음 실행에서 재시도)
+            run["sources"][name] = {"status": "error", "error": f"{type(e).__name__}: {e}"[:300],
+                                    "trace": traceback.format_exc()[-600:]}
+            state.setdefault("fails", {})[name] = state.get("fails", {}).get(name, 0) + 1
+        else:
+            state.setdefault("fails", {})[name] = 0
+
+    apply_overrides(db)
+    pruned = update_status(db, today, cfg)
+    links = {} if a.no_links else check_links(f, db, today, cfg.get("link_checks_per_run", 25))
+    active = sum(1 for e in db["events"].values() if e.get("status") == "active")
+    run.update({"added": stats["added"], "merged": stats["merged"], "rejected": stats["rejected"], "pruned": pruned,
+                "links": links, "active": active, "total": len(db["events"]), "requests": f.count,
+                "sec": round(time.time() - t0, 1)})
+
+    # 안전장치: 진행 중 건수가 이전의 절반 아래로 급감하면 저장하지 않고 실패로 끝낸다(기존 사이트 유지)
+    if prev_active >= 20 and active < prev_active * 0.5:
+        run["aborted"] = f"진행 중 {prev_active}→{active}건 급감, 저장 안 함"
+        runs.append(run)
+        dump(DATA / "runs.json", runs[-300:])
+        print(json.dumps(run, ensure_ascii=False))
+        return 2
+
+    db["meta"] = {"updated": now.isoformat(timespec="seconds")}
+    dump(DATA / "db.json", db)
+    dump(DATA / "state.json", state)
+    runs.append(run)
+    dump(DATA / "runs.json", runs[-300:])
+    print(json.dumps({k: v for k, v in run.items() if k != "sources"}, ensure_ascii=False))
+    for k, v in run["sources"].items():
+        print(f"  {k}: {json.dumps({x: y for x, y in v.items() if x != 'trace'}, ensure_ascii=False)}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

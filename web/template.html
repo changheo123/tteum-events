@@ -1,6 +1,6 @@
 <title>틈틈 이벤트 줍줍</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="무료로 참여할 수 있는 경품·댓글·퀴즈·설문 이벤트를 공식 공지를 사람이 확인한 것만 마감 순으로 모았어요.">
+<meta name="description" content="무료로 참여할 수 있는 경품·댓글·퀴즈·설문 이벤트를 매시간 자동으로 모아 마감 순으로 보여주는 사이트">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
@@ -39,7 +39,7 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-body { background: var(--ground); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.6;
+body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.6;
   -webkit-text-size-adjust: 100%; word-break: keep-all; overflow-wrap: anywhere; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--band); }
 .wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
@@ -159,7 +159,9 @@ details[open] summary::before { content: "−"; }
 .st { font-size: 12px; font-weight: 700; border-radius: 6px; padding: 1px 7px; white-space: nowrap; }
 .st.on { background: var(--s-bg); color: var(--s-fg); }
 .st.ref { background: var(--a-bg); color: var(--a-fg); }
-.st.off { background: var(--x-bg); color: var(--x-fg); }
+.st.off, .st.no { background: var(--x-bg); color: var(--x-fg); }
+.st.ledger { background: var(--a-bg); color: var(--a-fg); }
+.st.err { background: var(--sun); color: var(--on-sun); }
 .fold p { margin: 8px 0 0; font-size: 13px; color: var(--muted); max-width: 52em; }
 
 /* 상세 창 */
@@ -185,7 +187,7 @@ footer p { margin: 0; max-width: 46em; }
     <div class="intro">
       <div class="mark"><b>틈틈</b><span id="stamp"></span></div>
       <h1><small>도움되는 이벤트</small><span>줍줍</span></h1>
-      <p class="lede">돈 들이지 않고 참여할 수 있는 경품·댓글·퀴즈·설문 이벤트를 모았어요. 공식 공지를 사람이 확인한 것만 마감 순으로 보여주고, 구매·결제·참가비가 필요한 이벤트는 싣지 않아요. <b>무료 여부 원문 확인</b> 표시가 있는 건은 참여 전에 원문을 꼭 먼저 확인해 주세요.</p>
+      <p class="lede">돈 들이지 않고 참여할 수 있는 경품·댓글·퀴즈·설문 이벤트를 매시간 자동으로 모아 마감 순으로 보여줘요. 구매·결제·참가비가 필요한 이벤트는 싣지 않아요. <b>승인 전</b>·<b>무료 여부 원문 확인</b> 표시가 있는 건은 자동 수집한 값이라 참여 전에 원문을 꼭 먼저 확인해 주세요.</p>
     </div>
     <div class="stats" aria-label="마감 현황">
       <div class="stat hot"><b id="sHot">0</b><span>오늘·내일 마감</span></div>
@@ -233,7 +235,7 @@ footer p { margin: 0; max-width: 46em; }
   <div id="list" aria-live="polite"></div>
   <details class="fold" id="endedBox"><summary id="endedSum">종료된 이벤트</summary><ol class="ended" id="ended"></ol></details>
   <details class="fold" id="srcBox"><summary>수집 출처 현황</summary>
-    <p>이 페이지는 스스로 이벤트를 수집하지 않아요. 외부 수집기가 모은 후보를 사람이 원문과 대조해 승인한 장부를 반영합니다. 자동 수집 서버는 아직 연동 전이에요.</p>
+    <p>수집기가 매시간 공개 게시판·모음 사이트를 robots.txt 규칙대로 읽고, 구매·결제 조건이 있는 글과 공연초대를 빼고, 같은 이벤트는 하나로 합쳐요. 자동 수집한 이벤트는 '승인 전'으로 표시되고, 사람이 원문을 확인하면 승인으로 바뀌어요.</p>
     <div class="tbl"><table><thead><tr><th>출처</th><th>상태</th><th>현재 건수</th><th>가져오는 방식</th></tr></thead><tbody id="src"></tbody></table></div>
   </details>
 </div></main>
@@ -324,7 +326,7 @@ document.getElementById("sHot").textContent = easy.filter(e => e.days !== null &
 document.getElementById("sWeek").textContent = easy.filter(e => e.days !== null && e.days >= 2 && e.days <= 6).length;
 document.getElementById("sAll").textContent = easy.length;
 const m = DATA.meta;
-document.getElementById("stamp").textContent = `승인 장부 ${m.snapshot.slice(5).replace("-", "/")} 기준${m.added ? ` · 일괄 승인 ${m.added}건 포함` : ""}${m.candidates ? ` · 승인 전 후보 ${m.candidates}건 포함` : ""} · ${m.built.slice(5, 10).replace("-", "/")} ${m.built.slice(11)} 업데이트`;
+document.getElementById("stamp").textContent = `${m.built.slice(5, 10).replace("-", "/")} ${m.built.slice(11, 16)} 자동 수집 반영 · 사람 확인 ${m.approved}건 · 자동 수집 후보 ${m.candidates}건`;
 
 // 카테고리를 뺀 나머지 조건(검색·필터·토글)
 function passBase(e) {
@@ -468,24 +470,14 @@ function render() {
   }
 }
 
-// 수집 출처 현황: 실제 데이터 건수로만 상태를 표시
+// 수집 출처 현황: 수집기 실행 기록(DATA.meta.sources)과 실제 진행 중 건수로 표시
 function sources() {
-  const c = f => all.filter(f).length;
-  const rows = [
-    ["공공기관·지자체 누리집", "on", c(e => e.plats.includes("web") && e.pub && !e.viaList), "외부 수집기(공식 게시판 순찰) → 사람 승인"],
-    ["인스타그램 게시물", "on", c(e => e.plats.includes("insta")), "장부에 승인된 게시물 링크. 인스타그램 API 자동 수집은 미연동"],
-    ["유튜브 영상", "on", c(e => e.plats.includes("yt")), "장부에 승인된 영상 링크. YouTube Data API 자동 수집은 미연동"],
-    ["네이버 블로그", "on", c(e => e.plats.includes("naver")), "장부에 승인된 공식 블로그 글. 검색 API 자동 수집은 미연동"],
-    ["기업 공식 누리집", "on", c(e => e.plats.includes("web") && !e.pub && !e.viaList), "외부 수집기 → 사람 승인"],
-    ["이벤트 목록 사이트(events.kr)", "ref", c(e => e.viaList), "목록 정보만 읽음. 주최 원문 확인 전이라 '무료 여부 원문 확인' 표시"],
-    ["X(트위터)", "off", c(e => e.plats.includes("x")), "연동 필요. 검색 API가 유료라 서버와 키가 있어야 함"],
-    ["텔레그램 공개 채널", "off", c(e => e.plats.includes("tg")), "연동 필요. 봇/클라이언트 API를 서버에서 실행해야 함"],
-    ["쿠팡·브랜드 쇼핑몰", "off", c(e => e.plats.includes("shop")), "연동 필요. 쇼핑몰별 이용 약관 확인 후 공개 이벤트 페이지만 수집"],
-    ["라디오·방송사", "off", c(e => e.kind === "라디오"), "연동 필요. KBS·MBC·SBS 공식 이벤트 게시판 수집기 개발 예정"],
-    ["체험단·서포터즈", "off", c(e => e.kind === "체험단"), "연동 필요. 무료 체험단 공식 모집 공고 수집기 개발 예정"],
-  ];
-  const label = { on: "장부 반영 중", ref: "참고용", off: "연동 필요" };
-  document.getElementById("src").innerHTML = rows.map(([n, s, k, how]) => `<tr><td>${esc(n)}</td><td><span class="st ${s}">${label[s]}</span></td><td class="n">${k}</td><td>${esc(how)}</td></tr>`).join("");
+  const label = { on: "자동 수집 중", ledger: "사람 확인", off: "연동 필요", err: "오류·재시도 중", no: "수집 안 함" };
+  document.getElementById("src").innerHTML = (m.sources || []).map(s => {
+    const n = live.filter(e => s.match.some(k => e.src === k || (e.via || []).includes(k))).length;
+    const when = s.last ? ` · 마지막 성공 ${s.last.slice(5, 10).replace("-", "/")} ${s.last.slice(11, 16)}` : "";
+    return `<tr><td>${esc(s.label)}</td><td><span class="st ${s.st}">${label[s.st]}</span></td><td class="n">${s.match.length ? n : "-"}</td><td>${esc(s.how)}${esc(when)}</td></tr>`;
+  }).join("");
 }
 
 // 상세 창

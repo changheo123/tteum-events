@@ -1,0 +1,127 @@
+# DB(data/db.json) → 사이트(_site/). 검증에 실패하면 0이 아닌 코드로 끝나 배포가 멈추고 기존 사이트가 유지된다
+import datetime as dt
+import json
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+from collector.common import now_kst
+from collector.enrich import enrich
+
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / "_site"
+
+# 출처 현황 표: (키, 이름, DB의 src 코드들, 방식 설명)
+SOURCE_ROWS = [
+    ("ledger", "사람 확인 장부", ["ledger"], "1단계에서 사람이 공식 원문과 대조해 승인한 이벤트"),
+    ("events_kr", "이벤트 모음 사이트(events.kr)", ["ek"], "목록·상세 공개 페이지(robots.txt 허용)"),
+    ("busan", "부산시 이벤트 통합안내", ["bs"], "공식 이벤트 게시판 목록"),
+    ("mohw", "보건복지부 국민참여이벤트", ["mo"], "산하기관 이벤트 모음 게시판"),
+    ("touredu", "한국관광공사 관광e배움터", ["te"], "진행 중 이벤트 게시판"),
+    ("youtube", "유튜브 영상 설명란", ["yt"], "YouTube Data API(무료 키 필요)"),
+    ("naver", "네이버 블로그·카페", ["nv"], "네이버 검색 API(무료 키 필요). 블로그 RSS는 robots.txt가 막아 쓰지 않음"),
+    ("telegram", "텔레그램 공개 채널", ["tg"], "공개 채널 웹 미리보기(t.me/s). 수집할 채널 목록 필요"),
+    (None, "인스타그램", [], "공개 게시물 검색을 허용하는 공식 API가 없어 수집 안 함. 다른 출처에서 찾은 인스타 이벤트는 표시"),
+    (None, "X(트위터)", [], "검색 API가 유료라 무료 운영 원칙상 수집 안 함"),
+    (None, "쿠팡·쇼핑몰", [], "공개 이벤트 목록 API가 없고 약관상 자동 수집이 제한돼 수집 안 함"),
+    (None, "라디오·방송사", [], "방송사 이벤트 게시판이 로그인·스크립트 방식이라 아직 수집기 없음"),
+]
+
+
+def source_meta(state, runs):
+    last_run = runs[-1]["sources"] if runs else {}
+    out = []
+    for key, label, match, how in SOURCE_ROWS:
+        if key is None:
+            st = "no"
+        elif key == "ledger":
+            st = "ledger"
+        else:
+            r = last_run.get(key, {}).get("status")
+            if r in (None, "wait"):  # 이번 실행 차례가 아니었으면 지난 결과로 판단
+                r = "ok" if state.get("lastOk", {}).get(key) and not state.get("fails", {}).get(key) else ("unconfigured" if key in ("youtube", "naver", "telegram") and not state.get("lastOk", {}).get(key) else "error")
+            st = {"ok": "on", "unconfigured": "off", "off": "off"}.get(r, "err")
+        out.append({"key": key, "label": label, "match": match, "how": how, "st": st,
+                    "last": state.get("lastOk", {}).get(key) if key else None})
+    return out
+
+
+def main():
+    db = json.loads((ROOT / "data" / "db.json").read_text(encoding="utf-8"))
+    state = json.loads((ROOT / "data" / "state.json").read_text(encoding="utf-8"))
+    runs = json.loads((ROOT / "data" / "runs.json").read_text(encoding="utf-8"))
+    via = {}
+    for aid, oid in state.get("alias", {}).items():
+        via.setdefault(oid, set()).add(aid.split("-")[0])
+
+    events = []
+    for e in db["events"].values():
+        if e.get("status") not in ("active", "ended"):
+            continue  # 반려(rejected)·링크 끊김(removed)은 싣지 않는다
+        x = enrich(e)
+        x["via"] = sorted(via.get(e["id"], []))
+        for k in ("srcUrls", "linkFail", "platHint", "firstSeen"):
+            x.pop(k, None)
+        x["isAuto"] = bool(e.get("cand"))
+        events.append(x)
+    # 마감 가까운 순(없으면 맨 뒤) → 제목
+    events.sort(key=lambda x: (x.get("end") or "9999", x["title"]))
+
+    now = now_kst()
+    today = now.date().isoformat()
+    live = [x for x in events if not x.get("end") or x["end"] >= today]
+    meta = {
+        "built": now.strftime("%Y-%m-%d %H:%M"), "date": today,
+        "approved": sum(1 for x in live if not x.get("cand")),
+        "candidates": sum(1 for x in live if x.get("cand")),
+        "shown": len(live), "ended": len(events) - len(live),
+        "sources": source_meta(state, runs),
+        "lastRun": runs[-1]["at"] if runs else None,
+    }
+    payload = {"meta": meta, "events": events}
+
+    # 검증 1: DB의 진행 중·종료 건수와 사이트 데이터 건수가 같아야 한다
+    n_db = sum(1 for e in db["events"].values() if e.get("status") in ("active", "ended"))
+    assert len(events) == n_db, f"건수 불일치 {len(events)} != {n_db}"
+    # 검증 2: 원문 링크가 없는 이벤트는 싣지 않는다
+    bad = [x["id"] for x in events if not str(x.get("url", "")).startswith("http")]
+    assert not bad, f"원문 링크 없음: {bad[:5]}"
+
+    tpl = (ROOT / "web" / "template.html").read_text(encoding="utf-8")
+    assert tpl.count("/*__DATA__*/") == 1
+    data_js = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    page = tpl.replace("/*__DATA__*/", data_js)
+
+    tmp = ROOT / "_site.tmp"
+    shutil.rmtree(tmp, ignore_errors=True)
+    (tmp / "data").mkdir(parents=True)
+    # GitHub Pages는 문서 뼈대가 필요하다(Artifact는 자동으로 감싸 주지만 일반 호스팅은 아님)
+    html = ('<!doctype html>\n<html lang="ko"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E'
+            '%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%230e7a55%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%227%22 fill=%22%23ffce3d%22/%3E%3C/svg%3E">\n'
+            f'{page.split("<header", 1)[0]}</head>\n<body>\n<header{page.split("<header", 1)[1]}\n</body></html>\n')
+    (tmp / "index.html").write_text(html, encoding="utf-8")
+    (tmp / "data" / "events.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+    status = [{k: v for k, v in r.items() if k != "sources"} | {"sources": {s: {a: b for a, b in v.items() if a != "trace"} for s, v in r["sources"].items()}} for r in runs[-100:]]
+    (tmp / "data" / "status.json").write_text(json.dumps(status, ensure_ascii=False, indent=1), encoding="utf-8")
+    (tmp / ".nojekyll").write_text("")
+
+    # 검증 3: 페이지 스크립트 문법(node가 있으면)
+    script = html.rsplit("<script>", 1)[1].rsplit("</script>", 1)[0]
+    (tmp / "check.js").write_text(script, encoding="utf-8")
+    if shutil.which("node"):
+        r = subprocess.run(["node", "--check", str(tmp / "check.js")], capture_output=True, text=True)
+        assert r.returncode == 0, "스크립트 문법 오류: " + r.stderr[-500:]
+    (tmp / "check.js").unlink()
+
+    # 검증을 모두 통과한 뒤에만 결과 폴더에 덮어쓴다(폴더가 사용 중이어도 되도록 내용 복사)
+    shutil.copytree(tmp, OUT, dirs_exist_ok=True)
+    shutil.rmtree(tmp, ignore_errors=True)
+    print(json.dumps({k: v for k, v in meta.items() if k != "sources"}, ensure_ascii=False))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

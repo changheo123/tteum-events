@@ -1,0 +1,71 @@
+[
+ {
+  "active": 106,
+  "added": 31,
+  "at": "2026-10-27T19:40:23+09:00",
+  "links": {
+   "checked": 25,
+   "dead": 0,
+   "error": 0,
+   "ok": 25,
+   "skip": 10
+  },
+  "merged": 19,
+  "pruned": 0,
+  "rejected": 0,
+  "requests": 95,
+  "sec": 76.7,
+  "seeded": 90,
+  "sources": {
+   "busan": {
+    "listed": 4,
+    "merged": 1,
+    "new": 3,
+    "requests": 1,
+    "sec": 0.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 163,
+    "merged": 13,
+    "new": 21,
+    "requests": 50,
+    "sec": 49.7,
+    "skipped": 6,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 2,
+    "new": 5,
+    "requests": 13,
+    "sec": 13.3,
+    "skipped": 5,
+    "status": "ok"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "listed": 5,
+    "merged": 3,
+    "new": 2,
+    "requests": 6,
+    "sec": 5.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 121
+ }
+]
