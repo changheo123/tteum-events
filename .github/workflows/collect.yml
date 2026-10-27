@@ -21,14 +21,14 @@ permissions:
   id-token: write
   actions: write   # 이어달리기(next-run)가 다음 실행을 요청할 때 필요
 
-concurrency:
-  group: collect
-  cancel-in-progress: false
-
 jobs:
   collect:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    # 데이터 커밋이 겹치지 않게 수집 작업만 한 번에 하나씩(이어달리기 대기 중에도 새 실행은 바로 시작)
+    concurrency:
+      group: collect
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
 
