@@ -4,14 +4,82 @@
  "no_end_stale_days": 21,
  "keep_ended_days": 45,
  "sources": {
-  "events_kr": {"enabled": true, "interval_min": 60, "max_pages": 10, "max_details": 40},
-  "busan": {"enabled": true, "interval_min": 60},
-  "mohw": {"enabled": true, "interval_min": 60, "max_details": 15},
-  "touredu": {"enabled": true, "interval_min": 180},
-  "youtube": {"enabled": true, "interval_min": 180, "days": 14,
-   "queries": ["댓글 이벤트 경품 추첨", "구독 이벤트 기프티콘 증정", "댓글 퀴즈 이벤트 당첨"]},
-  "naver": {"enabled": true, "interval_min": 120,
-   "queries": ["댓글 이벤트 경품 추첨 마감", "퀴즈 이벤트 기프티콘 증정", "설문조사 이벤트 경품"]},
-  "telegram": {"enabled": true, "interval_min": 120, "channels": []}
+  "korissue": {
+   "enabled": true,
+   "interval_min": 60,
+   "options": [
+    2,
+    3
+   ]
+  },
+  "events_kr": {
+   "enabled": true,
+   "interval_min": 60,
+   "max_pages": 10,
+   "max_details": 40
+  },
+  "eventhouse": {
+   "enabled": true,
+   "interval_min": 60,
+   "max_pages": 15,
+   "quick_pages": 2,
+   "full_every_min": 360
+  },
+  "danawa": {
+   "enabled": true,
+   "interval_min": 120,
+   "max_pages": 3
+  },
+  "sbs": {
+   "enabled": true,
+   "interval_min": 180
+  },
+  "busan": {
+   "enabled": true,
+   "interval_min": 60
+  },
+  "mohw": {
+   "enabled": true,
+   "interval_min": 60,
+   "max_details": 15
+  },
+  "touredu": {
+   "enabled": true,
+   "interval_min": 180
+  },
+  "youtube": {
+   "enabled": true,
+   "interval_min": 180,
+   "days": 14,
+   "queries": [
+    "댓글 이벤트 경품 추첨",
+    "구독 이벤트 기프티콘 증정",
+    "댓글 퀴즈 이벤트 당첨"
+   ]
+  },
+  "naver": {
+   "enabled": true,
+   "interval_min": 120,
+   "queries": [
+    "댓글 이벤트 경품 추첨 마감",
+    "퀴즈 이벤트 기프티콘 증정",
+    "설문조사 이벤트 경품"
+   ],
+   "types": [
+    "blog",
+    "cafearticle",
+    "webkr"
+   ],
+   "sns_queries": [
+    "인스타그램 댓글 이벤트 경품 추첨",
+    "유튜브 댓글 이벤트 경품",
+    "트위터 리트윗 이벤트 경품 추첨"
+   ]
+  },
+  "telegram": {
+   "enabled": true,
+   "interval_min": 120,
+   "channels": []
+  }
  }
 }

@@ -7,7 +7,7 @@ GitHub Actions(수집·빌드)와 GitHub Pages(호스팅)만 써서 월 운영�
 
 | 경로 | 역할 |
 |---|---|
-| `collector/sources/` | 출처별 수집 모듈(events.kr, 부산, 복지부, 관광e배움터, 유튜브, 네이버, 텔레그램) |
+| `collector/sources/` | 출처별 수집 모듈. 키 없이 동작: korissue(원문 링크), 이벤트하우스, events.kr, 다나와, SBS, 부산, 복지부, 관광e배움터. 키·설정 필요: 유튜브, 네이버(블로그·카페·웹문서), 텔레그램 |
 | `collector/extract.py` | 규칙 기반 추출: 기간·발표일·경품·참여 방법, 유료 조건·공연초대 제외(AI 미사용) |
 | `collector/pipeline.py` | 수집 → 중복 병합 → 종료·링크 처리 → 급감 안전장치 → `data/` 저장 |
 | `build.py` | `data/db.json` → `_site/`(건수·링크·스크립트 검증) |

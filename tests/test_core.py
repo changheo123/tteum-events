@@ -61,6 +61,33 @@ def test_dedupe_and_board_items_stay_separate():
     assert P.merge(db, e2, "2026-10-27", st) != a["id"]
 
 
+def test_similar_titles_from_different_orgs_stay_separate():
+    db = {"events": {}}
+    st = {"added": 0, "merged": 0}
+    a = ev("퀴즈 풀고 커피 받자 이벤트!!", "https://a.kr/q1", org="서울시의회")
+    b = ev("퀴즈 풀고 커피 받자 이벤트!!", "https://b.kr/q2", org="오븐마루치킨")
+    c = ev("퀴즈 풀고 커피 받자 이벤트!!", "https://www.eventhouse.kr/site/view.php?no=1", org="서울특별시의회")
+    assert P.merge(db, a, "2026-10-27", st) != P.merge(db, b, "2026-10-27", st)
+    assert P.merge(db, c, "2026-10-27", st) == a["id"]  # 같은 주최(표기만 다름)는 합친다
+    assert db["events"][a["id"]]["url"] == "https://a.kr/q1"  # 원문 링크가 대표로 남는다
+
+
+def test_prize_value():
+    from collector.enrich import prize_value
+    cases = {"GS25 5천원권 500명": 5000, "배달의민족 5만원권 20명": 50000, "모바일 상품권 5,000원": 5000,
+             "상품권 1만 원 50명": 10000, "온누리 1만5천원": 15000, "CU 모바일 금액권 5천원 1,000명": 5000, "커피 쿠폰": None}
+    for p, v in cases.items():
+        assert prize_value({"prize": p}) == v, p
+
+
+def test_aggregator_prize_tidy():
+    from collector.sources.aggregators import tidy_prize, numbered
+    assert tidy_prize("GS25 모바일상품권 5천원권-20명") == "GS25 모바일상품권 5천원권 20명"
+    assert tidy_prize("네이버페이-00명") == "네이버페이"  # 사이트가 가린 인원은 지운다
+    assert tidy_prize("상품-200명") == "상품 200명"
+    assert numbered("① 팔로우 ② 댓글") == ["1. 팔로우", "2. 댓글"]
+
+
 def test_status_expiry():
     db = {"events": {}}
     st = {"added": 0, "merged": 0}

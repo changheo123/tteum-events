@@ -52,8 +52,10 @@ def naver(f, state, cfg):
         raise NotConfigured("NAVER_CLIENT_ID/SECRET 없음")
     hdr = {"X-Naver-Client-Id": cid, "X-Naver-Client-Secret": sec}
     events, skipped, listed = [], {}, 0
-    for kind in ("blog", "cafearticle"):
-        for q in cfg.get("queries", []):
+    # webkr(웹문서) 검색은 인스타그램·X·유튜브 게시물 원문 링크를 찾는 검색엔진 경로로 쓴다
+    for kind in cfg.get("types", ["blog", "cafearticle", "webkr"]):
+        qs = cfg.get("sns_queries", []) if kind == "webkr" else cfg.get("queries", [])
+        for q in qs:
             r = f.get(f"https://openapi.naver.com/v1/search/{kind}.json", check_robots=False, headers=hdr,
                       params={"query": q, "display": 50, "sort": "date"})
             r.raise_for_status()
@@ -65,8 +67,11 @@ def naver(f, state, cfg):
                 if not (STRONG.search(title + desc) and find_dates(desc)):
                     skipped[it["link"]] = "요약에 경품·날짜 없음"
                     continue
-                ev, why = build_event(src="nv", sid=it["link"], title=title, url=it["link"],
-                                      org=it.get("bloggername") or it.get("cafename"), body=desc, plat_hint="naver")
+                link = it["link"]
+                plat = ("insta" if "instagram.com" in link else "x" if re.search(r"//(?:www\.)?(?:x|twitter)\.com/", link)
+                        else "yt" if "youtube.com" in link else "naver" if kind != "webkr" else "web")
+                ev, why = build_event(src="nv", sid=link, title=title, url=link,
+                                      org=it.get("bloggername") or it.get("cafename"), body=desc, plat_hint=plat)
                 if ev:
                     ev["tags"].append("원문 미확인")
                     events.append(ev)

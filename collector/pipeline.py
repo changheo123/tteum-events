@@ -13,14 +13,19 @@ from pathlib import Path
 
 from .common import Fetcher, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
-from .sources import events_kr, public_boards, api_sources
+from .sources import events_kr, public_boards, api_sources, aggregators
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CONFIG = ROOT / "config" / "sources.json"
 
 SOURCES = {
+    # 원문 링크를 주는 출처를 먼저 돌려, 같은 이벤트가 목록 사이트에서 나오면 원문 쪽에 합쳐지게 한다
+    "korissue": aggregators.korissue,
     "events_kr": events_kr.collect,
+    "eventhouse": aggregators.eventhouse,
+    "danawa": aggregators.danawa,
+    "sbs": aggregators.sbs,
     "busan": public_boards.busan,
     "mohw": public_boards.mohw,
     "touredu": public_boards.touredu,
@@ -82,29 +87,57 @@ def find_dup(db, ev, index):
     t = norm_title(ev["title"])
     if len(t) < 6:
         return None
-    for oid, o in db["events"].items():
-        if o.get("status") == "rejected":
+    # 마감일이 같은 글(또는 마감일이 없는 글)끼리만 제목을 비교한다
+    by_end = db["_ix"]["end"]
+    pool = by_end.get(ev.get("end"), []) + by_end.get(None, []) if ev.get("end") else [x for v in by_end.values() for x in v]
+    og = norm_org(ev.get("org"))
+    for oid, ot, oo in pool:
+        if db["events"].get(oid, {}).get("status") == "rejected":
             continue
-        if ev.get("end") and o.get("end") and ev["end"] != o["end"]:
+        # 모음 사이트 제목은 '퀴즈 풀고 커피 받자'처럼 비슷한 것이 많아 주최가 다르면 다른 이벤트로 본다
+        if og and oo and not (og in oo or oo in og or difflib.SequenceMatcher(None, og, oo).ratio() >= 0.6):
             continue
-        ot = norm_title(o["title"])
-        if ot and (t in ot or ot in t or difflib.SequenceMatcher(None, t, ot).ratio() >= 0.86):
+        if ot and ((len(ot) >= 6 and (t in ot or ot in t)) or difflib.SequenceMatcher(None, t, ot).ratio() >= 0.86):
             return oid
     return None
 
 
+def norm_org(o):
+    """주최명 비교용: 괄호·말줄임·공백·'(주)' 제거."""
+    o = re.sub(r"\(주\)|㈜|주식회사|\.\.+|…|\([^)]*\)|\s", "", o or "")
+    return o.lower()
+
+
+def _index_add(ix, oid, o):
+    for k in keys_of(o):
+        ix["url"].setdefault(k, oid)
+    ix["end"].setdefault(o.get("end"), []).append((oid, norm_title(o["title"]), norm_org(o.get("org"))))
+
+
+def _index(db):
+    """실행 중 한 번만 만드는 중복 판별 색인(URL·마감일별 제목). 저장 전에 지운다."""
+    if "_ix" not in db:
+        db["_ix"] = {"url": {}, "end": {}}
+        for oid, o in db["events"].items():
+            _index_add(db["_ix"], oid, o)
+    return db["_ix"]
+
+
+AGG_URL = re.compile(r"events\.kr/|t\.me/|eventhouse\.kr/")
+
+
 def merge(db, ev, today, stats):
-    index = {}
-    for oid, o in db["events"].items():
-        for k in keys_of(o):
-            index.setdefault(k, oid)
-    oid = find_dup(db, ev, index)
+    ix = _index(db)
+    oid = find_dup(db, ev, ix["url"])
     if oid is None:
         ev.update({"srcUrls": [u for u in {ev["url"], ev.get("listUrl")} if u], "firstSeen": today, "lastSeen": today, "status": "active"})
         db["events"][ev["id"]] = ev
+        _index_add(ix, ev["id"], ev)
         stats["added"] += 1
         return ev["id"]
     o = db["events"][oid]
+    for k in keys_of(ev):
+        ix["url"].setdefault(k, oid)
     stats["merged"] += 1
     o["lastSeen"] = today
     o.setdefault("srcUrls", [])
@@ -119,7 +152,7 @@ def merge(db, ev, today, stats):
         if not o.get("steps") and ev.get("steps"):
             o["steps"] = ev["steps"]
         # 모음 사이트 링크보다 주최 원문 링크를 대표 링크로
-        if re.search(r"events\.kr/|t\.me/", o["url"]) and not re.search(r"events\.kr/|t\.me/", ev["url"]):
+        if AGG_URL.search(o["url"]) and not AGG_URL.search(ev["url"]):
             o["url"] = ev["url"]
             o["tags"] = [t for t in o["tags"] if t != "원문 미확인"]
     return oid
@@ -302,6 +335,7 @@ def main(argv=None):
         print(json.dumps(run, ensure_ascii=False))
         return 2
 
+    db.pop("_ix", None)
     db["meta"] = {"updated": now.isoformat(timespec="seconds")}
     dump(DATA / "db.json", db)
     dump(DATA / "state.json", state)

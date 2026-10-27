@@ -23,7 +23,7 @@ def platforms(e):
 
 def via_list(e):
     """응모 링크가 주최 원문이 아니라 모음 사이트·공유 채널인 경우."""
-    return bool(re.search(r"events\.kr/|t\.me/", e.get("url") or ""))
+    return bool(re.search(r"events\.kr/|t\.me/|eventhouse\.kr/", e.get("url") or ""))
 
 
 def is_public(e):
@@ -51,13 +51,15 @@ def prize_types(e):
 
 
 def prize_value(e):
-    p = (e.get("prize") or "").replace(" ", "")
+    # 공백을 지우지 않는다: 'GS25 5천원권'을 붙이면 '255천원'으로 잘못 읽힌다
+    p = e.get("prize") or ""
+    b = r"(?<![\dA-Za-z])"  # 영문·숫자 바로 뒤의 숫자(GS25, CU2 등)는 금액이 아니다
     vals = []
-    for m in re.finditer(r"(\d+)만(\d)?천?원", p):
+    for m in re.finditer(b + r"(\d+)\s*만\s*(?:(\d)\s*천\s*)?원", p):
         vals.append(int(m.group(1)) * 10000 + (int(m.group(2)) * 1000 if m.group(2) else 0))
-    for m in re.finditer(r"(?<![\d만])(\d+)천원", p):
+    for m in re.finditer(b + r"(?<!만)(?<!만\s)(\d+)\s*천\s*원", p):
         vals.append(int(m.group(1)) * 1000)
-    for m in re.finditer(r"(\d{1,3}(?:,\d{3})+|\d{4,})원", p):
+    for m in re.finditer(b + r"(\d{1,3}(?:,\d{3})+|\d{4,})\s*원", p):
         vals.append(int(m.group(1).replace(",", "")))
     return max(vals) if vals else None
 

@@ -221,6 +221,7 @@ footer p { margin: 0; max-width: 46em; }
         <label class="more" for="fNoAcct"><input type="checkbox" id="fNoAcct"> 회원가입·로그인 없이</label>
         <label class="more" for="fNoSns"><input type="checkbox" id="fNoSns"> SNS 계정 없이</label>
         <label class="more" for="fNoCost"><input type="checkbox" id="fNoCost"> 추가 비용 확인된 것 빼기</label>
+        <label class="more" for="fOrig"><input type="checkbox" id="fOrig"> 원문 링크 있는 것만</label>
         <label class="more" for="fFav"><input type="checkbox" id="fFav"> 저장한 것만</label>
         <label class="more" for="fHideDone"><input type="checkbox" id="fHideDone"> 참여한 것 숨기기</label>
         <label class="more" for="onlyOk"><input type="checkbox" id="onlyOk"> 승인된 것만 보기</label>
@@ -292,7 +293,7 @@ const DUE = [["all", "전체"], ["d1", "오늘·내일"], ["d6", "이번 주(6�
 const SORTS = { due: "마감 임박순", new: "최신 등록순", easy: "참여 간편순", value: "경품 가치순" };
 
 const state = { cat: "전체 이벤트", q: "", sort: "due", plat: "all", prize: "all", due: "all", time: "all",
-  noAcct: false, noSns: false, noCost: false, fav: false, hideDone: false, showX: false, onlyOk: false };
+  noAcct: false, noSns: false, noCost: false, orig: false, fav: false, hideDone: false, showX: false, onlyOk: false };
 
 function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
 function kstToday() { return new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); }
@@ -346,6 +347,7 @@ function passBase(e) {
   if (state.noAcct && e.acct) return false;
   if (state.noSns && e.sns) return false;
   if (state.noCost && e.tax) return false;
+  if (state.orig && e.viaList) return false;
   if (state.fav && !fav.has(e.id)) return false;
   if (state.hideDone && done.has(e.id)) return false;
   if (state.q) {
@@ -459,7 +461,7 @@ function renderList() {
   document.getElementById("endedSum").textContent = `종료된 이벤트 ${g.length}건`;
   document.getElementById("ended").innerHTML = g.map(e => `<li><b>${esc(e.title)}</b><span>${esc(e.org)} · ${md(e.end)} 마감${safeUrl(e.url) ? ` · <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">원문</a>` : ""}</span></li>`).join("");
 
-  const n = ["plat", "prize", "due", "time"].filter(k => state[k] !== "all").length + ["noAcct", "noSns", "noCost", "fav", "hideDone", "onlyOk", "showX"].filter(k => state[k]).length;
+  const n = ["plat", "prize", "due", "time"].filter(k => state[k] !== "all").length + ["noAcct", "noSns", "noCost", "orig", "fav", "hideDone", "onlyOk", "showX"].filter(k => state[k]).length;
   const fN = document.getElementById("fN"); fN.hidden = !n; fN.textContent = n;
 }
 
@@ -528,11 +530,11 @@ function toggle(set, key, id) {
   set.has(id) ? set.delete(id) : set.add(id); save(key, set);
 }
 function resetFilters() {
-  Object.assign(state, { q: "", plat: "all", prize: "all", due: "all", time: "all", noAcct: false, noSns: false, noCost: false, fav: false, hideDone: false, showX: false, onlyOk: false });
+  Object.assign(state, { q: "", plat: "all", prize: "all", due: "all", time: "all", noAcct: false, noSns: false, noCost: false, orig: false, fav: false, hideDone: false, showX: false, onlyOk: false });
   syncInputs(); render();
 }
 const BIND = { fPlat: "plat", fPrize: "prize", fDue: "due", fTime: "time", sort: "sort" };
-const CHK = { fNoAcct: "noAcct", fNoSns: "noSns", fNoCost: "noCost", fFav: "fav", fHideDone: "hideDone", onlyOk: "onlyOk", showX: "showX" };
+const CHK = { fNoAcct: "noAcct", fNoSns: "noSns", fNoCost: "noCost", fOrig: "orig", fFav: "fav", fHideDone: "hideDone", onlyOk: "onlyOk", showX: "showX" };
 function syncInputs() {
   document.getElementById("q").value = state.q;
   for (const [id, k] of Object.entries(BIND)) document.getElementById(id).value = state[k];

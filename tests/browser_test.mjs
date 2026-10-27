@@ -115,10 +115,13 @@ try {
   const kept = await ev(`document.querySelector('#list .tk [data-act="fav"][data-id="${fid}"]')?.getAttribute('aria-pressed')`);
   check("저장 표시가 새로고침 후 유지", kept === "true");
 
-  // 0건 카테고리 안내
-  await ev(`document.querySelector('.chip[data-k="라디오·사연"]').click()`); await sleep(300);
-  const empty = await ev(`document.getElementById('list').textContent`);
-  check("0건 카테고리 안내 문구", empty.includes("연동되지 않아"));
+  // 0건 카테고리 안내(0건인 칩이 있을 때만)
+  const zeroChip = await ev(`[...document.querySelectorAll('.chip')].find(c => c.querySelector('.n').textContent === '0')?.dataset.k || ''`);
+  if (zeroChip) {
+    await ev(`document.querySelector('.chip[data-k="${zeroChip}"]').click()`); await sleep(300);
+    const empty = await ev(`document.getElementById('list').textContent`);
+    check("0건 카테고리 안내 문구", empty.includes("연동되지 않아"), zeroChip);
+  }
 
   // 종료 이벤트 목록·출처 현황 표(전체 카테고리 기준)
   await ev(`document.querySelector('.chip[data-k="전체 이벤트"]').click()`); await sleep(300);
