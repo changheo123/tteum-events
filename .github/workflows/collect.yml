@@ -4,7 +4,7 @@ name: collect-and-deploy
 
 on:
   schedule:
-    - cron: "17 * * * *"   # 매시 17분(UTC 기준, 한국 시간도 매시 17분)
+    - cron: "23 * * * *"   # 매시 23분(UTC 기준, 한국 시간도 매시 23분). 정시 직후 혼잡을 피함
   workflow_dispatch:
     inputs:
       force:
