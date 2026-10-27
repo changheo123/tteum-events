@@ -19,6 +19,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write   # 이어달리기(next-run)가 다음 실행을 요청할 때 필요
 
 concurrency:
   group: collect
@@ -93,3 +94,32 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # 이어달리기: GitHub 예약(cron)이 돌지 않을 때를 대비해 50분 뒤 다음 실행을 직접 요청한다.
+  # 최근 2시간 안에 예약 실행이 있었으면 cron이 살아 있는 것이므로 요청하지 않고 끝낸다.
+  # 수집·배포가 실패해도 다음 회차는 이어지도록 always()로 둔다.
+  next-run:
+    needs: deploy
+    if: always() && github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    concurrency:
+      group: next-run
+      cancel-in-progress: true   # push가 여러 번 있어도 이어달리기는 최신 하나만
+    steps:
+      - name: 예약 실행 확인 후 50분 뒤 다음 실행 요청
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          recent=$(gh run list --workflow collect.yml --event schedule --limit 1 --json createdAt --jq '.[0].createdAt // ""')
+          if [ -n "$recent" ] && [ $(( $(date +%s) - $(date -d "$recent" +%s) )) -lt 7200 ]; then
+            echo "예약 실행이 동작 중($recent)이라 이어달리기를 멈춥니다"; exit 0
+          fi
+          sleep 3000
+          recent=$(gh run list --workflow collect.yml --event schedule --limit 1 --json createdAt --jq '.[0].createdAt // ""')
+          if [ -n "$recent" ] && [ $(( $(date +%s) - $(date -d "$recent" +%s) )) -lt 7200 ]; then
+            echo "기다리는 동안 예약 실행이 돌았습니다($recent). 이어달리기를 멈춥니다"; exit 0
+          fi
+          gh workflow run collect.yml --ref "${{ github.ref_name }}"
+          echo "다음 수집 실행을 요청했습니다"
