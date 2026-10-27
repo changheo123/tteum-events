@@ -1,6 +1,6 @@
 {
  "min_interval_sec": 1.0,
- "link_checks_per_run": 25,
+ "link_checks_per_run": 60,
  "no_end_stale_days": 21,
  "keep_ended_days": 45,
  "sources": {

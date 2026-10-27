@@ -178,7 +178,7 @@ def update_status(db, today, cfg):
     pruned = 0
     for oid in list(db["events"]):
         e = db["events"][oid]
-        if e.get("status") in ("rejected", "removed"):
+        if e.get("status") in ("rejected", "removed", "excluded", "merged"):
             continue
         if e.get("end"):
             e["status"] = "ended" if e["end"] < today else "active"
@@ -203,7 +203,7 @@ def check_links(f, db, today, limit):
     for e in act:
         if done["checked"] >= limit:
             break
-        if NO_LINK_CHECK.search(e["url"]):
+        if NO_LINK_CHECK.search(e["url"]) or AGG_URL.search(e["url"]):  # SNS·폼·모음 사이트는 원문 확인 대상이 아님
             if e.get("linkChecked") != today:
                 e["linkChecked"], e["linkStatus"] = today, "skip"
                 done["skip"] += 1
@@ -216,8 +216,8 @@ def check_links(f, db, today, limit):
         except PermissionError:
             e["linkStatus"] = "robots"
             continue
-        except Exception:
-            e["linkStatus"] = "error"
+        except Exception as ex:
+            e["linkStatus"] = f"error {type(ex).__name__}"
             done["error"] += 1
             continue
         if code in (404, 410):
@@ -231,6 +231,52 @@ def check_links(f, db, today, limit):
             e["linkStatus"] = "ok" if code < 400 else f"http {code}"
             done["ok"] += code < 400
     return done
+
+
+def audit(db, today):
+    """매 실행 품질 점검. 유료·공연초대는 제외(excluded), 의심 항목은 issues에 '확인 필요' 사유를 단다.
+    마감일·링크를 추측해 고치지 않고 표시만 한다."""
+    t = dt.date.fromisoformat(today)
+    res = {"excluded": 0, "flagged": 0, "merged": 0}
+    act = [e for e in db["events"].values() if e.get("status") == "active"]
+    for e in act:
+        text = " ".join([e["title"], e.get("prize") or "", *e.get("steps", []), *e.get("needs", [])])
+        if e.get("src") != "ledger" and e["id"] not in PAY_OK and pay_required(text):
+            e["status"], e["excluded"] = "excluded", "유료 조건"
+            res["excluded"] += 1
+            continue
+        if is_show_invite(e["title"] + " " + (e.get("prize") or "")):
+            e["status"], e["excluded"] = "excluded", "공연초대"
+            res["excluded"] += 1
+            continue
+        issues = []
+        if e.get("start") and e.get("end") and e["end"] < e["start"]:
+            issues.append("응모 기간")
+        if e.get("end") and dt.date.fromisoformat(e["end"]) > t + dt.timedelta(days=200):
+            issues.append("마감일")
+        ls = e.get("linkStatus") or ""
+        if ls.startswith("error") or ls == "robots" or ls.startswith("http 4") or ls.startswith("http 5"):
+            issues.append("원문 링크 접속")
+        if issues != e.get("issues", []):
+            e["issues"] = issues
+        res["flagged"] += bool(issues)
+    # 제목(정규화)·마감일이 완전히 같고 주최명 앞 두 글자가 같으면 같은 이벤트(예: 전북특별자치도 / 전북시)
+    seen = {}
+    for e in sorted((x for x in db["events"].values() if x.get("status") == "active"), key=lambda x: (x.get("cand", True), x["id"])):
+        key = (norm_title(e["title"]), e.get("end"), norm_org(e.get("org"))[:2])
+        if len(key[0]) < 8 or not key[2]:
+            continue
+        if key in seen:
+            keep = db["events"][seen[key]]
+            keep.setdefault("srcUrls", [])
+            for u in [e.get("url"), *e.get("srcUrls", [])]:
+                if u and u not in keep["srcUrls"]:
+                    keep["srcUrls"].append(u)
+            e["status"], e["excluded"] = "merged", seen[key]
+            res["merged"] += 1
+        else:
+            seen[key] = e["id"]
+    return res
 
 
 def apply_overrides(db):
@@ -325,9 +371,10 @@ def main(argv=None):
     apply_overrides(db)
     pruned = update_status(db, today, cfg)
     links = {} if a.no_links else check_links(f, db, today, cfg.get("link_checks_per_run", 25))
+    quality = audit(db, today)
     active = sum(1 for e in db["events"].values() if e.get("status") == "active")
     run.update({"added": stats["added"], "merged": stats["merged"], "rejected": stats["rejected"], "pruned": pruned,
-                "links": links, "active": active, "total": len(db["events"]), "requests": f.count,
+                "links": links, "quality": quality, "active": active, "total": len(db["events"]), "requests": f.count,
                 "sec": round(time.time() - t0, 1)})
 
     # 안전장치: 진행 중 건수가 이전의 절반 아래로 급감하면 저장하지 않고 실패로 끝낸다(기존 사이트 유지)

@@ -108,7 +108,7 @@ def enrich(e):
         "value": v, "tax": tax_flag(e, v), "tb": tb, "est": est,
         "acct": need_account(e), "sns": need_sns(e, plats),
         # ok=사람이 확인한 장부에 유료 조건 없음, check=자동 수집·원문 미확인이라 원문 확인 필요
-        "free": "check" if (e.get("cand") or "원문 미확인" in e["tags"] or via_list(e)) else "ok",
+        "free": "check" if (e.get("cand") or e.get("issues") or "원문 미확인" in e["tags"] or via_list(e)) else "ok",
         "freeNote": e.get("freeNote"),
     })
     return out

@@ -90,6 +90,27 @@ def test_aggregator_prize_tidy():
     assert numbered("① 팔로우 ② 댓글") == ["1. 팔로우", "2. 댓글"]
 
 
+def test_audit():
+    db = {"events": {}}
+    st = {"added": 0, "merged": 0}
+    a = ev("SNS 팔로우하고 아메리카노 챙기자 이벤트!!", "https://a.kr/1", end="2026-10-28", org="전북특별자치도")
+    b = ev("SNS 팔로우하고 아메리카노 챙기자 이벤트!!", "https://b.kr/2", end="2026-10-28", org="전북시")
+    c = ev("퀴즈 맞히고 치킨세트 받아가자 이벤트", "https://c.kr/3", end="2027-08-31", org="치킨")
+    d = ev("댓글 이벤트", "https://d.kr/4", end="2026-11-30", org="몰")
+    for x in (a, b, c, d):
+        db["events"][x["id"]] = dict(x, status="active")
+    db["events"][d["id"]]["steps"] = ["상품 선결제 후 리뷰 확인되면 페이백"]  # 수집 뒤에 규칙이 강화된 경우
+    db["events"][a["id"]]["linkStatus"] = "error SSLError"
+    r = P.audit(db, "2026-10-27")
+    assert db["events"][d["id"]]["status"] == "excluded"
+    assert db["events"][c["id"]]["issues"] == ["마감일"]
+    assert db["events"][a["id"]]["issues"] == ["원문 링크 접속"]
+    assert [db["events"][x["id"]]["status"] for x in (a, b)].count("merged") == 1
+    assert r == {"excluded": 1, "flagged": 2, "merged": 1}
+    P.update_status(db, "2026-10-27", {})  # 종료 처리가 제외·병합 상태를 되돌리지 않는다
+    assert db["events"][d["id"]]["status"] == "excluded"
+
+
 def test_status_expiry():
     db = {"events": {}}
     st = {"added": 0, "merged": 0}
