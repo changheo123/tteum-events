@@ -106,6 +106,7 @@ def main():
     # GitHub Pages는 문서 뼈대가 필요하다(Artifact는 자동으로 감싸 주지만 일반 호스팅은 아님)
     html = ('<!doctype html>\n<html lang="ko"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+            '<link rel="canonical" href="https://changheo123.github.io/tteum-events/">\n'
             '<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E'
             '%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%230e7a55%22/%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%227%22 fill=%22%23ffce3d%22/%3E%3C/svg%3E">\n'
             f'{page.split("<header", 1)[0]}</head>\n<body>\n<header{page.split("<header", 1)[1]}\n</body></html>\n')
