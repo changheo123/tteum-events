@@ -45,9 +45,10 @@
    "max_items": 80
   },
   "gangnam": {
-   "enabled": true,
+   "enabled": false,
    "interval_min": 180,
-   "max_items": 80
+   "max_items": 80,
+   "note": "GitHub(해외) 서버에서 접속 시간 초과. 해외 접속 차단으로 보여 우회하지 않고 끔"
   },
   "busan": {
    "enabled": true,
