@@ -1,0 +1,90 @@
+# 매시간 이벤트 수집 → 검증 → 사이트 빌드 → GitHub Pages 배포
+# 수집이 실패하면 기존 DB로, 빌드·브라우저 검증이 실패하면 배포하지 않아 이전 사이트가 그대로 유지된다
+name: collect-and-deploy
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # 매시 17분(UTC 기준, 한국 시간도 매시 17분)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "주기와 관계없이 모든 출처 수집"
+        type: boolean
+        default: false
+  push:
+    branches: [live]
+    paths-ignore: ["data/**", "README.md"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: 단위 테스트
+        run: python -m pytest tests -q
+
+      - name: 이벤트 수집
+        id: collect
+        continue-on-error: true
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: python -m collector.pipeline ${{ (github.event_name == 'workflow_dispatch' && inputs.force) && '--force' || '' }}
+
+      - name: 사이트 빌드(건수·링크·스크립트 검증)
+        run: python build.py
+
+      - name: 실제 브라우저 점검
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory _site &
+          sleep 2
+          mkdir -p /tmp/bt
+          CHROME=$(command -v google-chrome || command -v chromium) node tests/browser_test.mjs http://127.0.0.1:8765/ /tmp/bt
+
+      - name: 수집 데이터 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -q -m "수집 $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && exit 0; sleep 5; done
+          exit 1
+
+      - name: 수집 실패 알림
+        if: steps.collect.outcome == 'failure'
+        run: echo "::warning::수집 단계가 실패해 기존 데이터로 배포했습니다. data/runs.json을 확인하세요."
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
