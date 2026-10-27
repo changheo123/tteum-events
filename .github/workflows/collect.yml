@@ -53,7 +53,8 @@ jobs:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
           NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
           NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-        run: python -m collector.pipeline ${{ (github.event_name == 'workflow_dispatch' && inputs.force) && '--force' || '' }}
+        # 코드가 바뀐 push와 수동 강제 실행은 주기와 관계없이 모든 출처를 다시 수집해 새 코드를 검증한다
+        run: python -m collector.pipeline ${{ (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.force)) && '--force' || '' }}
 
       - name: 사이트 빌드(건수·링크·스크립트 검증)
         run: python build.py

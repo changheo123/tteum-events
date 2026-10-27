@@ -27,6 +27,8 @@ def test_pay_filter():
     assert pay_required("제품 구매 후 리뷰 작성 시 증정")
     assert not pay_required("구매 없이 누구나 응모 가능, 추첨 증정")
     assert not pay_required("댓글 남기면 추첨")
+    assert pay_required("상품 선결제 주문 후 리뷰 확인 완료 후 페이백 진행")  # 체험단 페이백형은 유료
+    assert not pay_required("3만원 이용권 제공, 방문 후 블로그 리뷰")
     e, why = build_event(src="t", sid="1", title="구매 인증 이벤트", url="https://a.kr/1", body="3만원 이상 구매 고객 추첨")
     assert e is None and "유료" in why
 

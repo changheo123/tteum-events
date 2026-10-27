@@ -13,7 +13,7 @@ from pathlib import Path
 
 from .common import Fetcher, now_kst, today_kst
 from .extract import norm_url, norm_title, is_show_invite, pay_required
-from .sources import events_kr, public_boards, api_sources, aggregators
+from .sources import events_kr, public_boards, api_sources, aggregators, experience
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -26,6 +26,9 @@ SOURCES = {
     "eventhouse": aggregators.eventhouse,
     "danawa": aggregators.danawa,
     "sbs": aggregators.sbs,
+    "reviewnote": experience.reviewnote,
+    "mrblog": experience.mrblog,
+    "gangnam": experience.gangnam,
     "busan": public_boards.busan,
     "mohw": public_boards.mohw,
     "touredu": public_boards.touredu,

@@ -34,6 +34,21 @@
    "enabled": true,
    "interval_min": 180
   },
+  "reviewnote": {
+   "enabled": true,
+   "interval_min": 180,
+   "max_items": 80
+  },
+  "mrblog": {
+   "enabled": true,
+   "interval_min": 180,
+   "max_items": 80
+  },
+  "gangnam": {
+   "enabled": true,
+   "interval_min": 180,
+   "max_items": 80
+  },
   "busan": {
    "enabled": true,
    "interval_min": 60
