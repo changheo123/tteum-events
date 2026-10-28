@@ -88,11 +88,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "bs-0ec37ec6de",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "기타",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -127,11 +130,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "bs-74c8aab11c",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "기타",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -164,11 +170,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "bs-c9fd582457",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -35269,11 +35278,14 @@
    "freeNote": null,
    "grade": "A",
    "id": "hub-bs-288",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "퀴즈",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "max": null,
    "min": null,
    "mode": null,
@@ -56417,6 +56429,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-28T15:48:37+09:00"
+  "updated": "2026-10-28T16:41:33+09:00"
  }
 }
