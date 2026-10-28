@@ -32979,12 +32979,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "ek-572e207381",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://events.kr/event.php?id=173",
    "max": null,
    "min": null,
@@ -35119,14 +35121,12 @@
    "freeNote": null,
    "grade": "S",
    "id": "gg-myggd-vol208-survey",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "설문",
    "lastSeen": "2026-10-27",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "max": 10,
    "min": 5,
    "mode": "추첨",
@@ -38766,14 +38766,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "ki-6abeb13a19",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "기타",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -45280,6 +45278,86 @@
    "url": "https://www.mrblog.net/campaigns/1144977",
    "who": null
   },
+  "mb-9a6bf770a0": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-10-28",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "mb-9a6bf770a0",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여"
+   ],
+   "org": "미블",
+   "place": null,
+   "platHint": null,
+   "prize": "페이셜 특수관리 \"다이아몬드 페이셜\" 이용권 (체험 제공, 5명 모집)",
+   "reasons": [],
+   "src": "mb",
+   "srcUrls": [
+    "https://www.mrblog.net/campaigns/1145424"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[파주 운정동] 스파카나안 체험단",
+   "url": "https://www.mrblog.net/campaigns/1145424",
+   "who": null
+  },
+  "mb-9bafa21848": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "mb-9bafa21848",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(포장)"
+   ],
+   "org": "미블",
+   "place": null,
+   "platHint": null,
+   "prize": "6만원 식사권 (2인 체험) (체험 제공, 5명 모집)",
+   "reasons": [],
+   "src": "mb",
+   "srcUrls": [
+    "https://www.mrblog.net/campaigns/1146344"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[화성 동탄] 빨간거짱구네 동탄점 체험단",
+   "url": "https://www.mrblog.net/campaigns/1146344",
+   "who": null
+  },
   "mb-9e37775a58": {
    "announce": null,
    "cand": true,
@@ -48891,6 +48969,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1505961",
    "who": null
   },
+  "rn-0f9de8891e": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-07",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "rn-0f9de8891e",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "4만원 무료식사권 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1493865"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[부산/해운대구] 돌낙집 본점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1493865",
+   "who": null
+  },
   "rn-101db5781c": {
    "announce": null,
    "cand": true,
@@ -49302,7 +49422,8 @@
     "https://www.reviewnote.co.kr/campaigns/1507722",
     "https://www.reviewnote.co.kr/campaigns/1507605",
     "https://www.reviewnote.co.kr/campaigns/1507740",
-    "https://www.reviewnote.co.kr/campaigns/1507957"
+    "https://www.reviewnote.co.kr/campaigns/1507957",
+    "https://www.reviewnote.co.kr/campaigns/1508554"
    ],
    "start": null,
    "status": "active",
@@ -50096,6 +50217,48 @@
    ],
    "title": "[제주/서귀포시] 형제도식당중문본점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1512630",
+   "who": null
+  },
+  "rn-331d7a42b3": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-07",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "rn-331d7a42b3",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "식사권 지급 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1514082"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[대구/북구] 부산앞바다횟집 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1514082",
    "who": null
   },
   "rn-3370e5ae36": {
@@ -52111,6 +52274,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1506270",
    "who": null
   },
+  "rn-663d21cf8b": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-07",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "rn-663d21cf8b",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "40,000원 자유이용권 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1508576"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경북/울진군] 와따요 족발보쌈 울진점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1508576",
+   "who": null
+  },
   "rn-694700cb6b": {
    "announce": null,
    "cand": true,
@@ -52318,6 +52523,48 @@
    ],
    "title": "[서울/마포구] 국제표준금거래소 마포대흥역점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1505972",
+   "who": null
+  },
+  "rn-6d6c4b9cc7": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-07",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "rn-6d6c4b9cc7",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "원고 작업 포인트 (30,000원) 제공 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1508496"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/강동구] 프린트카페 올림픽파크포레온점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1508496",
    "who": null
   },
   "rn-721ed97b07": {
@@ -56376,6 +56623,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1505522",
    "who": null
   },
+  "rn-dfdcbdfa5b": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-07",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "rn-dfdcbdfa5b",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "휠얼라이먼트무료 서비스 5대점검 서비스 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1508570"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/금천구] 티스테이션금천구청점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1508570",
+   "who": null
+  },
   "rn-e2233269da": {
    "announce": null,
    "cand": true,
@@ -56585,6 +56874,48 @@
    ],
    "title": "[서울/구로구] 제니스 레스토랑 카페 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1513146",
+   "who": null
+  },
+  "rn-e4b981e5ff": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-07",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "rn-e4b981e5ff",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "10만원식사권 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1508325"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[전남/순천시] 여수갓육고 순천본점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1508325",
    "who": null
   },
   "rn-e601c833ba": {
@@ -58062,6 +58393,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-28T20:21:01+09:00"
+  "updated": "2026-10-28T21:18:10+09:00"
  }
 }
