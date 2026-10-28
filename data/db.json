@@ -13791,6 +13791,48 @@
    "url": "https://www.eventhouse.kr/site/view.php?no=317991",
    "who": null
   },
+  "eh-680e06314f": {
+   "announce": "2026-11-04",
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "eh-680e06314f",
+   "kind": "댓글",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318605",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "써모스",
+   "place": null,
+   "platHint": "insta",
+   "prize": "써모스 심플 스트레이트 텀블러 600ml 5명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318605"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [
+    "써모스 팔로우",
+    "가져갈 장소 댓글 작성"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "써모스 텀블러 장소 댓글 달고 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318605",
+   "who": null
+  },
   "eh-696c3ee016": {
    "announce": "2026-11-02",
    "cand": true,
@@ -14772,6 +14814,49 @@
    ],
    "title": "스탬프 4개 모으고 상품권 3만원 받자 이벤트!!",
    "url": "https://www.eventhouse.kr/site/view.php?no=312780",
+   "who": null
+  },
+  "eh-73ab4052b5": {
+   "announce": "2026-11-23",
+   "cand": true,
+   "checked": null,
+   "count": 32,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "eh-73ab4052b5",
+   "kind": "기타",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318607",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "국가유산 미디어아트 여수",
+   "place": null,
+   "platHint": "insta",
+   "prize": "삼성 갤럭시 버즈4 1명 31명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318607"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [
+    "팔로우",
+    "현장촬영",
+    "스토리 계정·#태그"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "여수 미디어아트 인증하고 버즈4 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318607",
    "who": null
   },
   "eh-73c8a330cc": {
@@ -17448,6 +17533,48 @@
    ],
    "title": "가루쌀 초성퀴즈 풀고 다이소권 받자 이벤트!!",
    "url": "https://www.eventhouse.kr/site/view.php?no=317773",
+   "who": null
+  },
+  "eh-89ebcee6d7": {
+   "announce": "2026-11-04",
+   "cand": true,
+   "checked": null,
+   "count": 3,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "eh-89ebcee6d7",
+   "kind": "댓글",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318606",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "써모스",
+   "place": null,
+   "platHint": "naver",
+   "prize": "써모스 심플 스트레이트 텀블러 600ml 3명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318606"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [
+    "이웃추가",
+    "인터뷰 공감번호 댓글 작성"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "예니초 공감번호 댓글로 텀블러 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318606",
    "who": null
   },
   "eh-8a7b3eb4d2": {
@@ -56290,6 +56417,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-28T14:54:47+09:00"
+  "updated": "2026-10-28T15:48:37+09:00"
  }
 }
