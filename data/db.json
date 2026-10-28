@@ -32979,12 +32979,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "ek-572e207381",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://events.kr/event.php?id=173",
    "max": null,
    "min": null,
@@ -37406,7 +37408,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/reels/DeygU3PEh-z/"
+    "https://www.instagram.com/reels/DeygU3PEh-z/",
+    "https://www.eventhouse.kr/site/view.php?no=318612"
    ],
    "start": "2026-10-22",
    "status": "active",
@@ -37447,7 +37450,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/De_WS3Ok2op/"
+    "https://www.instagram.com/p/De_WS3Ok2op/",
+    "https://www.eventhouse.kr/site/view.php?no=318620"
    ],
    "start": "2026-10-27",
    "status": "active",
@@ -38394,7 +38398,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/De_L5gWzIV5/"
+    "https://www.instagram.com/p/De_L5gWzIV5/",
+    "https://www.eventhouse.kr/site/view.php?no=318614"
    ],
    "start": "2026-10-28",
    "status": "active",
@@ -38650,7 +38655,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DeiwgnpgZ-8/"
+    "https://www.instagram.com/p/DeiwgnpgZ-8/",
+    "https://www.eventhouse.kr/site/view.php?no=318615"
    ],
    "start": "2026-10-16",
    "status": "active",
@@ -39562,7 +39568,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/Dev7fIhFD3r/"
+    "https://www.instagram.com/p/Dev7fIhFD3r/",
+    "https://www.eventhouse.kr/site/view.php?no=318613"
    ],
    "start": "2026-10-21",
    "status": "active",
@@ -40120,7 +40127,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/DfBM7DbiQLu/"
+    "https://www.instagram.com/p/DfBM7DbiQLu/",
+    "https://www.eventhouse.kr/site/view.php?no=318623"
    ],
    "start": "2026-10-28",
    "status": "active",
@@ -42305,7 +42313,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/De_mL8Mj2rF/"
+    "https://www.instagram.com/p/De_mL8Mj2rF/",
+    "https://www.eventhouse.kr/site/view.php?no=318622"
    ],
    "start": "2026-10-27",
    "status": "active",
@@ -42430,7 +42439,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/De6l7lkkx3W/"
+    "https://www.instagram.com/p/De6l7lkkx3W/",
+    "https://www.eventhouse.kr/site/view.php?no=318621"
    ],
    "start": "2026-10-25",
    "status": "active",
@@ -42596,7 +42606,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/De1Cp0ojySM/"
+    "https://www.instagram.com/p/De1Cp0ojySM/",
+    "https://www.eventhouse.kr/site/view.php?no=318611"
    ],
    "start": "2026-10-23",
    "status": "active",
@@ -42764,7 +42775,8 @@
    "reasons": [],
    "src": "ki",
    "srcUrls": [
-    "https://www.instagram.com/p/De-ypPLmeP-/"
+    "https://www.instagram.com/p/De-ypPLmeP-/",
+    "https://www.eventhouse.kr/site/view.php?no=318610"
    ],
    "start": "2026-10-27",
    "status": "active",
@@ -58391,6 +58403,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-28T22:11:32+09:00"
+  "updated": "2026-10-28T23:05:38+09:00"
  }
 }
