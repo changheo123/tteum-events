@@ -34609,14 +34609,12 @@
    "freeNote": null,
    "grade": "S",
    "id": "gg-myggd-vol208-survey",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "설문",
    "lastSeen": "2026-10-27",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "max": 10,
    "min": 5,
    "mode": "추첨",
@@ -38040,14 +38038,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "ki-6abeb13a19",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "기타",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -53956,6 +53952,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-28T10:40:54+09:00"
+  "updated": "2026-10-28T11:33:40+09:00"
  }
 }
