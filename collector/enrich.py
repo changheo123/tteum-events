@@ -13,7 +13,7 @@ def platforms(e):
     hint = e.get("platHint")
     if "instagram.com" in u or "인스타 참여" in e["tags"] or hint == "insta": p.append("insta")
     if "youtube.com" in u or "youtu.be" in u or "유튜브 참여" in e["tags"] or hint == "yt": p.append("yt")
-    if "blog.naver.com" in u or "cafe.naver.com" in u or hint == "naver": p.append("naver")
+    if any(h in u for h in ("blog.naver.com", "cafe.naver.com", "form.naver.com", "naver.me", "m.site.naver.com")) or hint == "naver": p.append("naver")
     if "x.com/" in u or "twitter.com" in u or hint == "x": p.append("x")
     if "t.me/" in u or hint == "tg": p.append("tg")
     if "coupang.com" in u or "smartstore.naver.com" in u or hint == "shop": p.append("shop")
@@ -38,16 +38,43 @@ def is_public(e):
 
 PRIZE_TYPES = [
     ("coffee", ["커피", "아메리카노", "라떼", "스타벅스", "투썸", "메가", "컴포즈", "공차", "프라페", "밀크티", "카페"]),
+    ("gifticon", ["기프티콘", "해피콘", "모바일상품권", "모바일 상품권", "모바일금액권", "모바일 금액권", "금액권", "교환권", "쿠폰"]),
     ("gift", ["상품권", "네이버페이", "포인트", "금액권", "해피콘", "배달의민족", "배민", "온누리", "튼튼머니", "땡겨요", "배달쿠폰", "기프티콘", "쿠폰"]),
+    ("electronics", ["에어팟", "갤럭시", "아이패드", "아이폰", "애플워치", "갤럭시워치", "워치", "스탠바이미", "헤드셋", "버즈",
+                     "노트북", "태블릿", "이어폰", "공기청정기", "퓨리케어", "고프로", "로봇청소기"]),
     ("food", ["치킨", "피자", "케이크", "디저트", "한우", "브리또", "햄버거", "분식"]),
-    ("goods", ["워치", "에어팟", "고프로", "헤드셋", "카메라", "골드바", "숙박권", "퓨리케어", "크림", "키보드", "독서등",
-               "캐리어", "테이블웨어", "초대권", "버즈", "굿즈", "레디백", "인스탁스", "아이패드", "갤럭시", "교통카드"]),
+    ("goods", ["카메라", "골드바", "숙박권", "크림", "키보드", "독서등", "캐리어", "테이블웨어", "초대권", "굿즈", "레디백", "인스탁스", "교통카드"]),
 ]
 
 
 def prize_types(e):
     p = e.get("prize") or ""
     return [k for k, words in PRIZE_TYPES if any(w in p for w in words)]
+
+
+_FORM_URL = re.compile(r"forms\.gle|docs\.google\.com/forms|form\.naver\.com|moaform\.com|smore\.im|m\.site\.naver\.com|answer\.moaform|naver\.me/", re.I)
+_FORM_WORD = re.compile(r"구글\s*폼|네이버\s*폼|폼제출|폼\s*제출|모어폼|스모어")
+
+
+def entry_modes(e):
+    """참여 방법 칩: 폼·댓글·퀴즈·설문은 겹칠 수 있고, 체험단이 아니면 일반이다."""
+    url = " ".join(x or "" for x in (e.get("url"), e.get("listUrl"), " ".join(e.get("steps") or [])))
+    kind = e.get("kind") or ""
+    modes = []
+    plat = (e.get("platform") or "").lower()
+    if _FORM_URL.search(url) or _FORM_WORD.search(url) or "form" in plat or "smore" in plat:
+        modes.append("form")
+    if kind == "댓글":
+        modes.append("comment")
+    if kind == "퀴즈":
+        modes.append("quiz")
+    if kind in ("설문", "투표"):
+        modes.append("survey")
+    if kind == "체험단":
+        modes.append("exp")
+    else:
+        modes.append("general")
+    return modes
 
 
 def prize_value(e):
@@ -105,6 +132,7 @@ def enrich(e):
     out = dict(e)
     out.update({
         "plats": plats, "pub": is_public(e), "viaList": via_list(e), "ptypes": prize_types(e),
+        "entries": entry_modes(e), "bot": bool(e.get("bot") or e.get("src") == "pp"),
         "value": v, "tax": tax_flag(e, v), "tb": tb, "est": est,
         "acct": need_account(e), "sns": need_sns(e, plats),
         # ok=사람이 확인한 장부에 유료 조건 없음, check=자동 수집·원문 미확인이라 원문 확인 필요
