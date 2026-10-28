@@ -193,6 +193,47 @@
    "url": "https://www.busan.go.kr/minwon/eventresult/EVTView?srchIdx=1820&prgcode=EVT_00000000001&event_gubun=SITE",
    "who": "부산시 누리집 회원 대상"
   },
+  "dn-0a6026872d": {
+   "announce": "2026-11-04",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "dn-0a6026872d",
+   "kind": "기타",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "다나와 회원 로그인 후 응모"
+   ],
+   "org": "다나와 · 피씨디렉트",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "dn",
+   "srcUrls": [
+    "https://event.danawa.com/pcdirecta_261028"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "GIGABYTE B850M GAMING X WIFI6E 피씨디렉트 룰렛 이벤트!",
+   "url": "https://event.danawa.com/pcdirecta_261028",
+   "who": null
+  },
   "dn-12f4589c4f": {
    "announce": "2026-11-03",
    "cand": true,
@@ -234,6 +275,88 @@
    "url": "https://event.danawa.com/bravotec2_261027",
    "who": null
   },
+  "dn-1578e19276": {
+   "announce": "2026-11-05",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "dn-1578e19276",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "다나와 회원 로그인 후 응모"
+   ],
+   "org": "다나와 · 제이웍스코리아",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "dn",
+   "srcUrls": [
+    "https://event.danawa.com/jayworks1_261028"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "Creative XF1 (정품) 채널 스피커 제품찾기 이벤트!",
+   "url": "https://event.danawa.com/jayworks1_261028",
+   "who": null
+  },
+  "dn-24b2cce6c7": {
+   "announce": "2026-11-05",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "dn-24b2cce6c7",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "다나와 회원 로그인 후 응모"
+   ],
+   "org": "다나와 · 코잇",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "dn",
+   "srcUrls": [
+    "https://event.danawa.com/coit1_261028"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "ASUS PRIME B860M-A-CSM 코잇 제품찾기 이벤트!",
+   "url": "https://event.danawa.com/coit1_261028",
+   "who": null
+  },
   "dn-29d2d66802": {
    "announce": "2026-11-06",
    "cand": true,
@@ -273,6 +396,47 @@
    ],
    "title": "YMTC ZHITAI Ti600s M.2 NVMe (1TB) SSD 체험단 이벤트",
    "url": "https://event.danawa.com/zhitai_261023",
+   "who": null
+  },
+  "dn-2da4f0099a": {
+   "announce": "2026-11-06",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-05",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "dn-2da4f0099a",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "다나와 회원 로그인 후 응모"
+   ],
+   "org": "다나와 · 데이븐",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "dn",
+   "srcUrls": [
+    "https://event.danawa.com/daven_261028"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "DAVEN 벤투스 420 MESH ARGB 블랙 케이스 체험단 이벤트",
+   "url": "https://event.danawa.com/daven_261028",
    "who": null
   },
   "dn-34ea5b5c60": {
@@ -562,6 +726,47 @@
    "url": "https://event.danawa.com/bravotec4_261027",
    "who": null
   },
+  "dn-82dcc4a090": {
+   "announce": "2026-11-05",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "dn-82dcc4a090",
+   "kind": "댓글",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "다나와 회원 로그인 후 응모"
+   ],
+   "org": "다나와 · 코잇",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "dn",
+   "srcUrls": [
+    "https://event.danawa.com/coit2_261028"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "BIWIN NV7200 M.2 NVMe 장점 댓글 이벤트!",
+   "url": "https://event.danawa.com/coit2_261028",
+   "who": null
+  },
   "dn-c6a04f9686": {
    "announce": "2026-11-03",
    "cand": true,
@@ -642,6 +847,48 @@
    ],
    "title": "앱코 케이스 상품의견 이벤트!",
    "url": "https://event.danawa.com/abkoa_261026",
+   "who": null
+  },
+  "dn-e2477254db": {
+   "announce": "2026-11-05",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-28",
+   "grade": "C",
+   "id": "dn-e2477254db",
+   "kind": "체험단",
+   "lastSeen": "2026-10-28",
+   "linkChecked": "2026-10-28",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "다나와 회원 로그인 후 응모"
+   ],
+   "org": "다나와 · MSI",
+   "place": null,
+   "platHint": null,
+   "prize": null,
+   "reasons": [],
+   "src": "dn",
+   "srcUrls": [
+    "https://event.danawa.com/msi_261028",
+    "https://event.danawa.com/msi2_261028"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "로그인 필요"
+   ],
+   "title": "MSI MPG 코어리퀴드 P22 360 블랙 쿨러 체험단 이벤트",
+   "url": "https://event.danawa.com/msi_261028",
    "who": null
   },
   "dn-e6e1e08d01": {
@@ -34320,12 +34567,14 @@
    "freeNote": null,
    "grade": "S",
    "id": "gg-myggd-vol208-survey",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-10-27",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "max": 10,
    "min": 5,
    "mode": "추첨",
@@ -37749,11 +37998,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "ki-6abeb13a19",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "기타",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -51412,6 +51664,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-28T08:51:32+09:00"
+  "updated": "2026-10-28T09:45:06+09:00"
  }
 }
