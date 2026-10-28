@@ -1946,5 +1946,128 @@
    }
   },
   "total": 1218
+ },
+ {
+  "active": 1089,
+  "added": 55,
+  "at": "2026-10-28T10:40:54+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 0,
+   "ok": 60,
+   "skip": 1
+  },
+  "merged": 473,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 13,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 88,
+  "sec": 90.6,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "listed": 4,
+    "merged": 4,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 251,
+    "new": 1,
+    "requests": 10,
+    "sec": 11.1,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 163,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.0,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 168,
+    "merged": 164,
+    "new": 0,
+    "requests": 2,
+    "sec": 2.6,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "mohw": {
+    "listed": 12,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 2.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "mrblog": {
+    "listed": 30,
+    "merged": 14,
+    "new": 8,
+    "requests": 1,
+    "sec": 1.3,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "listed": 82,
+    "merged": 34,
+    "new": 46,
+    "requests": 1,
+    "sec": 0.6,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "sbs": {
+    "listed": 17,
+    "merged": 6,
+    "new": 0,
+    "requests": 1,
+    "sec": 0.7,
+    "skipped": 11,
+    "status": "ok"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "listed": 5,
+    "merged": 0,
+    "new": 0,
+    "requests": 1,
+    "sec": 1.2,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "youtube": {
+    "reason": "YT_API_KEY 없음",
+    "status": "unconfigured"
+   }
+  },
+  "total": 1273
  }
 ]
