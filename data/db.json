@@ -32855,14 +32855,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "ek-572e207381",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "설문",
    "lastSeen": "2026-10-28",
    "linkChecked": "2026-10-28",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": "https://events.kr/event.php?id=173",
    "max": null,
    "min": null,
@@ -57467,6 +57465,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-28T17:39:15+09:00"
+  "updated": "2026-10-28T18:34:09+09:00"
  }
 }
