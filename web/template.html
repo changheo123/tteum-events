@@ -76,8 +76,9 @@ h1 span { font-family: var(--f-display); font-size: clamp(64px, 12vw, 96px); lin
 .more { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--muted); cursor: pointer; min-height: 40px; }
 .more input { width: 18px; height: 18px; accent-color: var(--brand); margin: 0; flex: none; }
 .tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.field { font: inherit; font-size: 14.5px; min-height: 40px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 0 12px; }
-.search { flex: 1 1 220px; min-width: 0; }
+.field { font: inherit; font-size: 14.5px; min-height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); padding: 0 12px; }
+.search { flex: 1 1 100%; min-width: 0; }
+.tools select.field { flex: 1 1 9.2rem; max-width: 100%; }
 select.field { padding-right: 8px; cursor: pointer; }
 .btn { font: inherit; font-size: 14px; font-weight: 700; min-height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
 .btn[aria-expanded="true"] { background: var(--pill); color: var(--on-pill); border-color: var(--pill); }
@@ -93,8 +94,9 @@ section { display: grid; gap: 12px; }
 h2 { margin: 0; display: flex; align-items: baseline; gap: 8px; font-size: clamp(19px, 3vw, 22px); font-weight: 800; text-wrap: balance; }
 h2 span { font-size: 14.5px; font-weight: 500; color: var(--muted); }
 .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); gap: 12px; align-items: start; }
-.tk { display: grid; grid-template-columns: 74px minmax(0, 1fr); background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; cursor: pointer; }
+.tk { display: grid; grid-template-columns: 84px minmax(0, 1fr); background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; cursor: pointer; }
 .tk:hover { border-color: var(--dash); }
+.tk.today { box-shadow: inset 0 0 0 2px var(--sun); }
 .stub { background: var(--calm); color: var(--calm-ink); border-right: 2px dashed var(--dash); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 14px 4px; text-align: center; }
 .stub b { font-family: var(--f-display); font-weight: 400; font-size: 26px; line-height: 1; font-variant-numeric: tabular-nums; }
 .stub span { font-size: 12px; color: var(--ink2); }
@@ -118,6 +120,7 @@ h2 span { font-size: 14.5px; font-weight: 500; color: var(--muted); }
 .tag.free { font-weight: 700; background: transparent; border-color: var(--brand-ink); color: var(--brand-ink); }
 .tag.new { font-weight: 800; background: var(--sun); color: var(--on-sun); border-color: transparent; }
 .tag.mine { font-weight: 700; background: var(--pill); color: var(--on-pill); border-color: transparent; }
+.tag.bot { font-weight: 800; background: var(--sun); color: var(--on-sun); border-color: transparent; }
 .gS { background: var(--s-bg); color: var(--s-fg); }
 .gA { background: var(--a-bg); color: var(--a-fg); }
 .gC { background: var(--x-bg); color: var(--x-fg); }
@@ -133,17 +136,20 @@ details[open] summary::before { content: "−"; }
 .facts p, .facts ul, .facts ol { margin: 0; color: var(--ink2); line-height: 1.6; }
 .facts ul, .facts ol { padding-left: 1.2em; display: grid; gap: 3px; }
 .unk { color: var(--x-fg); font-weight: 700; }
-.foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding-top: 9px; border-top: 1px solid var(--line2); font-size: 12px; color: var(--muted); }
-.acts { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-left: auto; }
+.howto { margin: 0; font-size: 13px; line-height: 1.45; color: var(--ink2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.foot { display: flex; flex-direction: column; align-items: stretch; gap: 8px; padding-top: 9px; border-top: 1px solid var(--line2); font-size: 12px; color: var(--muted); }
+.acts { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .ib { font: inherit; font-size: 13px; font-weight: 700; min-height: 42px; padding: 0 11px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--ink2); cursor: pointer; display: inline-flex; align-items: center; gap: 5px; }
 .ib svg { width: 15px; height: 15px; }
 .ib[aria-pressed="true"] { background: var(--calm); color: var(--calm-ink); border-color: var(--calm-ink); }
-.go { display: inline-flex; align-items: center; gap: 5px; min-height: 42px; padding: 0 15px; border-radius: 10px; background: var(--brand); color: var(--on-brand); font-size: 14.5px; font-weight: 700; text-decoration: none; }
+.go { display: inline-flex; align-items: center; justify-content: center; gap: 5px; min-height: 48px; padding: 0 15px; border-radius: 10px; background: var(--brand); color: var(--on-brand); font-size: 15px; font-weight: 700; text-decoration: none; }
+.go.main { width: 100%; }
 .go:hover { filter: brightness(1.08); }
 .go svg { width: 14px; height: 14px; }
 .go.alt { background: var(--card); color: var(--brand-ink); border: 1px solid var(--brand-ink); }
 .empty { padding: 32px 16px; text-align: center; color: var(--muted); background: var(--card); border: 1px dashed var(--line); border-radius: 16px; display: grid; gap: 10px; justify-items: center; }
 .empty p { margin: 0; max-width: 34em; }
+.result { margin: 0; font-size: 13.5px; font-weight: 700; color: var(--muted); }
 
 /* 종료·출처 */
 .fold { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 10px 15px; }
@@ -187,11 +193,11 @@ footer p { margin: 0; max-width: 46em; }
     <div class="intro">
       <div class="mark"><b>틈틈</b><span id="stamp"></span></div>
       <h1><small>도움되는 이벤트</small><span>줍줍</span></h1>
-      <p class="lede">돈 들이지 않고 참여할 수 있는 경품·댓글·퀴즈·설문 이벤트를 매시간 자동으로 모아 마감 순으로 보여줘요. 구매·결제·참가비가 필요한 이벤트는 싣지 않아요. <b>승인 전</b>·<b>무료 여부 원문 확인</b> 표시가 있는 건은 자동 수집한 값이라 참여 전에 원문을 꼭 먼저 확인해 주세요.</p>
+      <p class="lede">돈 들이지 않고 참여할 수 있는 경품·댓글·퀴즈·설문 이벤트를 마감 순으로 보여줘요. 구매·결제·공연 초대·특정 지역 주민만 되는 행사는 빼 두었어요. <b>승인 전</b>·<b>뽀삐 발굴</b>은 자동으로 모은 값이라 참여 전에 공식 페이지를 먼저 확인해 주세요.</p>
     </div>
     <div class="stats" aria-label="마감 현황">
-      <div class="stat hot"><b id="sHot">0</b><span>오늘·내일 마감</span></div>
-      <div class="stat"><b id="sWeek">0</b><span>이번 주 마감</span></div>
+      <div class="stat hot"><b id="sHot">0</b><span>오늘 마감</span></div>
+      <div class="stat"><b id="sWeek">0</b><span>7일 이내 마감</span></div>
       <div class="stat"><b id="sAll">0</b><span>지금 참여 가능</span></div>
     </div>
   </div>
@@ -202,7 +208,7 @@ footer p { margin: 0; max-width: 46em; }
     <div class="chips" id="chips" role="group" aria-label="이벤트 종류로 걸러보기"></div>
     <div class="tools">
       <label class="sr" for="q">이벤트 검색</label>
-      <input class="field search" id="q" type="search" placeholder="이벤트·주최·경품 검색" autocomplete="off">
+      <input class="field search" id="q" type="search" placeholder="이벤트, 주최, 경품, 참여 방법 검색" autocomplete="off" enterkeyhint="search">
       <label class="sr" for="sort">정렬</label>
       <select class="field" id="sort">
         <option value="due">마감 임박순</option>
@@ -210,11 +216,13 @@ footer p { margin: 0; max-width: 46em; }
         <option value="easy">참여 간편순</option>
         <option value="value">경품 가치순</option>
       </select>
-      <button type="button" class="btn" id="fBtn" aria-expanded="false" aria-controls="panel">필터<span class="n" id="fN" hidden>0</span></button>
+      <label class="sr" for="fPlat">플랫폼</label>
+      <select class="field" id="fPlat"></select>
+      <label class="sr" for="fPrize">경품 종류</label>
+      <select class="field" id="fPrize"></select>
+      <button type="button" class="btn" id="fBtn" aria-expanded="false" aria-controls="panel">더보기<span class="n" id="fN" hidden>0</span></button>
     </div>
     <div class="panel" id="panel" hidden>
-      <label class="sel" for="fPlat">이벤트 플랫폼<select class="field" id="fPlat"></select></label>
-      <label class="sel" for="fPrize">경품 종류<select class="field" id="fPrize"></select></label>
       <label class="sel" for="fDue">마감일<select class="field" id="fDue"></select></label>
       <label class="sel" for="fTime">예상 참여 시간<select class="field" id="fTime"></select></label>
       <div class="checks">
@@ -234,9 +242,8 @@ footer p { margin: 0; max-width: 46em; }
 
 <main><div class="wrap">
   <div id="list" aria-live="polite"></div>
-  <details class="fold" id="endedBox"><summary id="endedSum">종료된 이벤트</summary><ol class="ended" id="ended"></ol></details>
   <details class="fold" id="srcBox"><summary>수집 출처 현황</summary>
-    <p>수집기가 매시간 공개 게시판·모음 사이트를 robots.txt 규칙대로 읽고, 구매·결제 조건이 있는 글과 공연초대를 빼고, 같은 이벤트는 하나로 합쳐요. 자동 수집한 이벤트는 '승인 전'으로 표시되고, 사람이 원문을 확인하면 승인으로 바뀌어요.</p>
+    <p>수집기가 매시간 공개 게시판·모음 사이트를 robots.txt 규칙대로 읽고, 구매·결제 조건이 있는 글과 공연 초대·특정 지역 주민만 되는 행사를 빼요. 마감일(한국 시간)이 지난 행사는 목록에서 지워요. 도우미 봇 뽀삐가 찾은 행사는 <code>data/bot_events.json</code>에서 합치고 '뽀삐 발굴'로 표시해요. 자동 수집은 '승인 전'이며, 사람이 원문을 확인하면 승인으로 바뀌어요.</p>
     <div class="tbl"><table><thead><tr><th>출처</th><th>상태</th><th>현재 건수</th><th>가져오는 방식</th></tr></thead><tbody id="src"></tbody></table></div>
   </details>
 </div></main>
@@ -273,30 +280,31 @@ const PLATS = {
   shop: ["쇼핑몰", '<path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/>'],
   web: ["공식 누리집", '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c3 3.2 3 13.8 0 17M12 3.5c-3 3.2-3 13.8 0 17"/>'],
 };
-// 메인 카테고리(이벤트 유형). 한 이벤트가 여러 카테고리에 속할 수 있음
+// 찾기 칩. 경품·플랫폼은 옆의 선택 상자에서 겹쳐 걸러진다
 const CATS = [
-  ["전체 이벤트", () => true],
-  ["간편 응모", e => e.grade === "S"],
-  ["댓글·퀴즈", e => ["댓글", "퀴즈", "투표"].includes(e.kind)],
-  ["SNS 이벤트", e => e.plats.some(p => ["insta", "naver", "x", "tg"].includes(p))],
-  ["유튜브 이벤트", e => e.plats.includes("yt")],
-  ["라디오·사연", e => e.kind === "라디오"],
-  ["설문조사", e => e.kind === "설문"],
-  ["무료 체험단", e => e.kind === "체험단"],
-  ["쇼핑몰 이벤트", e => e.plats.includes("shop")],
-  ["공공기관 이벤트", e => e.pub],
-  ["기타 무료 이벤트", e => e.kind === "기타"],
+  ["전체", () => true],
+  ["오늘 마감", e => e.days === 0],
+  ["폼", e => (e.entries || []).includes("form")],
+  ["댓글", e => (e.entries || []).includes("comment")],
+  ["퀴즈", e => (e.entries || []).includes("quiz")],
+  ["설문·투표", e => (e.entries || []).includes("survey")],
+  ["체험단", e => (e.entries || []).includes("exp")],
+  ["일반", e => (e.entries || []).includes("general")],
+  ["뽀삐 발굴", e => !!e.bot],
 ];
-const PRIZE = { coffee: "커피·음료", gift: "상품권·포인트", food: "음식", goods: "실물 경품", none: "경품 확인 필요" };
+const PRIZE = { gifticon: "기프티콘", electronics: "전자기기", coffee: "커피·음료", gift: "상품권·포인트", food: "음식", goods: "실물 경품", none: "경품 확인 필요" };
 const TIME = ["10초 이내", "1분 이내", "5분 이내", "5분 이상"];
 const DUE = [["all", "전체"], ["d1", "오늘·내일"], ["d6", "이번 주(6일 이내)"], ["d14", "2주 이내"], ["d30", "30일 이내"], ["none", "마감일 미표기"]];
 const SORTS = { due: "마감 임박순", new: "최신 등록순", easy: "참여 간편순", value: "경품 가치순" };
 
-const state = { cat: "전체 이벤트", q: "", sort: "due", plat: "all", prize: "all", due: "all", time: "all",
+const state = { cat: "전체", q: "", sort: "due", plat: "all", prize: "all", due: "all", time: "all",
   noAcct: false, noSns: false, noCost: false, orig: false, fav: false, hideDone: false, showX: false, onlyOk: false };
 
 function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
 function kstToday() { return new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10); }
+// 마감일 당일(Asia/Seoul)까지는 보여주고, 그 다음 날부터는 그리지 않는다
+function isCurrent(e) { return !e || !e.end || e.end >= kstToday(); }
+window.isCurrent = isCurrent;
 function utc(d) { const [y, m, dd] = d.split("-").map(Number); return Date.UTC(y, m - 1, dd); }
 function md(d) { if (!d) return ""; const t = new Date(utc(d)); return `${t.getUTCMonth() + 1}/${t.getUTCDate()} ${WD[t.getUTCDay()]}`; }
 function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : null; }
@@ -317,17 +325,17 @@ function save(k, s) { try { localStorage.setItem(k, JSON.stringify([...s])); } c
 const fav = load("tt-fav"), done = load("tt-done");
 
 const today = kstToday();
-const all = DATA.events.map(e => ({ ...e, days: e.end ? Math.round((utc(e.end) - utc(today)) / 864e5) : null,
+const all = DATA.events.filter(isCurrent).map(e => ({ ...e, entries: e.entries || [], bot: !!(e.bot || e.src === "pp"),
+  days: e.end ? Math.round((utc(e.end) - utc(today)) / 864e5) : null,
   isNew: !!e.checked && (utc(today) - utc(e.checked)) / 864e5 <= 3 }));
 const live = all.filter(e => e.days === null || e.days >= 0);
-const gone = all.filter(e => e.days !== null && e.days < 0).sort((a, b) => b.end.localeCompare(a.end));
 const byId = new Map(all.map(e => [e.id, e]));
 const easy = live.filter(e => e.grade !== "X");
-document.getElementById("sHot").textContent = easy.filter(e => e.days !== null && e.days <= 1).length;
-document.getElementById("sWeek").textContent = easy.filter(e => e.days !== null && e.days >= 2 && e.days <= 6).length;
+document.getElementById("sHot").textContent = easy.filter(e => e.days === 0).length;
+document.getElementById("sWeek").textContent = easy.filter(e => e.days !== null && e.days <= 6).length;
 document.getElementById("sAll").textContent = easy.length;
 const m = DATA.meta;
-document.getElementById("stamp").textContent = `${m.built.slice(5, 10).replace("-", "/")} ${m.built.slice(11, 16)} 자동 수집 반영 · 사람 확인 ${m.approved}건 · 자동 수집 후보 ${m.candidates}건`;
+document.getElementById("stamp").textContent = `${m.built.slice(5, 10).replace("-", "/")} ${m.built.slice(11, 16)} 반영 · 확인 ${m.approved} · 자동 ${m.candidates} · 뽀삐 ${m.bot || 0}`;
 
 // 카테고리를 뺀 나머지 조건(검색·필터·토글)
 function passBase(e) {
@@ -351,7 +359,7 @@ function passBase(e) {
   if (state.fav && !fav.has(e.id)) return false;
   if (state.hideDone && done.has(e.id)) return false;
   if (state.q) {
-    const hay = [e.title, e.org, e.prize, e.kind, ...e.tags, ...e.plats.map(p => PLATS[p][0])].join(" ").toLowerCase();
+    const hay = [e.title, e.org, e.prize, e.kind, ...(e.steps || []), ...e.tags, ...e.plats.map(p => PLATS[p][0])].join(" ").toLowerCase();
     if (!state.q.toLowerCase().split(/\s+/).filter(Boolean).every(w => hay.includes(w))) return false;
   }
   return true;
@@ -370,8 +378,8 @@ function chips() {
 function fillSelects() {
   const opt = (v, label, n) => `<option value="${v}">${esc(label)}${n === undefined ? "" : ` (${n})`}</option>`;
   const cnt = f => live.filter(f).length;
-  document.getElementById("fPlat").innerHTML = opt("all", "전체") + Object.entries(PLATS).map(([k, [n]]) => opt(k, n, cnt(e => e.plats.includes(k)))).join("");
-  document.getElementById("fPrize").innerHTML = opt("all", "전체") + Object.entries(PRIZE).map(([k, n]) => opt(k, n, cnt(e => k === "none" ? !e.ptypes.length : e.ptypes.includes(k)))).join("");
+  document.getElementById("fPlat").innerHTML = opt("all", "플랫폼 전체") + Object.entries(PLATS).map(([k, [n]]) => opt(k, n, cnt(e => e.plats.includes(k)))).join("");
+  document.getElementById("fPrize").innerHTML = opt("all", "경품 전체") + Object.entries(PRIZE).map(([k, n]) => opt(k, n, cnt(e => k === "none" ? !e.ptypes.length : e.ptypes.includes(k)))).join("");
   document.getElementById("fDue").innerHTML = DUE.map(([k, n]) => opt(k, n)).join("");
   document.getElementById("fTime").innerHTML = opt("all", "전체") + TIME.map((n, i) => opt(String(i), n)).join("") + opt("unk", "확인 필요");
 }
@@ -384,19 +392,28 @@ function timeText(e) {
 function platIcons(e) {
   return `<span class="plats">${e.plats.map(p => `<span class="pf" title="${PLATS[p][0]}">${SVG(PLATS[p][1])}<span class="sr">${PLATS[p][0]}</span></span>`).join("")}</span>`;
 }
-function linkLabel(e, detail) { return e.viaList ? "목록에서 원문 찾기" : detail ? "응모하러 가기" : "원문 바로가기"; }
+function linkLabel(e) { return e.viaList ? "목록에서 공식 글 열기" : "공식 페이지에서 참여"; }
+function dueBadge(e) {
+  if (e.days === null) return ["기한", "원문 확인"];
+  if (e.days === 0) return ["오늘", "마감"];
+  if (e.days === 1) return ["D-1", "내일"];
+  return [`D-${e.days}`, md(e.end)];
+}
 function toggles(e) {
   return `<button type="button" class="ib" data-act="fav" data-id="${esc(e.id)}" aria-pressed="${fav.has(e.id)}" title="저장">${I_SAVE}<span>저장</span></button>` +
     `<button type="button" class="ib" data-act="done" data-id="${esc(e.id)}" aria-pressed="${done.has(e.id)}" title="참여함 표시">${I_DONE}<span>참여함</span></button>`;
 }
 
 function card(e) {
-  const d = e.days === null ? "원문" : e.days === 0 ? "오늘" : `D-${e.days}`;
+  const [d, dSub] = dueBadge(e);
   const hot = e.days !== null && e.days <= 1;
+  const todayEnd = e.days === 0;
   const [main, note] = splitPrize(e.prize);
   const count = e.count ? `${e.count.toLocaleString()}명${e.mode ? " " + e.mode : ""}` : (e.mode || "");
   const gradeTag = { S: '<span class="tag g gS">간단 참여</span>', A: '<span class="tag g gA">조건 있음</span>', X: '<span class="tag g gX">조건 많음</span>', C: '<span class="tag g gC">승인 전</span>' }[e.grade];
   const tags = [];
+  if (e.bot) tags.push('<span class="tag bot">뽀삐 발굴</span>');
+  if ((e.entries || []).includes("form")) tags.push('<span class="tag">폼</span>');
   if (e.isNew) tags.push('<span class="tag new">신규</span>');
   if (done.has(e.id)) tags.push('<span class="tag mine">참여함</span>');
   tags.push(e.free === "ok" ? '<span class="tag free">무료 참여</span>' : '<span class="tag gX">무료 여부 원문 확인</span>');
@@ -408,21 +425,24 @@ function card(e) {
   if (e.grade === "X") e.reasons.forEach(r => tags.push(`<span class="tag gX">${esc(r)}</span>`));
   const time = timeText(e);
   const url = safeUrl(e.url);
-  const checked = e.cand ? "승인 전" : e.checked ? e.checked.slice(5).replace("-", "/") + " 확인" : "목록 정보";
-  return `<li class="tk${hot ? " hot" : ""}${e.cand ? " cand" : ""}${done.has(e.id) ? " done" : ""}" data-id="${esc(e.id)}">
-    <div class="stub"><b>${d}</b><span>${e.end ? md(e.end) : "마감 확인"}</span></div>
+  const checked = e.cand ? "승인 전 · 참여 전 공식 페이지 확인" : e.checked ? e.checked.slice(5).replace("-", "/") + " 확인" : "목록 정보";
+  const step = (e.steps || [])[0];
+  return `<li class="tk${hot ? " hot" : ""}${todayEnd ? " today" : ""}${e.cand ? " cand" : ""}${done.has(e.id) ? " done" : ""}" data-id="${esc(e.id)}">
+    <div class="stub"><b>${esc(d)}</b><span>${esc(dSub)}</span></div>
     <div class="body">
-      <div class="meta">${platIcons(e)}<span class="k">${esc(e.kind)}</span><span>${esc(e.org)}</span>${time ? `<span>${time}</span>` : ""}</div>
+      <div class="meta">${platIcons(e)}<span class="k">${esc(e.kind)}</span><span>${esc(e.org || "")}</span>${time ? `<span>${time}</span>` : ""}</div>
       <div class="prize"><strong>${esc(main)}</strong>${count ? `<em>${esc(count)}</em>` : ""}</div>
       ${note ? `<p class="note">${esc(note)}</p>` : ""}
       <p class="ttl">${esc(e.title)}</p>
+      ${step ? `<p class="howto">${esc(step)}</p>` : ""}
       <div class="tags">${tags.join("")}</div>
-      <div class="foot"><span>${checked} · 참여 전 원문 확인</span><div class="acts">${toggles(e)}<button type="button" class="ib" data-act="open" data-id="${esc(e.id)}">자세히</button>${url ? `<a class="go${e.viaList ? " alt" : ""}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${linkLabel(e)}${ARROW}</a>` : ""}</div></div>
+      <div class="foot"><span>${checked}</span>${url ? `<a class="go main${e.viaList ? " alt" : ""}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${linkLabel(e)}${ARROW}</a>` : ""}<div class="acts">${toggles(e)}<button type="button" class="ib" data-act="open" data-id="${esc(e.id)}">자세히</button></div></div>
     </div></li>`;
 }
 
 const GROUPS = [
-  ["오늘·내일 마감", e => e.days !== null && e.days <= 1],
+  ["오늘 마감", e => e.days === 0],
+  ["내일 마감", e => e.days === 1],
   ["이번 주 마감", e => e.days !== null && e.days >= 2 && e.days <= 6],
   ["여유 있게", e => e.days !== null && e.days >= 7],
   ["마감일은 원문 확인", e => e.days === null],
@@ -453,14 +473,10 @@ function renderList() {
   } else {
     // 마감 임박 영역은 정렬과 관계없이 맨 위에 따로 둔다
     const hot = list.filter(GROUPS[0][1]);
-    html = sec("오늘·내일 마감", hot) + sec(hot.length ? "그 밖의 이벤트" : "진행 중 이벤트", list.filter(e => !GROUPS[0][1](e)), SORTS[state.sort]);
+    html = sec("오늘 마감", hot) + sec(hot.length ? "그 밖의 이벤트" : "진행 중 이벤트", list.filter(e => !GROUPS[0][1](e)), SORTS[state.sort]);
   }
-  document.getElementById("list").innerHTML = `<div style="display:grid;gap:30px">${html || emptyHtml()}</div>`;
-
-  const g = gone.filter(e => catTest(state.cat)(e));
-  document.getElementById("endedBox").hidden = !g.length;
-  document.getElementById("endedSum").textContent = `종료된 이벤트 ${g.length}건`;
-  document.getElementById("ended").innerHTML = g.map(e => `<li><b>${esc(e.title)}</b><span>${esc(e.org)} · ${md(e.end)} 마감${safeUrl(e.url) ? ` · <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">원문</a>` : ""}</span></li>`).join("");
+  const head = list.length ? `<p class="result">${list.length.toLocaleString()}건 · ${esc(SORTS[state.sort])}</p>` : "";
+  document.getElementById("list").innerHTML = `<div style="display:grid;gap:30px">${head}${html || emptyHtml()}</div>`;
 
   const n = ["plat", "prize", "due", "time"].filter(k => state[k] !== "all").length + ["noAcct", "noSns", "noCost", "orig", "fav", "hideDone", "onlyOk", "showX"].filter(k => state[k]).length;
   const fN = document.getElementById("fN"); fN.hidden = !n; fN.textContent = n;
@@ -504,6 +520,7 @@ function openDetail(id) {
   else notes.push("주최 원문을 아직 열어보지 않은 목록 정보라, 무료 여부와 조건을 원문에서 꼭 확인해 주세요." + (e.freeNote ? ` (${e.freeNote})` : ""));
   if ((e.issues || []).length) notes.push(`자동 점검에서 ${e.issues.join("·")} 확인이 필요하다고 나왔어요. 원문에서 직접 확인해 주세요.`);
   if (e.tax) notes.push("고가 경품이 있어 당첨 시 제세공과금(보통 경품가의 22%)을 낼 수 있어요. 원문 안내를 확인해 주세요.");
+  if (e.bot) notes.unshift("뽀삐가 찾아 둔 행사예요. 기간·경품·참여 조건은 공식 페이지를 기준으로 확인해 주세요.");
   if (e.viaList) notes.push("응모 링크가 이벤트 목록 사이트로 연결돼요. 그 페이지에서 주최 원문으로 이동해 응모해 주세요.");
   notes.push("마감·경품·조건이 바뀔 수 있어요. 원문이 기준이에요.");
   const facts = [
@@ -521,7 +538,7 @@ function openDetail(id) {
   ];
   document.getElementById("dMeta").innerHTML = `${platIcons(e)}<span class="k">${esc(e.kind)}</span><span>${e.days === null ? "마감일 원문 확인" : e.days < 0 ? "종료" : e.days === 0 ? "오늘 마감" : `D-${e.days}`}</span>`;
   document.getElementById("dBody").innerHTML = `<h2 id="dTitle">${esc(e.title)}</h2><div class="facts">${facts.join("")}</div>`;
-  document.getElementById("dFoot").innerHTML = toggles(e) + (url ? `<a class="go${e.viaList ? " alt" : ""}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${linkLabel(e, true)}${ARROW}</a>` : "");
+  document.getElementById("dFoot").innerHTML = toggles(e) + (url ? `<a class="go main${e.viaList ? " alt" : ""}" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${linkLabel(e)}${ARROW}</a>` : "");
   if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", ""); }
   dlg.scrollTop = 0;
 }

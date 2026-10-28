@@ -6,8 +6,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+from collector.bot_events import BOT_PATH_NAME, select_events
 from collector.common import now_kst
 from collector.enrich import enrich
+from collector.extract import policy_block
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "_site"
@@ -15,6 +17,7 @@ OUT = ROOT / "_site"
 # 출처 현황 표: (키, 이름, DB의 src 코드들, 방식 설명)
 SOURCE_ROWS = [
     ("ledger", "사람 확인 장부", ["ledger"], "1단계에서 사람이 공식 원문과 대조해 승인한 이벤트"),
+    ("bot", "뽀삐 발굴", ["pp"], "도우미 봇 뽀삐가 찾은 이벤트(data/bot_events.json). 본 목록과 주소·제목이 같으면 빼 둠"),
     ("korissue", "경품 이벤트 모음(korissue)", ["ki"], "오늘·내일 마감 이벤트와 주최 원문 응모 링크(인스타그램·블로그·구글폼 등)"),
     ("eventhouse", "경품 이벤트 모음(이벤트하우스)", ["eh"], "플랫폼별 진행 이벤트 목록. 응모 링크는 로그인 전용이라 쓰지 않고, 원문은 다른 출처와 합쳐 찾음"),
     ("events_kr", "경품 이벤트 모음(events.kr)", ["ek"], "목록·상세 공개 페이지(robots.txt 허용)"),
@@ -45,6 +48,8 @@ def source_meta(state, runs):
             st = "no"
         elif key == "ledger":
             st = "ledger"
+        elif key == "bot":
+            st = "on"
         else:
             r = last_run.get(key, {}).get("status")
             if r in (None, "wait"):  # 이번 실행 차례가 아니었으면 지난 결과로 판단
@@ -55,46 +60,75 @@ def source_meta(state, runs):
     return out
 
 
+def shippable(e, today):
+    """진행 중이고, 서울 날짜로 마감 전이며, 공연초대·지역 한정이 아닌 항목만 사이트에 싣는다."""
+    if e.get("status") not in (None, "active"):
+        return False
+    if e.get("end") and e["end"] < today:
+        return False
+    if policy_block(e):
+        return False
+    return str(e.get("url") or "").startswith("http")
+
+
+def present(e, via):
+    x = enrich(e)
+    x["via"] = sorted(via)
+    for k in ("srcUrls", "linkFail", "platHint", "firstSeen", "platform"):
+        x.pop(k, None)
+    x["isAuto"] = bool(e.get("cand"))
+    return x
+
+
 def main():
     db = json.loads((ROOT / "data" / "db.json").read_text(encoding="utf-8"))
     state = json.loads((ROOT / "data" / "state.json").read_text(encoding="utf-8"))
     runs = json.loads((ROOT / "data" / "runs.json").read_text(encoding="utf-8"))
+    try:
+        bot_raw = json.loads((ROOT / "data" / BOT_PATH_NAME).read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        bot_raw = []
     via = {}
     for aid, oid in state.get("alias", {}).items():
         via.setdefault(oid, set()).add(aid.split("-")[0])
 
+    now = now_kst()
+    today = now.date().isoformat()
     events = []
     for e in db["events"].values():
-        if e.get("status") not in ("active", "ended"):
-            continue  # 반려(rejected)·링크 끊김(removed)은 싣지 않는다
-        x = enrich(e)
-        x["via"] = sorted(via.get(e["id"], []))
-        for k in ("srcUrls", "linkFail", "platHint", "firstSeen"):
-            x.pop(k, None)
-        x["isAuto"] = bool(e.get("cand"))
-        events.append(x)
+        if not shippable(e, today):
+            continue  # 종료·반려·링크 끊김·공연초대·지역 한정은 싣지 않는다
+        events.append(present(e, via.get(e["id"], [])))
+    # 마감이 지난 DB 행은 뽀삐 쪽의 아직 진행 중인 같은 행사를 막지 않는다
+    existing = [e for e in db["events"].values()
+                if e.get("status") not in ("rejected", "ended") and not (e.get("end") and e["end"] < today)]
+    bot_events = select_events(bot_raw if isinstance(bot_raw, list) else [], existing, today)
+    for e in bot_events:
+        if shippable(e, today):
+            events.append(present(e, []))
     # 마감 가까운 순(없으면 맨 뒤) → 제목
     events.sort(key=lambda x: (x.get("end") or "9999", x["title"]))
 
-    now = now_kst()
-    today = now.date().isoformat()
     live = [x for x in events if not x.get("end") or x["end"] >= today]
     meta = {
         "built": now.strftime("%Y-%m-%d %H:%M"), "date": today,
         "approved": sum(1 for x in live if not x.get("cand")),
-        "candidates": sum(1 for x in live if x.get("cand")),
-        "shown": len(live), "ended": len(events) - len(live),
+        "candidates": sum(1 for x in live if x.get("cand") and not x.get("bot")),
+        "bot": sum(1 for x in live if x.get("bot")),
+        "shown": len(live), "ended": 0,
         "sources": source_meta(state, runs),
         "lastRun": runs[-1]["at"] if runs else None,
     }
-    payload = {"meta": meta, "events": events}
+    payload = {"meta": meta, "events": live}
 
-    # 검증 1: DB의 진행 중·종료 건수와 사이트 데이터 건수가 같아야 한다
-    n_db = sum(1 for e in db["events"].values() if e.get("status") in ("active", "ended"))
-    assert len(events) == n_db, f"건수 불일치 {len(events)} != {n_db}"
-    # 검증 2: 원문 링크가 없는 이벤트는 싣지 않는다
-    bad = [x["id"] for x in events if not str(x.get("url", "")).startswith("http")]
+    # 검증 1: 진행 중으로 싣는 DB 건수 + 뽀삐 신규 건수가 사이트 데이터와 같아야 한다
+    n_db = sum(1 for e in db["events"].values() if shippable(e, today))
+    assert len(live) == n_db + len(bot_events), f"건수 불일치 {len(live)} != {n_db}+{len(bot_events)}"
+    # 검증 2: 원문 링크가 없는 이벤트, 마감이 지난 이벤트는 싣지 않는다
+    bad = [x["id"] for x in live if not str(x.get("url", "")).startswith("http")]
     assert not bad, f"원문 링크 없음: {bad[:5]}"
+    late = [x["id"] for x in live if x.get("end") and x["end"] < today]
+    assert not late, f"마감이 지난 이벤트: {late[:5]}"
 
     tpl = (ROOT / "web" / "template.html").read_text(encoding="utf-8")
     assert tpl.count("/*__DATA__*/") == 1

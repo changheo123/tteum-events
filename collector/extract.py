@@ -10,10 +10,25 @@ EVENT_WORDS = re.compile(r"이벤트|경품|추첨|증정|기프티콘|상품권
 
 # 유료 조건: 하나라도 있으면 무료 이벤트가 아니므로 제외(부정 표현은 먼저 지운다)
 # 체험단의 '선결제 후 페이백'·'구매평'도 먼저 돈을 내야 하므로 유료로 본다
-PAY = re.compile(r"구매|구입|결제|입금|참가비|참가 ?비용|유료|가입비|주문 ?고객|주문 ?시|충전 ?고객|금액 이상|원 이상 ?(?:구매|결제|이용)|구독료|멤버십 가입|페이백|환급형|구매평|실구매")
+PAY = re.compile(r"구매|구입|결제(?!원)|입금|참가비|참가 ?비용|유료|가입비|주문 ?고객|주문 ?시|충전 ?고객|금액 이상|원 이상 ?(?:구매|결제|이용)|구독료|멤버십 가입|페이백|환급형|구매평|실구매")
 PAY_NEG = re.compile(r"(구매|구입|결제)\s*(?:없이|와 ?무관|와 ?관계 ?없이|여부와 ?(?:관계|상관) ?없이|하지 ?않아도|불필요|필요 ?없)|무료 ?(?:참여|응모)|참가비 ?(?:없음|무료)|유료 ?(?:아님|아닙니다)")
-# 공연초대는 사이트 정책상 싣지 않는다
-SHOW = re.compile(r"(공연|연극|뮤지컬|콘서트|오페라|발레|리사이틀).{0,12}(초대|관람권|티켓)|초대 ?이벤트.{0,10}(공연|연극|뮤지컬)|문화초대이벤트")
+# 공연초대는 사이트 정책상 싣지 않는다(특정 공연·시사회 관람 초대. 영화관람권 경품·공연 후기 댓글은 남긴다)
+SHOW = re.compile(
+    r"(?:공연|연극|뮤지컬|콘서트|오페라|발레|리사이틀|시사회).{0,40}(?:초대권|관람권|티켓|초대)"
+    r"|초대 ?이벤트.{0,16}(?:공연|연극|뮤지컬|콘서트|시사회)"
+    r"|문화초대이벤트|공연\s*초대|시사회\s*초대"
+)
+# 특정 지역 주민만 참여하거나 지역 초대인 행사. 식당 위치·특산품·한정판·'제한 없음/미확인'은 빼지 않는다
+_REGION_NEG = re.compile(r"[^.。;\n]*?(?:미확인|미기재|안내하지\s*않|제한\s*(?:없|미)|필수\s*아님|거주\s*필수\s*아니)[^.。;\n]*")
+_LIM = r"(?:누구나|한정|대상|만(?![가-힣A-Za-z0-9]))"
+REGION = re.compile(
+    r"지역\s*주민|지역주민|주민\s*" + _LIM + r"|지역\s*한정|지역\s*초대(?!형)|지역에서만"
+    r"|(?<!전국)(?<!전국 )지역에서\s*참여\s*가능"
+    r"|(?:시민|도민|구민|군민)\s*" + _LIM +
+    r"|(?:서울|부산|대구|인천|광주|대전|울산|세종|경기|강원|충북|충남|전북|전남|경북|경남|제주)(?:시|도)?\s*(?:시민|도민)\s*" + _LIM +
+    r"|[가-힣]{1,8}(?:구|시|군)\s*(?:구민|시민|군민)\s*" + _LIM +
+    r"|거주(?:자)?\s*(?:한정|만(?![가-힣A-Za-z0-9]))|관내\s*(?:주민|거주)"
+)
 # 이미 끝난 글(당첨자 발표 공지 등)
 ENDED = re.compile(r"당첨자 ?(?:발표|안내|공지)|결과 ?발표|이벤트 ?(?:종료|마감) ?안내|수상자 ?발표")
 
@@ -72,12 +87,40 @@ def classify(text):
 
 def pay_required(text):
     t = PAY_NEG.sub(" ", text or "")
+    t = re.sub(r"구매하고\s*싶(?:은|다|어|어요|습니다)?", " ", t)  # '사고 싶은 제품' 댓글 주제는 결제 조건이 아니다
     hits = PAY.findall(t)
     return hits
 
 
 def is_show_invite(text):
     return bool(SHOW.search(text or ""))
+
+
+def is_region_limited(text):
+    """거주지로 참가 자격을 좁힌 행사(지역 주민 한정·지역 초대). 부정·미확인 문장은 제외."""
+    t = _REGION_NEG.sub(" ", text or "")
+    return bool(REGION.search(t))
+
+
+def policy_text(e):
+    """정책 판정에 쓰는 짧은 글(참여 단계 원문 전체는 넣지 않는다)."""
+    if not isinstance(e, dict):
+        return ""
+    return " ".join([
+        e.get("title") or "", e.get("prize") or "", e.get("who") or "", e.get("kind") or "",
+        " ".join(e.get("tags") or []), " ".join(e.get("needs") or []),
+    ])
+
+
+def policy_block(e):
+    """싣지 않을 사유. 없으면 None."""
+    if not isinstance(e, dict):
+        return None
+    if e.get("kind") == "공연 초대" or is_show_invite(policy_text(e)):
+        return "공연초대"
+    if is_region_limited(policy_text(e)):
+        return "지역 한정"
+    return None
 
 
 _PRIZE_LINE = re.compile(r"(?:경품|상품|선물|혜택|시상|증정|당첨 ?(?:인원|혜택))\s*[:：]?\s*(.+)")
@@ -150,6 +193,10 @@ def norm_url(u):
     q = [(k, v) for k, v in parse_qsl(p.query) if not re.match(r"utm_|hl$|img_index|igsh|fbclid|si$|nPage|vlist|b_list|keyField|orderby|cg_code", k)]
     host = p.netloc.lower().removeprefix("www.").removeprefix("m.")
     path = p.path.rstrip("/")
+    if host == "youtu.be":
+        vid = path.strip("/").split("/")[0]
+        if vid:
+            host, path, q = "youtube.com", "/watch", [("v", vid)]
     if "youtube.com" in host and path == "/watch":
         q = [(k, v) for k, v in q if k == "v"]
     return urlunparse(("https", host, path, "", urlencode(sorted(q)), ""))
@@ -170,8 +217,10 @@ def build_event(*, src, sid, title, url, org=None, body="", start=None, end=None
     """수집기 하나가 찾은 글을 사이트 장부 형식으로 바꾼다. 무료가 아니면 (None, 사유)."""
     title = clean(title)
     full = f"{title}\n{body or ''}"
-    if is_show_invite(full):
+    if is_show_invite(full) or kind_hint == "공연 초대":
         return None, "공연초대"
+    if is_region_limited(full):
+        return None, "지역 한정"
     hits = pay_required(full)
     if hits:
         return None, "유료 조건: " + ",".join(sorted(set(hits)))

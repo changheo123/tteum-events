@@ -79,7 +79,8 @@ try {
   const shown = await ev(`document.querySelectorAll('#list .tk').length`);
   check("데이터 건수 = 화면 카드 수(조건 많음 제외)", total === shown, `데이터 ${total} / 화면 ${shown}`);
   const chipSum = await ev(`[...document.querySelectorAll('.chip')].map(c => c.textContent)`);
-  check("카테고리 칩 11개", chipSum.length === 11, chipSum.join(" | "));
+  const wantChips = ["전체", "오늘 마감", "폼", "댓글", "퀴즈", "설문·투표", "체험단", "일반", "뽀삐 발굴"];
+  check("카테고리 칩", wantChips.every(w => chipSum.some(t => t.startsWith(w))), chipSum.join(" | "));
 
   // 검색
   await ev(`(() => { const q = document.getElementById('q'); q.value = '스타벅스'; q.dispatchEvent(new Event('input')); })()`); await sleep(400);
@@ -96,12 +97,17 @@ try {
   const dues = await ev(`[...document.querySelectorAll('#list .tk')].map(t => DATA.events.find(e => e.id === t.dataset.id).end).filter(Boolean)`);
   check("정렬: 마감 임박순", dues.every((v, i) => i === 0 || dues[i - 1] <= v), `${dues[0]} … ${dues.at(-1)}`);
 
-  // 카테고리 + 플랫폼 동시 필터
-  await ev(`document.querySelector('.chip[data-k="댓글·퀴즈"]').click()`); await sleep(200);
+  // 참여 방법 + 플랫폼 동시 필터
+  await ev(`document.querySelector('.chip[data-k="댓글"]').click()`); await sleep(200);
   await ev(`(() => { const s = document.getElementById('fPlat'); s.value = 'yt'; s.dispatchEvent(new Event('change')); })()`); await sleep(300);
-  const yt = await ev(`[...document.querySelectorAll('#list .tk')].map(t => { const e = DATA.events.find(x => x.id === t.dataset.id); return e.plats.includes('yt') && ['댓글','퀴즈','투표'].includes(e.kind); })`);
-  check("필터: 유튜브 + 댓글·퀴즈", yt.length > 0 && yt.every(Boolean), `${yt.length}건`);
-  await ev(`document.getElementById('fReset').click()`); await ev(`document.querySelector('.chip[data-k="전체 이벤트"]').click()`); await sleep(300);
+  const yt = await ev(`[...document.querySelectorAll('#list .tk')].map(t => { const e = DATA.events.find(x => x.id === t.dataset.id); return e.plats.includes('yt') && (e.entries || []).includes('comment'); })`);
+  check("필터: 유튜브 + 댓글", yt.length > 0 && yt.every(Boolean), `${yt.length}건`);
+  await ev(`document.getElementById('fReset').click()`); await ev(`document.querySelector('.chip[data-k="전체"]').click()`); await sleep(300);
+
+  await ev(`(() => { const s = document.getElementById('fPrize'); s.value = 'gifticon'; s.dispatchEvent(new Event('change')); })()`); await sleep(300);
+  const gifts = await ev(`[...document.querySelectorAll('#list .tk')].map(t => DATA.events.find(e => e.id === t.dataset.id).ptypes.includes('gifticon'))`);
+  check("필터: 기프티콘", gifts.length > 0 && gifts.every(Boolean), `${gifts.length}건`);
+  await ev(`document.getElementById('fReset').click()`); await sleep(200);
 
   // 무료 여부: 추가 비용 확인된 것 빼기
   await ev(`(() => { const c = document.getElementById('fNoCost'); c.checked = true; c.dispatchEvent(new Event('change')); })()`); await sleep(300);
@@ -130,11 +136,19 @@ try {
     check("0건 카테고리 안내 문구", empty.includes("연동되지 않아"), zeroChip);
   }
 
-  // 종료 이벤트 목록·출처 현황 표(전체 카테고리 기준)
-  await ev(`document.querySelector('.chip[data-k="전체 이벤트"]').click()`); await sleep(300);
-  const goneN = await ev(`DATA.events.filter(e => e.end && e.end < kstToday()).length`);
-  const ended = await ev(`({ended: document.querySelectorAll('#ended li').length, src: document.querySelectorAll('#src tr').length})`);
-  check("종료 이벤트 목록·출처 현황 표", ended.src >= 8 && ended.ended === goneN, `종료 ${ended.ended}/${goneN}건, 출처 행 ${ended.src}개`);
+  // 마감이 지난 이벤트는 데이터에도 화면에도 없고, 클라이언트 가드가 날짜를 자른다
+  await ev(`document.querySelector('.chip[data-k="전체"]').click()`); await sleep(300);
+  const guard = await ev(`({past: DATA.events.filter(e => e.end && e.end < kstToday()).length,
+    shown: [...document.querySelectorAll('#list .tk')].filter(t => { const e = DATA.events.find(x => x.id === t.dataset.id); return e && e.end && e.end < kstToday(); }).length,
+    fn: isCurrent({end:'2000-01-01'}) === false && isCurrent({end: kstToday()}) === true && isCurrent({}) === true,
+    endedBox: !!document.getElementById('ended'),
+    src: document.querySelectorAll('#src tr').length,
+    bot: document.body.innerText.includes('뽀삐 발굴') && DATA.events.some(e => e.bot),
+    cta: [...document.querySelectorAll('#list a.go')].some(a => a.textContent.includes('공식 페이지에서 참여'))})`);
+  check("마감 지난 이벤트는 빼고 뽀삐·공식 링크를 표시", guard.past === 0 && guard.shown === 0 && guard.fn && !guard.endedBox && guard.src >= 8 && guard.bot && guard.cta,
+    `과거 ${guard.past}/${guard.shown}, 출처 ${guard.src}, 뽀삐 ${guard.bot}, 버튼 ${guard.cta}`);
+  const todayCards = await ev(`(() => { const nodes = [...document.querySelectorAll('#list .tk.today')]; return {n: nodes.length, ok: nodes.every(t => t.textContent.includes('오늘') && t.textContent.includes('마감'))}; })()`);
+  check("오늘 마감 카드 강조", todayCards.n === 0 || todayCards.ok, `${todayCards.n}장`);
 
   // 원문 링크가 모두 http(s)
   const badLinks = await ev(`[...document.querySelectorAll('a.go')].filter(a => !/^https?:\\/\\//.test(a.href)).length`);

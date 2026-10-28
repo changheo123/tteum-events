@@ -12,7 +12,7 @@ import traceback
 from pathlib import Path
 
 from .common import Fetcher, now_kst, today_kst
-from .extract import norm_url, norm_title, is_show_invite, pay_required
+from .extract import norm_url, norm_title, is_show_invite, is_region_limited, pay_required, policy_block
 from .sources import events_kr, public_boards, api_sources, aggregators, experience
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,6 +65,8 @@ def seed_from_ledger(db):
     n = 0
     for e in led["events"]:
         if e["kind"] == "공연 초대" or ("공연 초대권" in (e.get("prize") or "") and "현장 관람" in e["tags"]):
+            continue
+        if policy_block(e):
             continue
         txt = " ".join(e["needs"] + e["steps"] + [e["title"], e.get("prize") or ""])
         if re.search(r"구매|결제|입금|참가비|유료|기부", txt) and e["id"] not in PAY_OK:
@@ -171,28 +173,45 @@ def month_expiry(title):
     return (nxt - dt.timedelta(days=1)).isoformat()
 
 
+def _expired(e, today, t, stale):
+    """Asia/Seoul 날짜 기준으로 마감이 지났으면 True. 마감일 당일은 아직 진행 중이다."""
+    if e.get("status") == "ended":
+        return True
+    if e.get("end"):
+        return e["end"] < today
+    exp = month_expiry(e.get("title"))
+    last = dt.date.fromisoformat((e.get("lastSeen") or today)[:10])
+    return bool((exp and exp < today) or (e.get("cand") and (t - last).days > stale))
+
+
 def update_status(db, today, cfg):
+    """마감이 지난 이벤트는 상태를 남기지 않고 DB에서 지운다. 공연초대·지역 한정 역시 지운다."""
     stale = cfg.get("no_end_stale_days", 21)
-    keep = cfg.get("keep_ended_days", 45)
     t = dt.date.fromisoformat(today)
     pruned = 0
     for oid in list(db["events"]):
         e = db["events"][oid]
-        if e.get("status") in ("rejected", "removed", "excluded", "merged"):
-            continue
-        if e.get("end"):
-            e["status"] = "ended" if e["end"] < today else "active"
-        else:
-            exp = month_expiry(e["title"])
-            last = dt.date.fromisoformat(e.get("lastSeen") or today)
-            gone = (exp and exp < today) or (e.get("cand") and (t - last).days > stale)
-            e["status"] = "ended" if gone else "active"
-        # 오래 지난 종료 이벤트는 DB에서 정리(이력은 git에 남음)
-        endd = e.get("end") or e.get("lastSeen")
-        if e["status"] == "ended" and endd and (t - dt.date.fromisoformat(endd)).days > keep:
+        if policy_block(e) or _expired(e, today, t, stale):
             del db["events"][oid]
             pruned += 1
+            continue
+        if e.get("status") in ("rejected", "removed", "excluded", "merged"):
+            continue
+        e["status"] = "active"
     return pruned
+
+
+def prune_bot_events(today):
+    """data/bot_events.json에서 마감이 지난 항목과 공연초대·지역 한정을 지운다. 바뀐 때만 저장."""
+    from .bot_events import BOT_PATH_NAME, prune_records
+    path = DATA / BOT_PATH_NAME
+    raw = load(path, [])
+    if not isinstance(raw, list):
+        raw = []
+    kept, dropped = prune_records(raw, today)
+    if dropped:
+        dump(path, kept)
+    return dropped
 
 
 def check_links(f, db, today, limit):
@@ -245,8 +264,9 @@ def audit(db, today):
             e["status"], e["excluded"] = "excluded", "유료 조건"
             res["excluded"] += 1
             continue
-        if is_show_invite(e["title"] + " " + (e.get("prize") or "")):
-            e["status"], e["excluded"] = "excluded", "공연초대"
+        why = policy_block(e)
+        if why:
+            e["status"], e["excluded"] = "excluded", why
             res["excluded"] += 1
             continue
         issues = []
@@ -341,7 +361,9 @@ def main(argv=None):
             added0, merged0 = stats["added"], stats["merged"]
             for ev in r["events"]:
                 # 수집기가 놓친 경우까지 한 번 더: 공연초대·유료 조건은 저장하지 않는다
-                if is_show_invite(ev["title"]) or pay_required(ev["title"] + " " + (ev.get("prize") or "")):
+                blob = " ".join([ev.get("title") or "", ev.get("prize") or "", ev.get("who") or "",
+                                 " ".join(ev.get("needs") or []), " ".join(ev.get("tags") or [])])
+                if (ev.get("end") and ev["end"] < today) or policy_block(ev) or is_show_invite(blob) or is_region_limited(blob) or pay_required(ev["title"] + " " + (ev.get("prize") or "")):
                     stats["rejected"] += 1
                     continue
                 oid = merge(db, ev, today, stats)
@@ -370,6 +392,7 @@ def main(argv=None):
 
     apply_overrides(db)
     pruned = update_status(db, today, cfg)
+    pruned += prune_bot_events(today)
     links = {} if a.no_links else check_links(f, db, today, cfg.get("link_checks_per_run", 25))
     quality = audit(db, today)
     active = sum(1 for e in db["events"].values() if e.get("status") == "active")
