@@ -18636,6 +18636,50 @@
    "url": "https://www.eventhouse.kr/site/view.php?no=318423",
    "who": null
   },
+  "eh-7d3fe9e4ec": {
+   "announce": "2026-11-25",
+   "cand": true,
+   "checked": null,
+   "count": 100,
+   "end": "2026-11-15",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "X",
+   "id": "eh-7d3fe9e4ec",
+   "kind": "기타",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318730",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "소상공인시장진흥공단",
+   "place": null,
+   "platHint": "web",
+   "prize": "온누리상품권 1만원 100명",
+   "reasons": [
+    "공유·게시형"
+   ],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318730"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "시장 방문",
+    "SNS 소개글 게시",
+    "링크 제출"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "시장 SNS 소개하고 온누리상품권 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318730",
+   "who": null
+  },
   "eh-7daa5ffe6f": {
    "announce": "2026-11-25",
    "cand": true,
@@ -23647,6 +23691,48 @@
    "url": "https://www.eventhouse.kr/site/view.php?no=317832",
    "who": null
   },
+  "eh-a560d0ffc4": {
+   "announce": "2026-11-06",
+   "cand": true,
+   "checked": null,
+   "count": 300,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "eh-a560d0ffc4",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318733",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "세종특별자치시 감염병관리지원단",
+   "place": null,
+   "platHint": "insta",
+   "prize": "아이스크림 모바일 쿠폰 4천원 300명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318733"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "이메일구독/팔로우",
+    "QR 퀴즈폼 모두 제출"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "300호 퀴즈 풀고 아이스크림 쿠폰 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318733",
+   "who": null
+  },
   "eh-a5a119f795": {
    "announce": "2026-10-30",
    "cand": true,
@@ -24876,6 +24962,48 @@
    ],
    "title": "소마 인지도 설문하고 메가커피 받자 이벤트!!",
    "url": "https://www.eventhouse.kr/site/view.php?no=318556",
+   "who": null
+  },
+  "eh-b1565f44e9": {
+   "announce": "2026-11-20",
+   "cand": true,
+   "checked": null,
+   "count": 100,
+   "end": "2026-11-15",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "eh-b1565f44e9",
+   "kind": "설문",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318731",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한식진흥원",
+   "place": null,
+   "platHint": "web",
+   "prize": "커피 교환권 100명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318731"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "매거진 구독",
+    "하단 84호 만족도 설문 제출"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "한식 84호 만족도 설문하고 커피 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318731",
    "who": null
   },
   "eh-b18efca94a": {
@@ -35711,13 +35839,12 @@
    "firstSeen": "2026-10-28",
    "grade": "C",
    "id": "eh-fcba05b6fe",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "설문",
    "lastSeen": "2026-10-29",
    "linkChecked": "2026-10-29",
-   "linkStatus": "error ConnectTimeout",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318601",
    "max": null,
    "min": null,
@@ -40262,6 +40389,48 @@
    "title": "카카오같이가치 「돌봄에 멈춰 있던 청년의 내일, 다시 시작할 수 있도록」 참여·공유 이벤트",
    "url": "https://www.jjwf.or.kr/sub04/notice.html?pmode=view&code=6abf03d5417c7",
    "who": "공지에 참여 대상·연령·지역 제한 미기재. 중복 참여·중복 당첨 규정도 미기재"
+  },
+  "ki-011eddb577": {
+   "announce": "2026-11-05",
+   "cand": true,
+   "checked": null,
+   "count": 20,
+   "end": "2026-10-29",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "ki-011eddb577",
+   "kind": "설문",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [
+    "응모 양식: https://form.naver.com/response/6QandX28xrN1-YZmins1GQ"
+   ],
+   "org": "노사발전재단",
+   "place": null,
+   "platHint": "insta",
+   "prize": "모바일 커피쿠폰 5천.. 20명",
+   "reasons": [],
+   "src": "ki",
+   "srcUrls": [
+    "https://www.instagram.com/p/De_YMsyoD5A/",
+    "https://www.eventhouse.kr/site/view.php?no=318732"
+   ],
+   "start": "2026-10-27",
+   "status": "active",
+   "steps": [
+    "네이버폼 접속",
+    "핵심가치 선택 후 제출"
+   ],
+   "tags": [],
+   "title": "핵심가치 설문하고 커피쿠폰 받자 이벤트!!",
+   "url": "https://www.instagram.com/p/De_YMsyoD5A/",
+   "who": null
   },
   "ki-042e944ce9": {
    "announce": "2026-11-06",
@@ -65358,6 +65527,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-29T10:08:56+09:00"
+  "updated": "2026-10-29T11:02:40+09:00"
  }
 }
