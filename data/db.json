@@ -12256,6 +12256,49 @@
    "url": "https://www.eventhouse.kr/site/view.php?no=318581",
    "who": null
   },
+  "eh-45352ff404": {
+   "announce": "2026-11-04",
+   "cand": true,
+   "checked": null,
+   "count": 10,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "eh-45352ff404",
+   "kind": "댓글",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318734",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "개인정보보호위원회",
+   "place": null,
+   "platHint": "insta",
+   "prize": "네이버페이 포인트 5천원 10명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318734"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "팔로우",
+    "좋아요",
+    "예방수칙 1가지 댓글"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "AI 보이스피싱 예방 댓글로 5천원 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318734",
+   "who": null
+  },
   "eh-45a8b8c040": {
    "announce": "2026-11-20",
    "cand": true,
@@ -13317,6 +13360,49 @@
    ],
    "title": "영양비율 퀴즈 풀고 네이버페이 받자 이벤트!!",
    "url": "https://www.eventhouse.kr/site/view.php?no=318671",
+   "who": null
+  },
+  "eh-4f9afd124b": {
+   "announce": "2026-11-25",
+   "cand": true,
+   "checked": null,
+   "count": 50,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "eh-4f9afd124b",
+   "kind": "댓글",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318739",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "열린관광",
+   "place": null,
+   "platHint": "insta",
+   "prize": "전국 편의점 금액권 5천원 50명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318739"
+   ],
+   "start": "2026-10-27",
+   "status": "active",
+   "steps": [
+    "7편 시청",
+    "2편 좋아요·댓글",
+    "캡처 제출"
+   ],
+   "tags": [
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "영상 2편 댓글 인증해 편의점권 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318739",
    "who": null
   },
   "eh-4fa40bb011": {
@@ -16127,6 +16213,49 @@
    ],
    "title": "궁궐수호 게임하고 키캡키링 노리자 이벤트!!",
    "url": "https://www.eventhouse.kr/site/view.php?no=317991",
+   "who": null
+  },
+  "eh-67e3729eae": {
+   "announce": "2026-11-18",
+   "cand": true,
+   "checked": null,
+   "count": 260,
+   "end": "2026-11-13",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "eh-67e3729eae",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318736",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "무안군",
+   "place": null,
+   "platHint": "insta",
+   "prize": "BBQ 황금올리브치킨+콜라125.. 30명 230명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318736"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "SNS 친구추가",
+    "빈칸 조합",
+    "정답 폼제출"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "무안 축제 이름 맞히고 치킨세트 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318736",
    "who": null
   },
   "eh-680e06314f": {
@@ -20726,6 +20855,46 @@
    "url": "https://www.eventhouse.kr/site/view.php?no=318720",
    "who": null
   },
+  "eh-8d8b822b20": {
+   "announce": "2026-11-09",
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "eh-8d8b822b20",
+   "kind": "댓글",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318735",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "동아제약",
+   "place": null,
+   "platHint": "insta",
+   "prize": "아일로 카무트 브랜드밀 함유 효소 30포 5명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318735"
+   ],
+   "start": "2026-10-27",
+   "status": "active",
+   "steps": [
+    "게시물에 아일로 효소 기대평 댓글 작성"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "아일로 효소 기대평 남기고 30포 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318735",
+   "who": null
+  },
   "eh-8d9641bbe9": {
    "announce": "2026-11-09",
    "cand": true,
@@ -22713,6 +22882,47 @@
    ],
    "title": "HRDK 중대성 평가 설문하고 커피 받자 이벤트!!",
    "url": "https://www.eventhouse.kr/site/view.php?no=318477",
+   "who": null
+  },
+  "eh-9cc2ca8244": {
+   "announce": "2026-11-16",
+   "cand": true,
+   "checked": null,
+   "count": 134,
+   "end": "2026-11-11",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "eh-9cc2ca8244",
+   "kind": "설문",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318632",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국도로공사",
+   "place": null,
+   "platHint": "insta",
+   "prize": "교촌 허니콤보+콜라 2명 132명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318632"
+   ],
+   "start": "2026-10-28",
+   "status": "active",
+   "steps": [
+    "QR·프로필 접속",
+    "구글폼 설문 작성·제출"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "도로공사 SNS 만족도 조사로 치킨 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318632",
    "who": null
   },
   "eh-9d87c49966": {
@@ -32167,6 +32377,48 @@
    "url": "https://www.eventhouse.kr/site/view.php?no=317081",
    "who": null
   },
+  "eh-e3d3765e48": {
+   "announce": "2026-11-05",
+   "cand": true,
+   "checked": null,
+   "count": 3,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "eh-e3d3765e48",
+   "kind": "댓글",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318738",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "써모스",
+   "place": null,
+   "platHint": "insta",
+   "prize": "써모스 투고 컵앤텀블러 3명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318738"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "써모스 팔로우",
+    "텀블러 쓸 순간 댓글"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "투고 텀블러 사용처 댓글로 선물 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318738",
+   "who": null
+  },
   "eh-e3fb7ec52d": {
    "announce": "2026-11-12",
    "cand": true,
@@ -35880,12 +36132,14 @@
    "firstSeen": "2026-10-28",
    "grade": "C",
    "id": "eh-fcba05b6fe",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-10-29",
    "linkChecked": "2026-10-29",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318601",
    "max": null,
    "min": null,
@@ -52362,6 +52616,9 @@
    "id": "mb-f4bd21b8b0",
    "kind": "체험단",
    "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -68070,6 +68327,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-29T11:31:07+09:00"
+  "updated": "2026-10-29T12:24:14+09:00"
  }
 }
