@@ -6011,5 +6011,103 @@
    }
   },
   "total": 1692
+ },
+ {
+  "active": 1256,
+  "added": 1,
+  "at": "2026-10-30T01:01:21+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 10,
+   "ok": 43,
+   "skip": 504
+  },
+  "merged": 556,
+  "pruned": 3,
+  "quality": {
+   "excluded": 0,
+   "flagged": 31,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 106,
+  "sec": 1008.7,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.busan.go.kr', port=443): Max retries exceeded with url: /minwon/eventresult (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.busan.go.kr', port=443) at 0x70e2368b1700>, 'Connection to www.busan.go.kr timed out. (connect timeout=20)'))",
+    "status": "error",
+    "trace": "kages/requests/sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/adapters.py\", line 717, in send\n    raise ConnectTimeout(e, request=request)\nrequests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.busan.go.kr', port=443): Max retries exceeded with url: /minwon/eventresult (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.busan.go.kr', port=443) at 0x70e2368b1700>, 'Connection to www.busan.go.kr timed out. (connect timeout=20)'))\n"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 12,
+    "new": 0,
+    "requests": 2,
+    "sec": 2.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 249,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.5,
+    "skipped": 1,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 166,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 298,
+    "merged": 295,
+    "new": 1,
+    "requests": 2,
+    "sec": 3.0,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "mohw": {
+    "error": "ConnectTimeout: HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /gallery.es?mid=a10314000000&bid=0015 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mohw.go.kr', port=443) at 0x70e2368b2a20>, 'Connection to www.mohw.go.kr timed out. (connect timeout=20",
+    "status": "error",
+    "trace": "sessions.py\", line 784, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/adapters.py\", line 717, in send\n    raise ConnectTimeout(e, request=request)\nrequests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /gallery.es?mid=a10314000000&bid=0015 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mohw.go.kr', port=443) at 0x70e2368b2a20>, 'Connection to www.mohw.go.kr timed out. (connect timeout=20)'))\n"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 1690
  }
 ]
