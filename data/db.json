@@ -37187,6 +37187,52 @@
    "url": "https://events.kr/event.php?id=90",
    "who": null
   },
+  "ek-2fcc820fc1": {
+   "announce": "2026-11-09",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-07",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "ek-2fcc820fc1",
+   "kind": "댓글",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://events.kr/event.php?id=191",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "국민건강보험 일산병원",
+   "place": null,
+   "platHint": "insta",
+   "prize": "커피 한 잔을 선물로 드립니다.",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=191"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "국민건강보험 일산병원 공식 인스타그램 [팔로우]하기!",
+    "본 게시물 댓글로 의료진 응원 한 마디 남기기",
+    "구글폼 접속 후 정답 인증샷 및 정보 입력하면 참여 완료!",
+    "이벤트 안내"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "인스타 참여",
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "국민건강보험 일산병원 의료진 응원댓글 이벤트",
+   "url": "https://events.kr/event.php?id=191",
+   "who": null
+  },
   "ek-310b86e0b6": {
    "announce": "2026-09-21",
    "cand": true,
@@ -37258,6 +37304,48 @@
    "tags": [],
    "title": "보안 실무 현황 설문 이벤트",
    "url": "https://forms.gle/e7uQ3UgefqS3SS1N7",
+   "who": null
+  },
+  "ek-3a2dc677d8": {
+   "announce": "2026-11-09",
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-07",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "ek-3a2dc677d8",
+   "kind": "댓글",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://events.kr/event.php?id=190",
+   "max": null,
+   "min": null,
+   "mode": "추첨",
+   "needs": [],
+   "org": "한국보건복지인재원",
+   "place": null,
+   "platHint": "yt",
+   "prize": "추첨을 통해 따뜻한/시원한 커피 선물을 드립니다",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=190"
+   ],
+   "start": "2026-10-29",
+   "status": "active",
+   "steps": [
+    "한국보건복지인재원 채널 '구독' 및 본 영상 '좋아요'",
+    "영상 시청 후 퀴즈 정답을 댓글로 작성하기!"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "\"장기요양등급 탈락했는데... 부모님 돌봄, 이제 어쩌죠?\"",
+   "url": "https://events.kr/event.php?id=190",
    "who": null
   },
   "ek-3fcfb99ec0": {
@@ -39660,12 +39748,14 @@
    "freeNote": null,
    "grade": "S",
    "id": "gg-myggd-vol208-survey",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "설문",
    "lastSeen": "2026-10-27",
    "linkChecked": "2026-10-29",
-   "linkFail": 0,
-   "linkStatus": "ok",
+   "linkFail": 1,
+   "linkStatus": "http 404",
    "max": 10,
    "min": 5,
    "mode": "추첨",
@@ -70288,6 +70378,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-29T16:55:35+09:00"
+  "updated": "2026-10-29T17:49:45+09:00"
  }
 }
