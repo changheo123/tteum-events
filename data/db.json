@@ -48141,7 +48141,8 @@
    "reasons": [],
    "src": "mb",
    "srcUrls": [
-    "https://www.mrblog.net/campaigns/1145926"
+    "https://www.mrblog.net/campaigns/1145926",
+    "https://www.mrblog.net/campaigns/1145909"
    ],
    "start": null,
    "status": "active",
@@ -57591,6 +57592,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1512639",
    "who": null
   },
+  "rn-3051e68d0e": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "rn-3051e68d0e",
+   "kind": "체험단",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "7만원상당 식사권or순남세트+순남전골+고추장삼겹살1 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1516344"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경북/구미시] 순남 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1516344",
+   "who": null
+  },
   "rn-30aefe55c9": {
    "announce": null,
    "cand": true,
@@ -62325,6 +62368,48 @@
    ],
    "title": "[경기/화성시] 장원갑칼국수 화성향남점 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1508890",
+   "who": null
+  },
+  "rn-7f5fef4312": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "rn-7f5fef4312",
+   "kind": "체험단",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "1. 시그니처 프라하 꼴레뇨 2. 파스타/리조또 메뉴 택 1 (총 6만원 상당의 구성) (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1500080"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/송파구] 라코즈 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1500080",
    "who": null
   },
   "rn-7fd55e1149": {
@@ -71406,6 +71491,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-29T21:06:45+09:00"
+  "updated": "2026-10-29T22:04:10+09:00"
  }
 }
