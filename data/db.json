@@ -38954,6 +38954,45 @@
    "url": "https://www.instagram.com/p/Dd3UUggGaWl/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
    "who": null
   },
+  "ek-e54183e2a0": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 100,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-29",
+   "grade": "C",
+   "id": "ek-e54183e2a0",
+   "kind": "기타",
+   "lastSeen": "2026-10-29",
+   "linkChecked": "2026-10-29",
+   "linkStatus": "skip",
+   "listUrl": "https://events.kr/event.php?id=189",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "주식회사 오가다",
+   "place": null,
+   "platHint": "yt",
+   "prize": "백억커피 아메리카노 100명 쏜다! EVENT",
+   "reasons": [],
+   "src": "ek",
+   "srcUrls": [
+    "https://events.kr/event.php?id=189",
+    "https://www.youtube.com/watch?v=bd6IoLDyF3I"
+   ],
+   "start": "2026-10-26",
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "유튜브 참여"
+   ],
+   "title": "백억커피 아메리카노 100명 증정 이벤트",
+   "url": "https://www.youtube.com/watch?v=bd6IoLDyF3I",
+   "who": null
+  },
   "ek-e62d7f1eb4": {
    "announce": null,
    "cand": true,
@@ -68327,6 +68366,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-29T13:18:54+09:00"
+  "updated": "2026-10-29T14:12:47+09:00"
  }
 }
