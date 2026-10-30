@@ -7842,11 +7842,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "eh-22fd297325",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "기타",
    "lastSeen": "2026-10-30",
    "linkChecked": "2026-10-30",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error SSLError",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=316435",
    "max": null,
    "min": null,
@@ -82585,6 +82588,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-30T16:26:13+09:00"
+  "updated": "2026-10-30T17:21:54+09:00"
  }
 }
