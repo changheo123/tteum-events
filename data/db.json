@@ -55056,6 +55056,46 @@
    "url": "https://www.mrblog.net/campaigns/1145802",
    "who": null
   },
+  "mb-667b57f665": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-30",
+   "grade": "C",
+   "id": "mb-667b57f665",
+   "kind": "체험단",
+   "lastSeen": "2026-10-30",
+   "linkChecked": "2026-10-30",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여"
+   ],
+   "org": "미블",
+   "place": null,
+   "platHint": null,
+   "prize": "음료2잔 + 빵2개 or 케이크1개 (체험 제공, 5명 모집)",
+   "reasons": [],
+   "src": "mb",
+   "srcUrls": [
+    "https://www.mrblog.net/campaigns/1146328"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[대전 홍도동] 카페블루발트 체험단",
+   "url": "https://www.mrblog.net/campaigns/1146328",
+   "who": null
+  },
   "mb-69341763c3": {
    "announce": null,
    "cand": true,
@@ -55414,6 +55454,46 @@
    "tags": [],
    "title": "[인천 선학역] 강력풍천장어 체험단",
    "url": "https://www.mrblog.net/campaigns/1146427",
+   "who": null
+  },
+  "mb-73fa02f0c0": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-03",
+   "endTime": null,
+   "firstSeen": "2026-10-30",
+   "grade": "C",
+   "id": "mb-73fa02f0c0",
+   "kind": "체험단",
+   "lastSeen": "2026-10-30",
+   "linkChecked": "2026-10-30",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여"
+   ],
+   "org": "미블",
+   "place": null,
+   "platHint": null,
+   "prize": "22,000원 식사권 (체험 제공, 5명 모집)",
+   "reasons": [],
+   "src": "mb",
+   "srcUrls": [
+    "https://www.mrblog.net/campaigns/1147132"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[서울역] 커피앤호두 서울역점 체험단",
+   "url": "https://www.mrblog.net/campaigns/1147132",
    "who": null
   },
   "mb-74798545db": {
@@ -71809,6 +71889,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1508372",
    "who": null
   },
+  "rn-820825ff8b": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-09",
+   "endTime": null,
+   "firstSeen": "2026-10-30",
+   "grade": "C",
+   "id": "rn-820825ff8b",
+   "kind": "체험단",
+   "lastSeen": "2026-10-30",
+   "linkChecked": "2026-10-30",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "헬스 1개월(9만원) PT 40분 1회(7만원) 총 16만원 상당 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1512335"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/광명시] 클리어짐 철산역점 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1512335",
+   "who": null
+  },
   "rn-8293b32766": {
    "announce": null,
    "cand": true,
@@ -75365,6 +75487,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1507020",
    "who": null
   },
+  "rn-a89b120397": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-09",
+   "endTime": null,
+   "firstSeen": "2026-10-30",
+   "grade": "C",
+   "id": "rn-a89b120397",
+   "kind": "체험단",
+   "lastSeen": "2026-10-30",
+   "linkChecked": "2026-10-30",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "대표메뉴(10만원) +전통주 3~5만원 총 15만원상당 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1512350"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/부천시] 한식주점 또올 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1512350",
+   "who": null
+  },
   "rn-a8c349fb17": {
    "announce": null,
    "cand": true,
@@ -78292,6 +78456,48 @@
    ],
    "title": "[서울/금천구] 도취 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1510104",
+   "who": null
+  },
+  "rn-c76e3c86a6": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-09",
+   "endTime": null,
+   "firstSeen": "2026-10-30",
+   "grade": "C",
+   "id": "rn-c76e3c86a6",
+   "kind": "체험단",
+   "lastSeen": "2026-10-30",
+   "linkChecked": "2026-10-30",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "칼국수와수육30000원까지 제공됩니다 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1512353"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[대구/달서구] 약전원조국수 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1512353",
    "who": null
   },
   "rn-c78f3385b5": {
@@ -84494,6 +84700,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-30T21:28:43+09:00"
+  "updated": "2026-10-30T22:23:47+09:00"
  }
 }
