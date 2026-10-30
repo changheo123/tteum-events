@@ -25693,7 +25693,7 @@
    "kind": "설문",
    "lastSeen": "2026-10-30",
    "linkChecked": "2026-10-30",
-   "linkStatus": "error SSLError",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318602",
    "max": null,
    "min": null,
@@ -77654,6 +77654,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-30T09:29:18+09:00"
+  "updated": "2026-10-30T10:24:34+09:00"
  }
 }
