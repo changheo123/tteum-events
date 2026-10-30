@@ -9209,6 +9209,49 @@
    "url": "https://www.eventhouse.kr/site/view.php?no=318515",
    "who": null
   },
+  "eh-2a77f45151": {
+   "announce": "2026-11-04",
+   "cand": true,
+   "checked": null,
+   "count": 25,
+   "end": "2026-11-02",
+   "endTime": null,
+   "firstSeen": "2026-10-30",
+   "grade": "C",
+   "id": "eh-2a77f45151",
+   "kind": "퀴즈",
+   "lastSeen": "2026-10-30",
+   "linkChecked": "2026-10-30",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318848",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "이금기",
+   "place": null,
+   "platHint": "insta",
+   "prize": "이금기 프리미엄 노추 10명 15명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318848"
+   ],
+   "start": "2026-10-27",
+   "status": "active",
+   "steps": [
+    "팔로우",
+    "좋아요",
+    "노추 정답 댓글"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "원문 미확인"
+   ],
+   "title": "챱스테이크 소스 퀴즈 풀고 노추 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318848",
+   "who": null
+  },
   "eh-2a80a5b1e5": {
    "announce": "2026-11-04",
    "cand": true,
@@ -21125,6 +21168,49 @@
    ],
    "title": "시장 SNS 소개하고 온누리상품권 받자 이벤트!!",
    "url": "https://www.eventhouse.kr/site/view.php?no=318730",
+   "who": null
+  },
+  "eh-7d48b6cca6": {
+   "announce": "2026-11-10",
+   "cand": true,
+   "checked": null,
+   "count": 50,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-30",
+   "grade": "C",
+   "id": "eh-7d48b6cca6",
+   "kind": "설문",
+   "lastSeen": "2026-10-30",
+   "linkChecked": "2026-10-30",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318847",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "평택시",
+   "place": null,
+   "platHint": "insta",
+   "prize": "네이버페이 1만원권 50명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318847"
+   ],
+   "start": "2026-10-30",
+   "status": "active",
+   "steps": [
+    "팔로우 캡처",
+    "네이버폼 설문·인증 제출"
+   ],
+   "tags": [
+    "팔로우 필요",
+    "캡처 인증",
+    "원문 미확인"
+   ],
+   "title": "평택 SNS 설문하고 네이버페이 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318847",
    "who": null
   },
   "eh-7daa5ffe6f": {
@@ -80533,6 +80619,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-30T11:56:54+09:00"
+  "updated": "2026-10-30T12:49:21+09:00"
  }
 }
