@@ -88,14 +88,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "bs-0ec37ec6de",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "기타",
    "lastSeen": "2026-10-30",
    "linkChecked": "2026-10-30",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -130,14 +128,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "bs-74c8aab11c",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "기타",
    "lastSeen": "2026-10-30",
    "linkChecked": "2026-10-30",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -170,14 +166,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "bs-c9fd582457",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "설문",
    "lastSeen": "2026-10-30",
    "linkChecked": "2026-10-30",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": null,
    "max": null,
    "min": null,
@@ -5046,11 +5040,14 @@
    "firstSeen": "2026-10-27",
    "grade": "X",
    "id": "eh-10e335fdea",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "기타",
    "lastSeen": "2026-10-30",
    "linkChecked": "2026-10-30",
-   "linkFail": 0,
-   "linkStatus": "ok",
+   "linkFail": 1,
+   "linkStatus": "http 404",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=316210",
    "max": null,
    "min": null,
@@ -15488,14 +15485,12 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "eh-53a934f7b7",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "라디오",
    "lastSeen": "2026-10-30",
    "linkChecked": "2026-10-30",
    "linkFail": 0,
-   "linkStatus": "error ConnectTimeout",
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=316694",
    "max": null,
    "min": null,
@@ -84501,6 +84496,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-30T19:33:32+09:00"
+  "updated": "2026-10-30T20:33:46+09:00"
  }
 }
