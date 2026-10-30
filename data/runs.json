@@ -7856,5 +7856,91 @@
    }
   },
   "total": 1956
+ },
+ {
+  "active": 1523,
+  "added": 1,
+  "at": "2026-10-30T17:45:27+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 3,
+   "ok": 50,
+   "skip": 1
+  },
+  "merged": 581,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 26,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 84,
+  "sec": 229.3,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "status": "wait"
+   },
+   "danawa": {
+    "status": "wait"
+   },
+   "eventhouse": {
+    "listed": 400,
+    "merged": 272,
+    "new": 0,
+    "requests": 10,
+    "sec": 11.8,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 166,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.5,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 312,
+    "merged": 309,
+    "new": 1,
+    "requests": 2,
+    "sec": 3.4,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "mohw": {
+    "status": "wait"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "status": "wait"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "status": "wait"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 1957
  }
 ]
