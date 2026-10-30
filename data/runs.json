@@ -7682,5 +7682,99 @@
    }
   },
   "total": 1956
+ },
+ {
+  "active": 1522,
+  "added": 0,
+  "at": "2026-10-30T16:26:13+09:00",
+  "links": {
+   "checked": 60,
+   "dead": 0,
+   "error": 3,
+   "ok": 50,
+   "skip": 0
+  },
+  "merged": 1178,
+  "pruned": 0,
+  "quality": {
+   "excluded": 0,
+   "flagged": 26,
+   "merged": 0
+  },
+  "rejected": 0,
+  "requests": 104,
+  "sec": 263.7,
+  "seeded": 0,
+  "sources": {
+   "busan": {
+    "status": "wait"
+   },
+   "danawa": {
+    "listed": 12,
+    "merged": 12,
+    "new": 0,
+    "requests": 2,
+    "sec": 2.3,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "eventhouse": {
+    "listed": 1120,
+    "merged": 857,
+    "new": 0,
+    "requests": 28,
+    "sec": 29.6,
+    "skipped": 8,
+    "status": "ok"
+   },
+   "events_kr": {
+    "listed": 166,
+    "merged": 0,
+    "new": 0,
+    "requests": 10,
+    "sec": 10.4,
+    "skipped": 0,
+    "status": "ok"
+   },
+   "gangnam": {
+    "status": "off"
+   },
+   "korissue": {
+    "listed": 311,
+    "merged": 309,
+    "new": 0,
+    "requests": 2,
+    "sec": 3.2,
+    "skipped": 2,
+    "status": "ok"
+   },
+   "mohw": {
+    "status": "wait"
+   },
+   "mrblog": {
+    "status": "wait"
+   },
+   "naver": {
+    "reason": "NAVER_CLIENT_ID/SECRET 없음",
+    "status": "unconfigured"
+   },
+   "reviewnote": {
+    "status": "wait"
+   },
+   "sbs": {
+    "status": "wait"
+   },
+   "telegram": {
+    "reason": "수집할 공개 채널 목록이 비어 있음",
+    "status": "unconfigured"
+   },
+   "touredu": {
+    "status": "wait"
+   },
+   "youtube": {
+    "status": "wait"
+   }
+  },
+  "total": 1956
  }
 ]
