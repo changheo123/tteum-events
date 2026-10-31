@@ -15477,12 +15477,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "eh-53a934f7b7",
-   "issues": [],
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "라디오",
    "lastSeen": "2026-10-31",
    "linkChecked": "2026-10-31",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=316694",
    "max": null,
    "min": null,
@@ -88489,6 +88491,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-31T13:28:04+09:00"
+  "updated": "2026-10-31T14:22:53+09:00"
  }
 }
