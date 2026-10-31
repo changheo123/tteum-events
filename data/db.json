@@ -17645,13 +17645,12 @@
    "firstSeen": "2026-10-28",
    "grade": "X",
    "id": "eh-62cfd225e6",
-   "issues": [
-    "원문 링크 접속"
-   ],
+   "issues": [],
    "kind": "댓글",
    "lastSeen": "2026-10-31",
    "linkChecked": "2026-10-31",
-   "linkStatus": "error ConnectTimeout",
+   "linkFail": 0,
+   "linkStatus": "ok",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=318600",
    "max": null,
    "min": null,
@@ -90456,6 +90455,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-31T18:49:03+09:00"
+  "updated": "2026-10-31T19:41:54+09:00"
  }
 }
