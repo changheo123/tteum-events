@@ -29275,11 +29275,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "eh-b69fcece3e",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "퀴즈",
    "lastSeen": "2026-10-31",
    "linkChecked": "2026-10-31",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=316148",
    "max": null,
    "min": null,
@@ -35101,11 +35104,14 @@
    "firstSeen": "2026-10-27",
    "grade": "C",
    "id": "eh-daf6d4e862",
+   "issues": [
+    "원문 링크 접속"
+   ],
    "kind": "퀴즈",
    "lastSeen": "2026-10-31",
    "linkChecked": "2026-10-31",
    "linkFail": 0,
-   "linkStatus": "ok",
+   "linkStatus": "error ConnectTimeout",
    "listUrl": "https://www.eventhouse.kr/site/view.php?no=316441",
    "max": null,
    "min": null,
@@ -90457,6 +90463,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-31T20:34:35+09:00"
+  "updated": "2026-10-31T21:29:19+09:00"
  }
 }
