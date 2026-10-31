@@ -55331,7 +55331,7 @@
    "grade": "C",
    "id": "mb-6c62d510bc",
    "kind": "체험단",
-   "lastSeen": "2026-10-30",
+   "lastSeen": "2026-10-31",
    "linkChecked": "2026-10-31",
    "linkFail": 0,
    "linkStatus": "ok",
@@ -56165,6 +56165,46 @@
    "tags": [],
    "title": "[관악구 봉천동] 커피보이 스튜디오 체험단",
    "url": "https://www.mrblog.net/campaigns/1145914",
+   "who": null
+  },
+  "mb-89140dd269": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": 5,
+   "end": "2026-11-01",
+   "endTime": null,
+   "firstSeen": "2026-10-31",
+   "grade": "C",
+   "id": "mb-89140dd269",
+   "kind": "체험단",
+   "lastSeen": "2026-10-31",
+   "linkChecked": "2026-10-31",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여"
+   ],
+   "org": "미블",
+   "place": null,
+   "platHint": null,
+   "prize": "자연눈썹 (시술 1회 진행 / 리터치시 개인부담) (체험 제공, 5명 모집)",
+   "reasons": [],
+   "src": "mb",
+   "srcUrls": [
+    "https://www.mrblog.net/campaigns/1146426"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [],
+   "title": "[분당 야탑역] 라인 (자연눈썹) 체험단",
+   "url": "https://www.mrblog.net/campaigns/1146426",
    "who": null
   },
   "mb-8c9f0d4d54": {
@@ -57418,7 +57458,7 @@
    "grade": "C",
    "id": "mb-ae5764db8b",
    "kind": "체험단",
-   "lastSeen": "2026-10-30",
+   "lastSeen": "2026-10-31",
    "linkChecked": "2026-10-31",
    "linkFail": 0,
    "linkStatus": "ok",
@@ -68956,6 +68996,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1516583",
    "who": null
   },
+  "rn-50ccc6da56": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-10",
+   "endTime": null,
+   "firstSeen": "2026-10-31",
+   "grade": "C",
+   "id": "rn-50ccc6da56",
+   "kind": "체험단",
+   "lastSeen": "2026-10-31",
+   "linkChecked": "2026-10-31",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "북창치킨 + 맥주2잔 (5만원 이내) (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1518584"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/중구] 북창치킨 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1518584",
+   "who": null
+  },
   "rn-5185343c27": {
    "announce": null,
    "cand": true,
@@ -73213,6 +73295,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1506159",
    "who": null
   },
+  "rn-7ac7c1523d": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-10",
+   "endTime": null,
+   "firstSeen": "2026-10-31",
+   "grade": "C",
+   "id": "rn-7ac7c1523d",
+   "kind": "체험단",
+   "lastSeen": "2026-10-31",
+   "linkChecked": "2026-10-31",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "돼지목살 + 생갈비살 + 돼지 양념갈비 + 소주(6만원 이내 자율) (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1518579"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[서울/성동구] 금호 경성갈비 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1518579",
+   "who": null
+  },
   "rn-7ae7bf70dd": {
    "announce": null,
    "cand": true,
@@ -76975,6 +77099,48 @@
    "tags": [],
    "title": "선착순 7 체험단",
    "url": "https://www.reviewnote.co.kr/campaigns/1505677",
+   "who": null
+  },
+  "rn-9d70bb25c1": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-10",
+   "endTime": null,
+   "firstSeen": "2026-10-31",
+   "grade": "C",
+   "id": "rn-9d70bb25c1",
+   "kind": "체험단",
+   "lastSeen": "2026-10-31",
+   "linkChecked": "2026-10-31",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "속눈썹연장, 속눈썹펌, led연장, 펌포인트연장 중 택1 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1518704"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경북/포항시] 뷰티온제이 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1518704",
    "who": null
   },
   "rn-9dec136873": {
@@ -87145,6 +87311,48 @@
    "url": "https://www.reviewnote.co.kr/campaigns/1510123",
    "who": null
   },
+  "rn-f99b0fef1d": {
+   "announce": null,
+   "cand": true,
+   "checked": null,
+   "count": null,
+   "end": "2026-11-10",
+   "endTime": null,
+   "firstSeen": "2026-10-31",
+   "grade": "C",
+   "id": "rn-f99b0fef1d",
+   "kind": "체험단",
+   "lastSeen": "2026-10-31",
+   "linkChecked": "2026-10-31",
+   "linkFail": 0,
+   "linkStatus": "ok",
+   "listUrl": null,
+   "max": null,
+   "min": null,
+   "mode": "선정",
+   "needs": [
+    "블로그·SNS 후기 작성 조건",
+    "신청 후 선정되어야 참여(방문형)"
+   ],
+   "org": "리뷰노트",
+   "place": null,
+   "platHint": null,
+   "prize": "1견 위생미용 + 목욕 + 털키링 (체험 제공)",
+   "reasons": [],
+   "src": "rn",
+   "srcUrls": [
+    "https://www.reviewnote.co.kr/campaigns/1518707"
+   ],
+   "start": null,
+   "status": "active",
+   "steps": [],
+   "tags": [
+    "방문 필요"
+   ],
+   "title": "[경기/수원시] 은밀하개위대하개 체험단",
+   "url": "https://www.reviewnote.co.kr/campaigns/1518707",
+   "who": null
+  },
   "rn-f9a185ec7f": {
    "announce": null,
    "cand": true,
@@ -88281,6 +88489,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-31T10:46:28+09:00"
+  "updated": "2026-10-31T11:38:59+09:00"
  }
 }
