@@ -24125,6 +24125,47 @@
    "url": "https://www.instagram.com/p/DZ6uWLrEsnt/",
    "who": null
   },
+  "eh-91d703a4ab": {
+   "announce": "2026-11-27",
+   "cand": true,
+   "checked": null,
+   "count": 100,
+   "end": "2026-11-08",
+   "endTime": null,
+   "firstSeen": "2026-10-31",
+   "grade": "C",
+   "id": "eh-91d703a4ab",
+   "kind": "설문",
+   "lastSeen": "2026-10-31",
+   "linkChecked": "2026-10-31",
+   "linkStatus": "skip",
+   "listUrl": "https://www.eventhouse.kr/site/view.php?no=318852",
+   "max": null,
+   "min": null,
+   "mode": null,
+   "needs": [],
+   "org": "한국관광공사",
+   "place": null,
+   "platHint": "web",
+   "prize": "커피 기프티콘 100명",
+   "reasons": [],
+   "src": "eh",
+   "srcUrls": [
+    "https://www.eventhouse.kr/site/view.php?no=318852"
+   ],
+   "start": "2026-10-26",
+   "status": "active",
+   "steps": [
+    "사용자 만족도 조사",
+    "폼제출"
+   ],
+   "tags": [
+    "원문 미확인"
+   ],
+   "title": "누리집 만족도 조사 참여하고 커피 받자 이벤트!!",
+   "url": "https://www.eventhouse.kr/site/view.php?no=318852",
+   "who": null
+  },
   "eh-91dc23311f": {
    "announce": "2026-11-06",
    "cand": true,
@@ -88867,6 +88908,6 @@
   }
  },
  "meta": {
-  "updated": "2026-10-31T16:05:07+09:00"
+  "updated": "2026-10-31T16:59:44+09:00"
  }
 }
